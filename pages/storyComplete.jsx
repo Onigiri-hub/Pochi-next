@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
-import { saveProgress, checkAndSaveUnitComplete } from "../utils/progressManager"
-import { loadCSV } from "../utils/csvLoader"
+import { saveProgress } from "../utils/progressManager"
 import { checkAndEarnBadges, loadBadgeList } from "../utils/badgeManager"
 import { useEffect, useState } from "react"
 import { useProfileContext } from "../utils/ProfileContext"
@@ -15,7 +14,6 @@ export default function StoryComplete() {
     setMofu, setStreak,
     setTotalLessons, totalLessons,
     totalRounds,
-    completedUnits, setCompletedUnits
   } = useProfileContext()
   const [newBadges, setNewBadges] = useState([])
   const [mofuEarned, setMofuEarned] = useState(0)
@@ -60,24 +58,12 @@ export default function StoryComplete() {
       setMofuEarned(mofu);
       setMofu(prev => prev + mofu)
 
-      // 4. カテゴリ完了チェック
-      const storyList = await loadCSV("/data/story/story_list.csv")
-      const stories = storyList.filter(r => r.category_id === String(category))
-      const totalStoriesInCategory = stories.length
-
-      const isCategoryComplete = await checkAndSaveUnitComplete(category, totalStoriesInCategory, completedUnits)
-      if (isCategoryComplete) {
-        setCompletedUnits(prev => new Set([...prev, `u${category}`]))
-      }
-
-      // 5. バッジチェック
+      // 4. バッジチェック
       const newBadgeIds = await checkAndEarnBadges({
         streak,
         totalLessons: totalLessons + (isFirstClear ? 1 : 0),
         totalRounds,
-        isUnitComplete: isCategoryComplete ? String(category) : null,
         isPerfect: isPerfect === "true",
-        completedUnitCount: completedUnits.size + (isCategoryComplete ? 1 : 0),
       })
 
       // 6. IDからバッジオブジェクトに変換

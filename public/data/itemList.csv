@@ -7,13 +7,13 @@ head_01,head,head_01.png,100,none,,シルクハット
 head_02,head,head_02.png,300,rounds_10,英単語10レッスン完了で解放,ピンクうんこ
 head_03,head,head_03.png,500,streak_10,10日連続記録で解放,グレーネコミミ
 head_04,head,head_04.png,500,streak_10,10日連続記録で解放,茶色ネコミミ
-head_05,head,head_05.png,500,unit_2_complete,Unit2コンプリートで解放,天使のりんぐ
-eye_01,eye,eye_01.png,50,unit_1_complete,Unit1コンプリートで解放,赤眼鏡
-eye_02,eye,eye_02.png,50,unit_1_complete,Unit1コンプリートで解放,青眼鏡
+head_05,head,head_05.png,500,rounds_20,英単語20レッスン完了で解放,天使のりんぐ
+eye_01,eye,eye_01.png,50,lessons_1,長文1レッスン完了で解放,赤眼鏡
+eye_02,eye,eye_02.png,50,lessons_1,長文1レッスン完了で解放,青眼鏡
 eye_03,eye,eye_03.png,100,none,,サングラス
 eye_04,eye,eye_04.png,500,streak_30,30日連続記録で解放,ハートのサングラス
 eye_05,eye,eye_05.png,300,streak_20,20日連続記録で解放,汗
-eye_06,eye,eye_06.png,500,unit_10_complete,Unit10コンプリートで解放,うるうる涙
+eye_06,eye,eye_06.png,500,lessons_10,長文10レッスン完了で解放,うるうる涙
 mouth_01,mouth,mouth_01.png,300,none,,水玉マスク
 mouth_02,mouth,mouth_02.png,50,lessons_5,長文5レッスン完了で解放,しましまマフラー
 mouth_03,mouth,mouth_03.png,300,streak_20,20日連続記録で解放,虹色マフラー

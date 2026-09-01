@@ -41,9 +41,7 @@ export async function checkAndEarnBadges({
   totalLessons = 0,
   totalRounds = 0,
   completedStages = [],
-  isUnitComplete = null,
   isPerfect = false,
-  completedUnitCount = 0,
 }) {
   const user = auth.currentUser;
   if (!user) return [];

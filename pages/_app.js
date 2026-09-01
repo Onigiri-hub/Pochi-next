@@ -37,7 +37,6 @@ export default function MyApp({ Component, pageProps }) {
   const [streak, setStreak] = useState(0)
   const [totalLessons, setTotalLessons] = useState(0)
   const [totalRounds, setTotalRounds] = useState(0)
-  const [completedUnits, setCompletedUnits] = useState(new Set())
   const [authChecked, setAuthChecked] = useState(false)
   const [currentUser, setCurrentUser] = useState(null)
   const dataLoadedRef = useRef(false)
@@ -57,19 +56,15 @@ export default function MyApp({ Component, pageProps }) {
       if (dataLoadedRef.current) return
       dataLoadedRef.current = true
 
-      const { doc, getDoc, setDoc, collection, getDocs } = await import("firebase/firestore")
+      const { doc, getDoc, setDoc } = await import("firebase/firestore")
       const { db } = await import("../firebase")
 
       // プロフィール・mofu・streakを一括取得
       const userRef = doc(db, "users", user.uid)
-      const [profileSnap, streakSnap, completedUnitsSnap] = await Promise.all([
+      const [profileSnap, streakSnap] = await Promise.all([
         getDoc(userRef),
         getDoc(doc(db, "users", user.uid, "streak", "current")),
-        getDocs(collection(db, "users", user.uid, "completedUnits")),
       ])
-
-      const completedUnitIds = new Set(completedUnitsSnap.docs.map(d => d.id))
-      setCompletedUnits(completedUnitIds)
 
       // 取得した値をローカル変数に保持（dailyCheckで使う）
       let currentStreak = 0
@@ -122,29 +117,12 @@ export default function MyApp({ Component, pageProps }) {
       try {
         const { checkAndEarnBadges } = await import("../utils/badgeManager")
 
-        const baseParams = {
+        await checkAndEarnBadges({
           streak: currentStreak,
           totalLessons: currentTotalLessons,
           totalRounds: currentTotalRounds,
           isPerfect: false,
-          completedUnitCount: completedUnitIds.size,
-        }
-
-        if (completedUnitIds.size > 0) {
-          // 各Unitコンプリートバッジをチェック
-          for (const unitId of completedUnitIds) {
-            await checkAndEarnBadges({
-              ...baseParams,
-              isUnitComplete: unitId.replace("u", ""),
-            })
-          }
-        } else {
-          // Unitコンプリートなしでも、streak/lesson/roundバッジはチェック
-          await checkAndEarnBadges({
-            ...baseParams,
-            isUnitComplete: null,
-          })
-        }
+        })
 
         localStorage.setItem("dailyCheck", today)
 
@@ -198,7 +176,6 @@ export default function MyApp({ Component, pageProps }) {
         streak, setStreak, 
         totalLessons, setTotalLessons,
         totalRounds, setTotalRounds,
-        completedUnits, setCompletedUnits,
       }}>
 
         <Head>

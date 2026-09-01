@@ -54,31 +54,3 @@ export async function saveProgress(unit, clearedOrder) {
     return { isFirstClear: false };
   }
 }
-
-// Unit完了チェック＆Firestoreに保存
-// 戻り値：今回初めて完了したならtrue
-export async function checkAndSaveUnitComplete(unitNo, totalLessonsInUnit, completedUnits) {
-  const user = auth.currentUser
-  if (!user) return false
-
-  try {
-    // Contextのcompletedunitsで確認（Firestore読み取り不要）
-    if (completedUnits.has(`u${unitNo}`)) return false
-
-    // 現在の進捗を確認
-    const progressSnap = await getDoc(doc(db, "users", user.uid, "progress", `u${unitNo}`))
-    const progress = progressSnap.exists() ? (progressSnap.data().value || 0) : 0
-
-    if (progress >= totalLessonsInUnit) {
-      // 初めて完了！Firestoreに保存
-      await setDoc(doc(db, "users", user.uid, "completedUnits", `u${unitNo}`), { 
-        completedAt: new Date() 
-      })
-      return true
-    }
-    return false
-  } catch (e) {
-    console.error("Unit完了チェック失敗:", e)
-    return false
-  }
-}

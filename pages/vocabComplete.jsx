@@ -100,7 +100,6 @@ export default function VocabComplete() {
         totalLessons,
         totalRounds: totalRounds + (firstClear ? 1 : 0),
         completedStages,
-        isUnitComplete: null,
         isPerfect: false,
       })
       if (badges.length > 0) {

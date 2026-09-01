@@ -11,8 +11,6 @@ export const ProfileContext = createContext({
   setTotalLessons: () => {},
   totalRounds: 0,
   setTotalRounds: () => {},
-  completedUnits: new Set(),
-  setCompletedUnits: () => {},
 })
 
 export function useProfileContext() {

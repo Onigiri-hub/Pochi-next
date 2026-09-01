@@ -18,7 +18,7 @@ const CATEGORIES = ["avatar", "head", "eye", "mouth"]
 
 export default function Mofu() {
   const router = useRouter()
-  const { mofu, setMofu, profile, streak, completedUnits, totalLessons, totalRounds } = useProfileContext()
+  const { mofu, setMofu, profile, streak, totalLessons, totalRounds } = useProfileContext()
   const [items, setItems] = useState([])
   const [purchasedIds, setPurchasedIds] = useState(new Set())
   const [loading, setLoading] = useState(true)
@@ -51,10 +51,6 @@ export default function Mofu() {
           const required = parseInt(item.unlock_condition.replace("streak_", ""))
           return streak >= required
         }
-        if (item.unlock_condition.startsWith("unit_") && item.unlock_condition.endsWith("_complete")) {
-          const unitNo = item.unlock_condition.replace("unit_", "").replace("_complete", "")
-          return completedUnits.has(`u${unitNo}`)
-        }
         if (item.unlock_condition.startsWith("rounds_")) {
           const required = parseInt(item.unlock_condition.replace("rounds_", ""))
           return totalRounds >= required
@@ -81,7 +77,7 @@ export default function Mofu() {
       setLoading(false)
     })
     return () => unsubscribe()
-  }, [completedUnits, totalLessons, totalRounds, streak])
+  }, [totalLessons, totalRounds, streak])
 
   const isUnlocked = (item) => {
     if (item.unlock_condition === "none") return true
@@ -90,10 +86,6 @@ export default function Mofu() {
     if (item.unlock_condition.startsWith("streak_")) {
       const required = parseInt(item.unlock_condition.replace("streak_", ""))
       return streak >= required
-    }
-    if (item.unlock_condition.startsWith("unit_") && item.unlock_condition.endsWith("_complete")) {
-      const unitNo = item.unlock_condition.replace("unit_", "").replace("_complete", "")
-      return completedUnits.has(`u${unitNo}`)
     }
     if (item.unlock_condition.startsWith("rounds_")) {
       const required = parseInt(item.unlock_condition.replace("rounds_", ""))
