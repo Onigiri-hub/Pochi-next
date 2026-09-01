@@ -179,6 +179,17 @@ export default function MyApp({ Component, pageProps }) {
 
   }, [])
 
+  // Service Worker登録（本番のみ：PWAインストール/オフライン対応）
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      "serviceWorker" in navigator &&
+      process.env.NODE_ENV === "production"
+    ) {
+      navigator.serviceWorker.register("/sw.js").catch(() => {})
+    }
+  }, [])
+
   return (
     <DictionaryContext.Provider value={dictionary}>
       <ProfileContext.Provider value={{ 
