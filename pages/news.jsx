@@ -3,19 +3,9 @@ import Navigation from "../components/Navigation";
 
 const newsItems = [
   {
-    date: "2026-07-26",
-    title: "実績を画像でシェアする機能を実装しました！",
-    body: "",
-  },
-  {
-    date: "2026-07-26",
-    title: "Unit25まで追加しました",
-    body: "",
-  },
-  {
-    date: "2026-07-18",
-    title: "Pochi β版を公開しました",
-    body: "ポチの英文法アプリをリリースしました。今後もコンテンツを追加していく予定です。どうぞよろしくお願いします！",
+    date: "2026-09-01",
+    title: "Pochi-NEXT β版を公開しました",
+    body: "Pochi-NEXTアプリをリリースしました。Pochi（本家）よりもハイレベルな英単語と、長文読解を扱っていきます。",
   },
 ];
 

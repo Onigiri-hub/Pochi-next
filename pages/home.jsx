@@ -87,20 +87,6 @@ export default function Home() {
           お知らせ
         </button>
 
-        <a href="https://ofuse.me/pochipochi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="supportLink"
-        >
-          Pochiを応援する
-        </a>
-        <p className="supportNote">
-          こどもたちが無料で学べるように、
-        </p>
-        <p className="supportNote">
-          ご支援を募っています
-        </p>
-
       </div>
       <Navigation />
     </div>
