@@ -1,0 +1,21 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/my_apps/e-grammar/public/animations/ãƒ•ãƒ¬ãƒ¼ãƒ %04d.png -vf scale=w=230:h=170:flags=bicubic -c:v libopenh264 -b:v 5000k C:/my_apps/e-grammar/public/animations/pochi-tokotoko.mp4
+=====================================================
+Input #0, image2, from 'C:/my_apps/e-grammar/public/animations/ƒtƒŒ[ƒ€%04d.png':
+  Duration: 00:00:00.52, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 231x171 [SAR 5905:5905 DAR 77:57], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 000002a30af20000] Slice count will be set automatically
+[libopenh264 @ 000002a30af20000] [OpenH264] this = 0x000002A30AF2F230, Warning:SliceArgumentValidationFixedSliceMode(), unsupported setting with Resolution and uiSliceNum combination under RC on! So uiSliceNum is changed to 4!
+[libopenh264 @ 000002a30af20000] [OpenH264] this = 0x000002A30AF2F230, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to 'C:/my_apps/e-grammar/public/animations/pochi-tokotoko.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 230x170 [SAR 1309:1311 DAR 77:57], q=2-31, 5000 kb/s, 24 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=4740.7kbits/s speed=0.0271x    frame=   13 fps=0.0 q=-0.0 Lsize=      22kB time=00:00:00.50 bitrate= 359.2kbits/s speed= 5.5x    
+video:21kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 4.175559%

@@ -1,0 +1,4 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s001,1,c02_s001_q1,There was a land of ice.,氷の国があった。,Matthew,There was a land of ice.,There|was|a|land|of|ice.,c02_s001_q1.mp3,1,Matthew.png,left
+c02,s001,2,c02_s001_q2,The wind was very cold.,風はとても冷たかった。,Matthew,The wind was very cold.,The|wind|was|very|cold.,c02_s001_q2.mp3,1,Matthew.png,left
+c02,s001,3,c02_s001_q3,A little girl lived there.,小さな女の子が住んでいた。,Matthew,A little girl lived there.,A|little|girl|lived|there.,c02_s001_q3.mp3,1,Matthew.png,left

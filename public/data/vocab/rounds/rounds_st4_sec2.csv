@@ -1,0 +1,13 @@
+section_id,round_id,round_no,mode_type,word_from,word_to,is_review
+st4_sec2,r337,1,fourChoices_en2ja,v1083,v1102,0
+st4_sec2,r338,2,fourChoices_en2ja,v1103,v1122,0
+st4_sec2,r339,3,review_en2ja,v1083,v1122,1
+st4_sec2,r340,4,review_en2ja,v1083,v1122,1
+st4_sec2,r341,5,fourChoices_ja2en,v1083,v1102,0
+st4_sec2,r342,6,fourChoices_ja2en,v1103,v1122,0
+st4_sec2,r343,7,review_ja2en,v1083,v1122,1
+st4_sec2,r344,8,review_ja2en,v1083,v1122,1
+st4_sec2,r345,9,typing,v1083,v1092,0
+st4_sec2,r346,10,typing,v1093,v1102,0
+st4_sec2,r347,11,typing,v1103,v1112,0
+st4_sec2,r348,12,typing,v1113,v1122,0

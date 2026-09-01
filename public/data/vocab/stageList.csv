@@ -1,0 +1,15 @@
+stage_id,stage_no,stage_name,mode_category,description
+st1,1,Stage1,1to1,初学者レベル
+st2,2,Stage2,1to1,よく使う言葉
+st3,3,Stage3,1to1,ちょっとかっちりした言葉
+st4,4,Stage4,1to1,かっちりした言葉
+ast1,1,Stage1,arrange,初学者レベル
+ast2,2,Stage2,arrange,初学者レベル
+ast3,3,Stage3,arrange,子供も良く使うレベル
+ast4,4,Stage4,arrange,子供も良く使うレベル
+ast5,5,Stage5,arrange,日常的に会話でよく出てくるレベル
+ast6,6,Stage6,arrange,日常的に会話でよく出てくるレベル
+ast7,7,Stage7,arrange,日常的に会話でよく出てくるレベル
+ast8,8,Stage8,arrange,日常的に会話でよく出てくるレベル
+ast9,9,Stage9,arrange,ネイティブ中学生の会話でも出てくるレベル
+ast10,10,Stage10,arrange,ネイティブ中学生の会話でも出てくるレベル

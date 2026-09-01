@@ -1,0 +1,197 @@
+body{
+background:#ebebeb;
+}
+
+/*
+.lessonHeader {
+  position: sticky;
+  top: 0;
+    z-index: 10;
+  
+  
+  margin: 10px;        
+  border-radius: 20px; 
+  overflow: hidden;    
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+*/
+
+.lessonHeader {
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.lessonHeaderContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.lessonHeaderContent h1 {
+  margin: 0px 0 10px 0;
+  font-size: 24px;
+}
+
+.lessonHeaderContent p {
+  margin: 0;
+}
+
+.headerInner {
+  max-width: 400px;
+  margin: auto;
+  
+  /* 縦幅を狭くする調整 */
+  padding: 12px 20px;  /* 上下の20pxを12pxに減らしてスリムに */
+  
+  color: white;
+  text-align: center;
+}
+
+/* Unit 1 などの文字サイズ微調整 */
+.headerInner .unitTitle {
+  font-size: 13px;     /* 少し小さく */
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+.headerInner h2 {      /* Unit名のタグに合わせて調整してくれ */
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.lessonList{
+max-width:400px;
+margin:auto;
+padding:20px;
+background:#ebebeb;
+min-height:100vh;
+}
+
+
+.lessonCard{
+background:white;
+padding:16px;
+margin-bottom:12px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.lessonName{
+font-size:16px;
+font-weight:bold;
+}
+
+button{
+padding:8px 16px;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+
+.lessonRow{
+display:flex;
+align-items:center;
+margin:25px 0;
+padding-left: 20px;
+cursor:pointer;
+}
+
+
+.lessonIcon {
+  /* サイズを完全に固定する */
+  width: 60px;
+  height: 60px;
+  min-width: 60px;  /* これがミソ！押しつぶされないようにする */
+  min-height: 60px; /* これで縦長を防ぐ */
+  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.1);
+}
+
+/* 中の画像自体のサイズ */
+.iconImage {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; /* 比率を維持 */
+}
+
+.lessonIcon img{
+width:26px;
+}
+
+/* 右のテキスト */
+
+.lessonInfo{
+margin-left:20px;
+}
+
+.lessonName{
+font-size:16px;
+margin-bottom:5px;
+}
+
+.lessonInfo button{
+background:#e53935;
+border:none;
+color:white;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+/* アニメーションなどはコンテナにかける */
+.lessonIcon.current {
+  animation: pulse 2s infinite; /* 2秒かけてループ */
+  cursor: pointer;
+  border: 2px solid #FFD700; /* 現在のレッスンを分かりやすく */
+}
+
+.icon.cleared {
+    cursor: pointer;
+}
+
+.lessonIcon.locked {
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); /* 開始時は影なし */
+  }
+  70% {
+    transform: scale(1.05); /* ほんの少し大きく */
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); /* 影を外に広げながら消す */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}

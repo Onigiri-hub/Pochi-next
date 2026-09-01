@@ -1,0 +1,10 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c01,s002,1,c01_s002_q1,Breath of the Wild's biggest draw is probably the physics engine.,ブレスオブザワイルドの一番の魅力は、たぶん物理演算エンジン。,Ivy,Breath of the Wild's biggest draw is probably the physics engine.,Breath|of|the|Wild's|biggest|draw|is|probably|the|physics|engine.,c01_s002_q1.mp3,1,Ivy.png,right
+c01,s002,2,c01_s002_q2,"Fire, wind, metal, chemistry all interact freely.",火・風・金属・化学反応が自由に絡み合う。,Ivy,"Fire, wind, metal, chemistry all interact freely.","Fire,|wind,|metal,|chemistry|all|interact|freely.",c01_s002_q2.mp3,1,Ivy.png,right
+c01,s002,3,c01_s002_q3,Players find solutions the designers never scripted.,開発者が用意してない解法をプレイヤーが見つけられる。,Ivy,Players find solutions the designers never scripted.,Players|find|solutions|the|designers|never|scripted.,c01_s002_q3.mp3,1,Ivy.png,right
+c01,s002,4,c01_s002_q4,Climbing and gliding also broke the genre's usual rules.,登る自由・パラセーリングも、このジャンルのお約束を壊した。,Ivy,Climbing and gliding also broke the genre's usual rules.,Climbing|and|gliding|also|broke|the|genre's|usual|rules.,c01_s002_q4.mp3,1,Ivy.png,right
+c01,s002,5,c01_s002_q5,No invisible walls.,見えない壁がない。,Ivy,No invisible walls.,No|invisible|walls.,c01_s002_q5.mp3,1,Ivy.png,right
+c01,s002,6,c01_s002_q6,Exploration felt truly free.,探索が本当に自由に感じられる。,Ivy,Exploration felt truly free.,Exploration|felt|truly|free.,c01_s002_q6.mp3,1,Ivy.png,right
+c01,s002,7,c01_s002_q7,The shrine structure let players skip straight to the final boss if they wanted.,祠の構造のおかげで、望めばいきなりラスボスに挑める。,Ivy,The shrine structure let players skip straight to the final boss if they wanted.,The|shrine|structure|let|players|skip|straight|to|the|final|boss|if|they|wanted.,c01_s002_q7.mp3,1,Ivy.png,right
+c01,s002,8,c01_s002_q8,Rare for a AAA game.,AAAゲームでは珍しい。,Ivy,Rare for a AAA game.,Rare|for|a|AAA|game.,c01_s002_q8.mp3,1,Ivy.png,right
+c01,s002,9,c01_s002_q9,Made the world feel genuinely non-linear.,世界が本当に非線形に感じられる理由になってる。,Ivy,Made the world feel genuinely non-linear.,Made|the|world|feel|genuinely|non-linear.,c01_s002_q9.mp3,1,Ivy.png,right

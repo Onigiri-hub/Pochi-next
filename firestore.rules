@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      match /progress/{unitId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /history/{historyId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      // 英単語用
+      match /vocab_rounds/{roundId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /vocab_progress/{wordId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /vocab_history/{historyId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      // 並べ替え単語の履修・自信度ステータス
+      match /arrange_word_status/{stage} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      // 報酬システム用
+      match /streak/{docId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /badges/{docId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /items/{itemId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /unlocked/{itemId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      match /completedUnits/{unitId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}

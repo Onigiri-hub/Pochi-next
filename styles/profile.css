@@ -1,0 +1,231 @@
+/* 共通の箱 */
+.container {
+  background: #ebebeb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 400px; 
+  background: white;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+/****** 設定画面 ********/
+
+.settingSection { margin-bottom: 30px; }
+.settingSection h3 { font-size: 14px; color: #666; margin-bottom: 15px; text-align: left; }
+
+/* アバター・カルーセル */
+.avatarCarousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 15px;
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+  cursor: grab;
+}
+
+.avatarCarousel:active {
+  cursor: grabbing; /* 掴んでいる間のアイコン */
+}
+
+.avatarCarousel::-webkit-scrollbar {
+  height: 6px;
+}
+.avatarCarousel::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.avatarOption {
+  flex: 0 0 60px;
+  padding: 6px;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+/* 選択中（真ん中）のやつを少し大きくして強調する */
+.avatarOption.active {
+  border-color: #a9b8e7;
+  background: #eef6ff;
+  transform: scale(1.1); 
+}
+
+.avatarOption img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+
+.nickInput {
+  width: 100%;
+  box-sizing: border-box; /* 幅100%にパディングを含める */
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+}
+
+/* ボタン類 */
+.actionButtons { 
+  display: flex; 
+  flex-direction: 
+  column; gap: 10px; 
+  margin-top: 40px; 
+}
+
+.saveBtn { 
+  background: #6f70a7; 
+  color: white; 
+  border: none; 
+  padding: 15px; 
+  border-radius: 12px; 
+  font-weight: bold; 
+}
+
+.logoutBtn { 
+  background: #eee; 
+  color: #666; 
+  border: none; 
+  padding: 12px; 
+  border-radius: 12px; 
+}
+
+/* リンク集 */
+.links { 
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  list-style: none; 
+  padding: 0; 
+  text-align: left; 
+}
+
+.links li { 
+  padding: 15px 0; 
+  border-bottom: 1px solid #eee; 
+  color: #555; 
+  cursor: pointer; 
+  font-size: 14px; 
+}
+
+
+
+
+/******** user profile画面（progress.jsx） *********/
+
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  width: 100%;           /* ★ 追加 */
+  text-align: center;    /* ★ 追加 */
+  margin: 0;             /* ★ 追加 */
+}
+
+.backBtn {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.settingsBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.settingsBtn img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.profileSection { 
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+
+.avatarCircle { 
+  margin: 0 auto 10px; /* 中央寄せ */
+  width: 100px;         /* ここで好きな大きさに調整するのじゃ */
+  height: 100px; 
+}
+
+.avatarCircle img {
+  width: 100%;         /* 親（avatarCircle）の幅いっぱいに広げる */
+  height: 100%;
+  object-fit: cover;   /* 画像が歪まないように調整 */
+  border-radius: 0%;  /* 丸くしたい場合はこれを入れる */
+}
+
+.nickname { font-size: 20px; font-weight: bold; }
+.statsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px; }
+.statItem { background: #f8f8f8; padding: 15px; border-radius: 15px; text-align: center; }
+.statLabel { display: block; font-size: 12px; color: #666; }
+.statValue { font-size: 20px; font-weight: bold; }
+.graphContainer { background: #f8f8f8; height: 200px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #999; }
+
+.profileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.audioToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  margin: 8px 0;
+}
+
+.audioToggle label {
+  font-size: 14px;
+  color: #333;
+}
+
+.toggleBtn {
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.toggleBtn.on {
+  background: #ffb6c1;
+  color: white;
+}
+
+.toggleBtn.off {
+  background: #d0d0d0;
+  color: #666;
+}
