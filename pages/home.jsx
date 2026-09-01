@@ -65,7 +65,7 @@ export default function Home() {
 
 
           <img
-            src="/images/illustrations/pochi_grammar.png"
+            src="/images/illustrations/pochi_story.png"
             alt="長文学習"
             className="homeBtnImg"
             onClick={() => router.push("/categoryList")}

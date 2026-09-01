@@ -18,7 +18,7 @@ export default function Navigation() {
         </button>
 
         <button onClick={() => router.push("/categoryList")} className="navItem" data-sound>
-          <img src="/images/icons/dog.svg" alt="リスト" />
+          <img src="/images/icons/book-333.svg" alt="リスト" />
           <span className="label">READING</span>
         </button>
 
