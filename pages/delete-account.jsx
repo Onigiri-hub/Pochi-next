@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { auth, db } from "../firebase";
-import { doc, deleteDoc } from "firebase/firestore";
-import { deleteUser } from "firebase/auth";
+import { doc, deleteDoc, collection, getDocs } from "firebase/firestore";
+import { deleteUser, reauthenticateWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 export default function DeleteAccount() {
   const router = useRouter();
@@ -11,16 +11,43 @@ export default function DeleteAccount() {
     if (!user) return;
 
     try {
-      // 1. Firestoreのユーザーデータを削除
-      await deleteDoc(doc(db, "users", user.uid));
-      
-      // 2. Authのユーザーを削除
+      // 0. セキュリティのため再認証（時間経過による requires-recent-login を回避）
+      //    先に再認証しておくことで「Firestoreだけ消えてAuthが残る」中途半端な状態を防ぐ
+      await reauthenticateWithPopup(user, new GoogleAuthProvider());
+
+      const uid = user.uid;
+
+      // 1. Firestoreのサブコレクションを削除（親ドキュメントを消しても残るため）
+      const subCollections = [
+        "progress", "history", "vocab_rounds",
+        "vocab_progress", "vocab_history", "streak", "badges",
+        "completedUnits", "items", "unlocked",
+      ];
+      await Promise.all(
+        subCollections.map(async (colName) => {
+          const ref = collection(db, "users", uid, colName);
+          const snap = await getDocs(ref);
+          await Promise.all(snap.docs.map((d) => deleteDoc(d.ref)));
+        })
+      );
+
+      // 2. Firestoreのユーザードキュメントを削除
+      await deleteDoc(doc(db, "users", uid));
+
+      // 3. Authのユーザーを削除
       await deleteUser(user);
 
-      // 3. 完了ページへ
+      // 4. 完了ページへ
       router.push("/delete-success");
     } catch (error) {
       console.error(error);
+      // ユーザーが再認証ポップアップを閉じただけの場合は何もしない
+      if (
+        error.code === "auth/popup-closed-by-user" ||
+        error.code === "auth/cancelled-popup-request"
+      ) {
+        return;
+      }
       alert("エラーが発生しました。再ログインしてから試してください（セキュリティの関係で、ログインから時間がたっていると削除できないことがあります。）");
     }
   };

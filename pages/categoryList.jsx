@@ -63,7 +63,7 @@ export default function CategoryList(){
           Pochi長文
           <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
             {[0, 0, 0].map((angle, i) => (
-              <img key={i} src="/images/icons/dog_333.svg" style={{ width: "24px", transform: `rotate(${angle}deg)` }} />
+              <img key={i} src="/images/icons/book-333.svg" style={{ width: "24px", transform: `rotate(${angle}deg)` }} />
             ))}
           </div>
         </div>
