@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
-import { getProgress } from "../utils/progressManager"
+import { getClearedOrders } from "../utils/progressManager"
 import Navigation from "../components/Navigation";
 
 export default function StoryList() {
   const [stories, setStories] = useState([])
   const [categoryName, setCategoryName] = useState("")
   const [categoryColor, setCategoryColor] = useState("#e53935")
-  const [progress, setProgress] = useState(0)
+  const [clearedOrders, setClearedOrders] = useState(new Set())
   const router = useRouter()
   const { category } = router.query
 
@@ -32,7 +32,7 @@ export default function StoryList() {
         .sort((a, b) => Number(a.order) - Number(b.order))
       setStories(list)
 
-      setProgress((await getProgress(category)) || 0)
+      setClearedOrders(await getClearedOrders(category))
     }
     load()
   }, [category])
@@ -64,15 +64,14 @@ export default function StoryList() {
 
       {stories.map((s) => {
         const order = Number(s.order);
-        const isCurrent = order === progress + 1;
-        const isLocked = order > progress + 1;
+        const learned = clearedOrders.has(order);
 
         return (
           <div className="lessonRow" key={s.story_id}>
             <div
-              className={`lessonIcon ${isLocked ? "locked" : isCurrent ? "current" : "cleared"}`}
-              style={{ backgroundColor: isLocked ? "#9e9e9e" : categoryColor }}
-              onClick={() => { if (!isLocked) goStory(s) }}
+              className="lessonIcon"
+              style={{ backgroundColor: learned ? categoryColor : "#9e9e9e" }}
+              onClick={() => goStory(s)}
               data-sound
             >
               <img src="/images/icons/practice_icon.png" className="iconImage" />
