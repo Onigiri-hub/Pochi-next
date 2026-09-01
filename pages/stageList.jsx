@@ -135,49 +135,10 @@ export default function StageList() {
     <div className="unitListContainer" style={{ paddingBottom: "100px" }}>
       <div className="unitList">
 
-        {/* 1:1英単語セクション */}
-        <div style={{ textAlign: "center", margin: "25px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
-          1:1英単語
-          <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
-            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
-            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
-            <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
-          </div>
-        </div>
-
-        {oneToOne.map((stage) => {
-          const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0 }
-          return (
-            <div
-              className="unitCard"
-              key={stage.stage_id}
-              onClick={() => router.push(`/sectionList?stage=${stage.stage_id}&name=${encodeURIComponent(stage.stage_name)}`)}
-            >
-              <img src="/images/illustrations/stagelist_button.png" className="unitCardBg" />
-              <div className="unitCardContent">
-                <div className="unitTitle">{stage.stage_name}</div>
-                <div style={{ width: "80%", marginTop: "24px", display: "flex", alignItems: "center", gap: "10px" }}>
-                  <div style={{ flex: 1, height: "8px", borderRadius: "4px", background: "#ccc", overflow: "hidden" }}>
-                    <div style={{
-                      height: "100%",
-                      width: `${progress.total > 0 ? (progress.cleared / progress.total) * 100 : 0}%`,
-                      background: "#02ccbb",
-                      transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
-                    }} />
-                  </div>
-                  <div style={{ fontSize: "13px", minWidth: "48px", textAlign: "right" }}>
-                    {progress.cleared}/{progress.total}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )
-        })}
-
         {/* 並べて英単語セクション */}
         {arrange.length > 0 && (
           <>
-            <div style={{ textAlign: "center", margin: "70px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
+            <div style={{ textAlign: "center", margin: "25px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
               並べて英単語
               <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
                 <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
@@ -214,6 +175,43 @@ export default function StageList() {
             })}
           </>
         )}
+
+        {/* 1:1英単語セクション（準備中：グレーアウトして無効化） */}
+        <div style={{ filter: "grayscale(100%)", opacity: 0.5, pointerEvents: "none" }}>
+          <div style={{ textAlign: "center", margin: "70px 0 40px", fontSize: "22px", fontWeight: "bold", color: "#333333" }}>
+            1:1英単語
+            <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" }}>
+              <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+              <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+              <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
+            </div>
+          </div>
+
+          {oneToOne.map((stage) => {
+            const progress = progressMap[stage.stage_id] || { total: 0, cleared: 0 }
+            return (
+              <div className="unitCard" key={stage.stage_id}>
+                <img src="/images/illustrations/stagelist_button.png" className="unitCardBg" />
+                <div className="unitCardContent">
+                  <div className="unitTitle">{stage.stage_name}</div>
+                  <div style={{ width: "80%", marginTop: "24px", display: "flex", alignItems: "center", gap: "10px" }}>
+                    <div style={{ flex: 1, height: "8px", borderRadius: "4px", background: "#ccc", overflow: "hidden" }}>
+                      <div style={{
+                        height: "100%",
+                        width: `${progress.total > 0 ? (progress.cleared / progress.total) * 100 : 0}%`,
+                        background: "#02ccbb",
+                        transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
+                      }} />
+                    </div>
+                    <div style={{ fontSize: "13px", minWidth: "48px", textAlign: "right" }}>
+                      {progress.cleared}/{progress.total}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
 
       </div>
       <Navigation />
