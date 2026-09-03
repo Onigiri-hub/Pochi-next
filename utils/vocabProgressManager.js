@@ -166,18 +166,19 @@ export async function getArrangeWordStatus(stage) {
   const user = await waitForUser()
   const key = `arrange_word_status_${stage}`
 
+  // 未ログインはlocalStorageにフォールバック
   if (!user) {
     const local = localStorage.getItem(key)
     return local ? JSON.parse(local) : {}
   }
 
   try {
-    const local = localStorage.getItem(key)
-    if (local) return JSON.parse(local)
-
+    // ログイン中はFirestoreを正として毎回取得（複数端末で同期させるため）
+    // ※1 stage = 1ドキュメント（全語をmapで保持）なので読み取りは1回で済む
     const ref = doc(db, "users", user.uid, "arrange_word_status", stage)
     const snap = await getDoc(ref)
     const data = snap.exists() ? snap.data() : {}
+    // localStorageはオフライン/エラー時のフォールバック用にキャッシュ
     localStorage.setItem(key, JSON.stringify(data))
     return data
 
