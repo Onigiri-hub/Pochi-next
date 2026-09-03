@@ -324,7 +324,7 @@ export default function ShareModal({ badge, onClose }) {
       {toast && (
         <div style={{
           position: "fixed",
-          bottom: "30px",
+          bottom: "90px",
           left: "50%",
           transform: "translateX(-50%)",
           background: "rgba(50,50,50,0.9)",

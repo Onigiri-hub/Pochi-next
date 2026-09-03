@@ -61,13 +61,11 @@ function sortByPriority(list, statusMap, order) {
     .map(x => x.w)
 }
 
-function shuffleArr(array) {
-  const copy = [...array]
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[copy[i], copy[j]] = [copy[j], copy[i]]
-  }
-  return copy
+// アルファベット順（大文字小文字を区別しない）でソート
+function sortAlphabetically(list) {
+  return [...list].sort((a, b) =>
+    (a.arrange_word || "").localeCompare(b.arrange_word || "", "en", { sensitivity: "base" })
+  )
 }
 
 const toolBtnStyle = {
@@ -86,7 +84,11 @@ export default function ArrangeSectionList() {
   const [statusMap, setStatusMap] = useState({})
   const [loading, setLoading] = useState(true)
   const [popupWord, setPopupWord] = useState(null) // 自信度ポップアップ対象の単語
+  const [showSortMenu, setShowSortMenu] = useState(false) // 並べ替え方法の選択メニュー
   const [showSortSettings, setShowSortSettings] = useState(false)
+  const [showSelectModal, setShowSelectModal] = useState(false) // 自分で選んで出題モーダル
+  const [selectedIds, setSelectedIds] = useState([]) // 選択中の単語ID（選んだ順）
+  const [selectToast, setSelectToast] = useState(null) // 選択モーダル内のトースト
   const [order, setOrderState] = useState(DEFAULT_ORDER)
   const orderRef = useRef(DEFAULT_ORDER)
   const setOrder = (next) => {
@@ -132,14 +134,6 @@ export default function ArrangeSectionList() {
     router.push(`/arrangePractice?stage=${stage}&words=${ids}`)
   }
 
-  function startRandom() {
-    // 全単語から習熟度に関係なくランダムに5語。設問の並びもシャッフル
-    const picked = shuffleArr(words).slice(0, WORDS_PER_SESSION)
-    if (picked.length === 0) return
-    const ids = picked.map(w => w.arrange_word_id).join(",")
-    router.push(`/arrangePractice?stage=${stage}&words=${ids}&order=random`)
-  }
-
   async function setConfidence(wordId, confidence) {
     const updated = await saveArrangeWordConfidence(stage, wordId, confidence)
     setStatusMap({ ...updated })
@@ -149,6 +143,52 @@ export default function ArrangeSectionList() {
   // いま表示中のリストを現在の優先順位で並べ直す
   function resortNow() {
     setWords(sortByPriority(words, statusMap, orderRef.current))
+  }
+
+  // 並べ替えメニューから：アルファベット順
+  function sortByAlphabet() {
+    setWords(sortAlphabetically(words))
+    setShowSortMenu(false)
+  }
+
+  // 並べ替えメニューから：優先順位の設定どおり
+  function sortByPriorityNow() {
+    resortNow()
+    setShowSortMenu(false)
+  }
+
+  // --- 自分で選んで出題 ---
+  function openSelectModal() {
+    setSelectedIds([])
+    setShowSelectModal(true)
+  }
+  function closeSelectModal() {
+    setShowSelectModal(false)
+    setSelectedIds([])
+  }
+  function showSelectToast(msg) {
+    setSelectToast(msg)
+    setTimeout(() => setSelectToast(null), 2000)
+  }
+  // 行タップで選択トグル（最大 WORDS_PER_SESSION 個）
+  function toggleSelect(id) {
+    setSelectedIds(prev => {
+      if (prev.includes(id)) return prev.filter(x => x !== id)
+      if (prev.length >= WORDS_PER_SESSION) {
+        showSelectToast(`${WORDS_PER_SESSION}個まで選べます`)
+        return prev
+      }
+      return [...prev, id]
+    })
+  }
+  // 選んだ単語（表示順）で出題開始
+  function startSelected() {
+    if (selectedIds.length === 0) return
+    const ids = words
+      .filter(w => selectedIds.includes(w.arrange_word_id))
+      .map(w => w.arrange_word_id)
+      .join(",")
+    router.push(`/arrangePractice?stage=${stage}&words=${ids}`)
   }
 
   // 設定モーダルを閉じる（保存＆並べ直し）
@@ -227,7 +267,7 @@ export default function ArrangeSectionList() {
             上から順番にやる！
           </button>
           <button
-            onClick={startRandom}
+            onClick={openSelectModal}
             style={{
               flex: 1,
               padding: "14px 0",
@@ -240,16 +280,16 @@ export default function ArrangeSectionList() {
               cursor: "pointer"
             }}
           >
-            ランダム出題
+            自分で選んで出題
           </button>
         </div>
 
         {/* 設定・並べ替えツールバー */}
         <div style={{ display: "flex", justifyContent: "flex-end", gap: "8px", marginBottom: "8px" }}>
-          <button onClick={resortNow} style={toolBtnStyle}>🔃 並べ替え</button>
+          <button onClick={() => setShowSortMenu(true)} style={toolBtnStyle}>🔃 並べ替え</button>
           <button onClick={() => setShowSortSettings(true)} style={toolBtnStyle}>
             <img src="/images/icons/settings-333.svg" alt="" style={{ width: "1em", height: "1em", verticalAlign: "-0.15em", marginRight: "4px" }} />
-            設定
+            優先順位の設定
           </button>
         </div>
 
@@ -312,6 +352,175 @@ export default function ArrangeSectionList() {
         </div>
 
       </div>
+
+      {/* 並べ替え方法の選択メニュー */}
+      {showSortMenu && (
+        <div
+          onClick={() => setShowSortMenu(false)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.4)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "white",
+              borderRadius: "16px",
+              padding: "20px",
+              width: "80%",
+              maxWidth: "300px",
+              textAlign: "center"
+            }}
+          >
+            <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "16px" }}>
+              並べ替え
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <button onClick={sortByAlphabet} style={confBtnStyle("#333333")}>
+                アルファベット順に並び替え
+              </button>
+              <button onClick={sortByPriorityNow} style={confBtnStyle("#02ccbb")}>
+                優先順位の設定どおりに並び替え
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 自分で選んで出題モーダル */}
+      {showSelectModal && (
+        <div
+          onClick={closeSelectModal}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.4)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "20px"
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "white",
+              borderRadius: "16px",
+              width: "88%",
+              maxWidth: "360px",
+              maxHeight: "80vh",
+              display: "flex",
+              flexDirection: "column",
+              overflow: "hidden"
+            }}
+          >
+            <div style={{ padding: "18px 20px 10px", textAlign: "center" }}>
+              <div style={{ fontWeight: "bold", fontSize: "17px" }}>出題する単語を選ぶ</div>
+              <div style={{ fontSize: "12px", color: "#888", marginTop: "4px" }}>
+                タップで選択（{selectedIds.length}/{WORDS_PER_SESSION}）
+              </div>
+            </div>
+
+            <div style={{ flex: 1, overflowY: "auto", borderTop: "1px solid #eee", borderBottom: "1px solid #eee" }}>
+              {words.map((w, i) => {
+                const checked = selectedIds.includes(w.arrange_word_id)
+                const status = statusMap[w.arrange_word_id] || {}
+                const learnedColor = status.learned ? LEARNED_COLOR : UNLEARNED_COLOR
+                const confidenceColor = CONFIDENCE_COLORS[status.confidence || "none"]
+                return (
+                  <div
+                    key={w.arrange_word_id || i}
+                    onClick={() => toggleSelect(w.arrange_word_id)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
+                      padding: "12px 18px",
+                      borderBottom: "1px solid #f0f0f0",
+                      cursor: "pointer",
+                      background: checked ? "#e6f9f7" : "white"
+                    }}
+                  >
+                    <span style={{
+                      width: "20px",
+                      height: "20px",
+                      borderRadius: "6px",
+                      border: checked ? "none" : "2px solid #ccc",
+                      background: checked ? "#02ccbb" : "white",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "white",
+                      fontSize: "13px",
+                      flexShrink: 0
+                    }}>
+                      {checked ? "✓" : ""}
+                    </span>
+                    <span style={{ fontWeight: "bold", fontSize: "15px", color: "#333" }}>{w.arrange_word}</span>
+
+                    {/* 右寄せの●2つ（表示のみ） */}
+                    <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "14px" }}>
+                      <span style={{ width: "14px", height: "14px", borderRadius: "50%", background: learnedColor, display: "inline-block" }} />
+                      <span style={{ width: "14px", height: "14px", borderRadius: "50%", background: confidenceColor, display: "inline-block" }} />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div style={{ display: "flex", gap: "10px", padding: "14px 20px" }}>
+              <button
+                onClick={closeSelectModal}
+                style={{
+                  flex: 1, padding: "12px 0", borderRadius: "10px",
+                  border: "1px solid #ddd", background: "white", color: "#555",
+                  fontSize: "15px", fontWeight: "bold", cursor: "pointer"
+                }}
+              >
+                キャンセル
+              </button>
+              <button
+                onClick={startSelected}
+                disabled={selectedIds.length === 0}
+                style={{
+                  flex: 1, padding: "12px 0", borderRadius: "10px", border: "none",
+                  background: selectedIds.length === 0 ? "#cccccc" : "#333333",
+                  color: "white", fontSize: "15px", fontWeight: "bold",
+                  cursor: selectedIds.length === 0 ? "not-allowed" : "pointer"
+                }}
+              >
+                GO
+              </button>
+            </div>
+          </div>
+
+          {selectToast && (
+            <div style={{
+              position: "fixed",
+              bottom: "90px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              background: "rgba(50,50,50,0.9)",
+              color: "#fff",
+              borderRadius: "16px",
+              padding: "12px 20px",
+              fontSize: "14px",
+              fontWeight: 500,
+              whiteSpace: "nowrap",
+              zIndex: 1100
+            }}>
+              {selectToast}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* 自信度ポップアップ */}
       {popupWord && (
