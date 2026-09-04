@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v1163,tuition,授業料,tuition.mp3,4,st4_sec4
-v1164,thumbtack,画鋲,thumbtack.mp3,4,st4_sec4
-v1165,ox,雄牛,ox.mp3,4,st4_sec4
-v1166,treasurer,会計係,treasurer.mp3,4,st4_sec4
-v1167,corporation,企業・法人,corporation.mp3,4,st4_sec4
-v1168,ethics,倫理,ethics.mp3,4,st4_sec4
-v1169,orbit,軌道,orbit.mp3,4,st4_sec4
-v1170,management,経営・管理,management.mp3,4,st4_sec4
-v1171,chrysanthemum,菊,chrysanthemum.mp3,4,st4_sec4
-v1172,vendor,売り手・業者,vendor.mp3,4,st4_sec4
-v1173,proverb,ことわざ,proverb.mp3,4,st4_sec4
-v1174,cosmos,コスモス（花）,cosmos.mp3,4,st4_sec4
-v1175,turnip,カブ,turnip.mp3,4,st4_sec4
-v1176,folklore,民話・民間伝承,folklore.mp3,4,st4_sec4
-v1177,questionnaire,アンケート,questionnaire.mp3,4,st4_sec4
-v1178,wake-up call,目覚ましの電話・警告,wake-up call.mp3,4,st4_sec4
-v1179,statistics,統計学,statistics.mp3,4,st4_sec4
-v1180,ladle,おたま,ladle.mp3,4,st4_sec4
-v1181,drawing pin,画鋲,drawing pin.mp3,4,st4_sec4
-v1182,grief,悲しみ・嘆き,grief.mp3,4,st4_sec4
-v1183,novelist,小説家,novelist.mp3,4,st4_sec4
-v1184,sardine,イワシ,sardine.mp3,4,st4_sec4
-v1185,patio,テラス・中庭,patio.mp3,4,st4_sec4
-v1186,evaluation,評価,evaluation.mp3,4,st4_sec4
-v1187,heartburn,胸やけ,heartburn.mp3,4,st4_sec4
-v1188,dialect,方言,dialect.mp3,4,st4_sec4
-v1189,stag beetle,クワガタ,stag beetle.mp3,4,st4_sec4
-v1190,copyright,著作権,copyright.mp3,4,st4_sec4
-v1191,fragment,断片,fragment.mp3,4,st4_sec4
-v1192,mammal,哺乳類,mammal.mp3,4,st4_sec4
-v1193,physician,内科医,physician.mp3,4,st4_sec4
-v1194,fluid,液体・流体,fluid.mp3,4,st4_sec4
-v1195,illusion,錯覚・幻想,illusion.mp3,4,st4_sec4
-v1196,sculpture,彫刻,sculpture.mp3,4,st4_sec4
-v1197,therapy,療法・セラピー,therapy.mp3,4,st4_sec4
-v1198,nutrient,栄養素,nutrient.mp3,4,st4_sec4
-v1199,corporate retreat,社員旅行・合宿,corporate retreat.mp3,4,st4_sec4
-v1200,high blood pressure,高血圧,high blood pressure.mp3,4,st4_sec4
-v1201,priority,優先事項,priority.mp3,4,st4_sec4
-v1202,doormat,玄関マット,doormat.mp3,4,st4_sec4
+word_id,word,ja,audio,stage,section_id,hint_image
+v1163,tuition,授業料,tuition.mp3,4,st4_sec4,
+v1164,thumbtack,画鋲,thumbtack.mp3,4,st4_sec4,
+v1165,ox,雄牛,ox.mp3,4,st4_sec4,
+v1166,treasurer,会計係,treasurer.mp3,4,st4_sec4,
+v1167,corporation,企業・法人,corporation.mp3,4,st4_sec4,
+v1168,ethics,倫理,ethics.mp3,4,st4_sec4,
+v1169,orbit,軌道,orbit.mp3,4,st4_sec4,
+v1170,management,経営・管理,management.mp3,4,st4_sec4,
+v1171,chrysanthemum,菊,chrysanthemum.mp3,4,st4_sec4,
+v1172,vendor,売り手・業者,vendor.mp3,4,st4_sec4,
+v1173,proverb,ことわざ,proverb.mp3,4,st4_sec4,
+v1174,cosmos,コスモス（花）,cosmos.mp3,4,st4_sec4,
+v1175,turnip,カブ,turnip.mp3,4,st4_sec4,
+v1176,folklore,民話・民間伝承,folklore.mp3,4,st4_sec4,
+v1177,questionnaire,アンケート,questionnaire.mp3,4,st4_sec4,
+v1178,wake-up call,目覚ましの電話・警告,wake-up call.mp3,4,st4_sec4,
+v1179,statistics,統計学,statistics.mp3,4,st4_sec4,
+v1180,ladle,おたま,ladle.mp3,4,st4_sec4,
+v1181,drawing pin,画鋲,drawing pin.mp3,4,st4_sec4,
+v1182,grief,悲しみ・嘆き,grief.mp3,4,st4_sec4,
+v1183,novelist,小説家,novelist.mp3,4,st4_sec4,
+v1184,sardine,イワシ,sardine.mp3,4,st4_sec4,
+v1185,patio,テラス・中庭,patio.mp3,4,st4_sec4,
+v1186,evaluation,評価,evaluation.mp3,4,st4_sec4,
+v1187,heartburn,胸やけ,heartburn.mp3,4,st4_sec4,
+v1188,dialect,方言,dialect.mp3,4,st4_sec4,
+v1189,stag beetle,クワガタ,stag beetle.mp3,4,st4_sec4,
+v1190,copyright,著作権,copyright.mp3,4,st4_sec4,
+v1191,fragment,断片,fragment.mp3,4,st4_sec4,
+v1192,mammal,哺乳類,mammal.mp3,4,st4_sec4,
+v1193,physician,内科医,physician.mp3,4,st4_sec4,
+v1194,fluid,液体・流体,fluid.mp3,4,st4_sec4,
+v1195,illusion,錯覚・幻想,illusion.mp3,4,st4_sec4,
+v1196,sculpture,彫刻,sculpture.mp3,4,st4_sec4,
+v1197,therapy,療法・セラピー,therapy.mp3,4,st4_sec4,
+v1198,nutrient,栄養素,nutrient.mp3,4,st4_sec4,
+v1199,corporate retreat,社員旅行・合宿,corporate retreat.mp3,4,st4_sec4,
+v1200,high blood pressure,高血圧,high blood pressure.mp3,4,st4_sec4,
+v1201,priority,優先事項,priority.mp3,4,st4_sec4,
+v1202,doormat,玄関マット,doormat.mp3,4,st4_sec4,

@@ -20,7 +20,9 @@ export default function DeleteAccount() {
       // 1. Firestoreのサブコレクションを削除（親ドキュメントを消しても残るため）
       const subCollections = [
         "progress", "history", "vocab_rounds",
-        "vocab_progress", "vocab_history", "streak", "badges",
+        "vocab_progress", "vocab_history",
+        "vocab_section_state", "arrange_word_status",
+        "streak", "badges",
         "completedUnits", "items", "unlocked",
       ];
       await Promise.all(

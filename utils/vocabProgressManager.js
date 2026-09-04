@@ -1,7 +1,6 @@
 import { db, auth } from "../firebase"
 import {
-  doc, getDoc, setDoc, collection, addDoc, serverTimestamp,
-  getDocs, query, where
+  doc, getDoc, setDoc, collection, addDoc, serverTimestamp
 } from "firebase/firestore"
 
 // ログインが確定するまで待つ関数
@@ -18,142 +17,58 @@ export function waitForUser() {
   })
 }
 
-// ラウンドの「できた」進捗をFirestoreに保存
-export async function saveVocabRoundProgress(roundId, doneWords, totalWords) {
-  const user = auth.currentUser
+// ===== 履修フェーズ：セクション状態（クリア済みラウンド＋定着テスト結果） =====
+// 保存先: users/{uid}/vocab_section_state/{section_id}
+//   = { clearedRounds: {round_id: true, ...}, test: {passed, lastScore, lastTestedAt} }
+// セクション単位の1ドキュメントに集約することで、sectionListは1 read/セクションで済む。
+
+// セクション状態を取得（Firestoreを正とする）
+export async function getSectionState(sectionId) {
+  const user = await waitForUser()
+  if (!user) return { clearedRounds: {}, test: null }
+  try {
+    const ref = doc(db, "users", user.uid, "vocab_section_state", sectionId)
+    const snap = await getDoc(ref)
+    const data = snap.exists() ? snap.data() : {}
+    return { clearedRounds: data.clearedRounds || {}, test: data.test || null }
+  } catch (e) {
+    console.error("section_state取得失敗:", e)
+    return { clearedRounds: {}, test: null }
+  }
+}
+
+// 履修ラウンドのクリアを記録し、初クリアかどうかを返す（書き込み1回＋履歴1回）
+export async function markRoundCleared(sectionId, roundId) {
+  const user = await waitForUser()
+  if (!user) return false
+
+  let firstClear = true
+  try {
+    const ref = doc(db, "users", user.uid, "vocab_section_state", sectionId)
+    const snap = await getDoc(ref)
+    const cleared = snap.exists() ? (snap.data().clearedRounds || {}) : {}
+    firstClear = !cleared[roundId]
+    await setDoc(ref, { clearedRounds: { [roundId]: true } }, { merge: true })
+  } catch (e) {
+    console.error("markRoundCleared失敗:", e)
+  }
+
+  // グラフ用の履歴（ラウンド終了時に1回だけ）
+  await addVocabHistory(roundId, sectionId)
+  return firstClear
+}
+
+// 定着テストの結果を保存（合否・直近スコア・受験日時）
+export async function saveSectionTest(sectionId, passed, lastScore) {
+  const user = await waitForUser()
   if (!user) return
-
   try {
-    const roundRef = doc(db, "users", user.uid, "vocab_rounds", roundId)
-    const snap = await getDoc(roundRef)
-    const existing = snap.exists() ? (snap.data().doneWords || []) : []
-
-    // 既存のできたとマージ（一度できたらずっとできた）
-    const merged = [...new Set([...existing, ...doneWords])]
-
-    await setDoc(roundRef, {
-      doneWords: merged,
-      totalWords: totalWords
-    })
-
-    // localStorageも同期
-    localStorage.setItem(`vocab_round_${roundId}`, JSON.stringify({
-      doneWords: merged,
-      totalWords: totalWords
-    }))
-
+    const ref = doc(db, "users", user.uid, "vocab_section_state", sectionId)
+    await setDoc(ref, {
+      test: { passed, lastScore, lastTestedAt: serverTimestamp() }
+    }, { merge: true })
   } catch (e) {
-    console.error("vocab_round保存失敗:", e)
-  }
-}
-
-// 習熟度をFirestoreに保存
-export async function saveVocabMastery(section, modeKey, masteryMap) {
-  const user = auth.currentUser
-  if (!user) return
-
-  try {
-    // 単語ごとにvocab_progressに保存
-    await Promise.all(
-      Object.entries(masteryMap).map(([wordId, data]) => {
-        const progressRef = doc(db, "users", user.uid, "vocab_progress", wordId)
-        return setDoc(progressRef, {
-          section_id: section,
-          [modeKey]: data,
-          lastStudied: data.lastStudied || new Date().toISOString()
-        }, { merge: true })
-      })
-    )
-
-    // localStorageも同期
-    localStorage.setItem(
-      `vocab_mastery_${section}_${modeKey}`,
-      JSON.stringify(masteryMap)
-    )
-
-  } catch (e) {
-    console.error("vocab_mastery保存失敗:", e)
-  }
-}
-
-// ラウンドの「できた」進捗をFirestoreから取得
-export async function getVocabRoundProgress(roundId) {
-  const user = await waitForUser()  // ログイン待ち
-
-  // 未ログインはlocalStorageにフォールバック
-  if (!user) {
-    const local = localStorage.getItem(`vocab_round_${roundId}`)
-    return local ? JSON.parse(local) : { doneWords: [], totalWords: 0 }
-  }
-
-  try {
-    const roundRef = doc(db, "users", user.uid, "vocab_rounds", roundId)
-    const snap = await getDoc(roundRef)
-
-    if (snap.exists()) {
-      const data = snap.data()
-      // localStorageも同期
-      localStorage.setItem(`vocab_round_${roundId}`, JSON.stringify(data))
-      return data
-    }
-    return { doneWords: [], totalWords: 0 }
-
-  } catch (e) {
-    console.error("vocab_round取得失敗:", e)
-    const local = localStorage.getItem(`vocab_round_${roundId}`)
-    return local ? JSON.parse(local) : { doneWords: [], totalWords: 0 }
-  }
-}
-
-// 習熟度をFirestoreから取得（getDocs で1回にまとめる）
-export async function getVocabMastery(section, modeKey) {
-  const user = await waitForUser()  // ログイン待ち
-
-  // console.log("getVocabMastery呼ばれた:", section, modeKey, "user:", user?.uid)
-
-  // 未ログインはlocalStorageにフォールバック
-  if (!user) {
-    const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
-    return local ? JSON.parse(local) : {}
-  }
-
-  try {
-    // localStorageにキャッシュがあればそれを使う
-    const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
-    // console.log("localStorageの中身:", local)
-    if (local) return JSON.parse(local)
-
-    // localStorageになければFirestoreから一括取得
-    // console.log("Firestoreから取得します")
-    const q = query(
-      collection(db, "users", user.uid, "vocab_progress"),
-      where("section_id", "==", section)
-    )
-    const snap = await getDocs(q)
-    // console.log("Firestoreから取得できたドキュメント数:", snap.size)
-
-    // {word_id: {mode1: {...}, mode2: {...}, ...}} の形に整形
-    const masteryMap = {}
-    snap.forEach(docSnap => {
-      const data = docSnap.data()
-      if (data[modeKey]) {
-        masteryMap[docSnap.id] = data[modeKey]
-      }
-    })
-    // console.log("整形後のmasteryMap:", masteryMap)
-
-    // localStorageにキャッシュとして保存
-    localStorage.setItem(
-      `vocab_mastery_${section}_${modeKey}`,
-      JSON.stringify(masteryMap)
-    )
-
-    return masteryMap
-
-  } catch (e) {
-    console.error("vocab_mastery取得失敗:", e)
-    const local = localStorage.getItem(`vocab_mastery_${section}_${modeKey}`)
-    return local ? JSON.parse(local) : {}
+    console.error("section_test保存失敗:", e)
   }
 }
 

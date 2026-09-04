@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0685,carnation,カーネーション,carnation.mp3,3,st3_sec3
-v0686,resort,リゾート,resort.mp3,3,st3_sec3
-v0687,tractor,トラクター,tractor.mp3,3,st3_sec3
-v0688,sword,剣,sword.mp3,3,st3_sec3
-v0689,stew,シチュー,stew.mp3,3,st3_sec3
-v0690,pea,エンドウ豆,pea.mp3,3,st3_sec3
-v0691,sea turtle,ウミガメ,sea turtle.mp3,3,st3_sec3
-v0692,oyster,カキ（牡蠣）,oyster.mp3,3,st3_sec3
-v0693,environment,環境,environment.mp3,3,st3_sec3
-v0694,caterpillar,毛虫,caterpillar.mp3,3,st3_sec3
-v0695,grain,穀物,grain.mp3,3,st3_sec3
-v0696,victim,被害者,victim.mp3,3,st3_sec3
-v0697,waist,腰,waist.mp3,3,st3_sec3
-v0698,yacht,ヨット,yacht.mp3,3,st3_sec3
-v0699,dawn,夜明け,dawn.mp3,3,st3_sec3
-v0700,co-worker,同僚,co-worker.mp3,3,st3_sec3
-v0701,spaceship,宇宙船,spaceship.mp3,3,st3_sec3
-v0702,aisle,通路,aisle.mp3,3,st3_sec3
-v0703,ferry terminal,フェリー乗り場,ferry terminal.mp3,3,st3_sec3
-v0704,soybean,大豆,soybean.mp3,3,st3_sec3
-v0705,continent,大陸,continent.mp3,3,st3_sec3
-v0706,runny nose,鼻水,runny nose.mp3,3,st3_sec3
-v0707,trunks,水泳パンツ,trunks.mp3,3,st3_sec3
-v0708,tap,蛇口・タップ,tap.mp3,3,st3_sec3
-v0709,thunderstorm,雷雨,thunderstorm.mp3,3,st3_sec3
-v0710,host mother,ホストマザー,host mother.mp3,3,st3_sec3
-v0711,ostrich,ダチョウ,ostrich.mp3,3,st3_sec3
-v0712,politics,政治,politics.mp3,3,st3_sec3
-v0713,blender,ミキサー,blender.mp3,3,st3_sec3
-v0714,blouse,ブラウス,blouse.mp3,3,st3_sec3
-v0715,cyberbullying,ネットいじめ,cyberbullying.mp3,3,st3_sec3
-v0716,nap,昼寝,nap.mp3,3,st3_sec3
-v0717,algebra,代数,algebra.mp3,3,st3_sec3
-v0718,wrestling,レスリング,wrestling.mp3,3,st3_sec3
-v0719,recycling center,リサイクルセンター,recycling center.mp3,3,st3_sec3
-v0720,undershirt,肌着,undershirt.mp3,3,st3_sec3
-v0721,toothache,歯痛,toothache.mp3,3,st3_sec3
-v0722,Celsius,摂氏,Celsius.mp3,3,st3_sec3
-v0723,patient,患者,patient.mp3,3,st3_sec3
-v0724,economy,経済,economy.mp3,3,st3_sec3
+word_id,word,ja,audio,stage,section_id,hint_image
+v0685,carnation,カーネーション,carnation.mp3,3,st3_sec3,
+v0686,resort,リゾート,resort.mp3,3,st3_sec3,
+v0687,tractor,トラクター,tractor.mp3,3,st3_sec3,
+v0688,sword,剣,sword.mp3,3,st3_sec3,
+v0689,stew,シチュー,stew.mp3,3,st3_sec3,
+v0690,pea,エンドウ豆,pea.mp3,3,st3_sec3,
+v0691,sea turtle,ウミガメ,sea turtle.mp3,3,st3_sec3,
+v0692,oyster,カキ（牡蠣）,oyster.mp3,3,st3_sec3,
+v0693,environment,環境,environment.mp3,3,st3_sec3,
+v0694,caterpillar,毛虫,caterpillar.mp3,3,st3_sec3,
+v0695,grain,穀物,grain.mp3,3,st3_sec3,
+v0696,victim,被害者,victim.mp3,3,st3_sec3,
+v0697,waist,腰,waist.mp3,3,st3_sec3,
+v0698,yacht,ヨット,yacht.mp3,3,st3_sec3,
+v0699,dawn,夜明け,dawn.mp3,3,st3_sec3,
+v0700,co-worker,同僚,co-worker.mp3,3,st3_sec3,
+v0701,spaceship,宇宙船,spaceship.mp3,3,st3_sec3,
+v0702,aisle,通路,aisle.mp3,3,st3_sec3,
+v0703,ferry terminal,フェリー乗り場,ferry terminal.mp3,3,st3_sec3,
+v0704,soybean,大豆,soybean.mp3,3,st3_sec3,
+v0705,continent,大陸,continent.mp3,3,st3_sec3,
+v0706,runny nose,鼻水,runny nose.mp3,3,st3_sec3,
+v0707,trunks,水泳パンツ,trunks.mp3,3,st3_sec3,
+v0708,tap,蛇口・タップ,tap.mp3,3,st3_sec3,
+v0709,thunderstorm,雷雨,thunderstorm.mp3,3,st3_sec3,
+v0710,host mother,ホストマザー,host mother.mp3,3,st3_sec3,
+v0711,ostrich,ダチョウ,ostrich.mp3,3,st3_sec3,
+v0712,politics,政治,politics.mp3,3,st3_sec3,
+v0713,blender,ミキサー,blender.mp3,3,st3_sec3,
+v0714,blouse,ブラウス,blouse.mp3,3,st3_sec3,
+v0715,cyberbullying,ネットいじめ,cyberbullying.mp3,3,st3_sec3,
+v0716,nap,昼寝,nap.mp3,3,st3_sec3,
+v0717,algebra,代数,algebra.mp3,3,st3_sec3,
+v0718,wrestling,レスリング,wrestling.mp3,3,st3_sec3,
+v0719,recycling center,リサイクルセンター,recycling center.mp3,3,st3_sec3,
+v0720,undershirt,肌着,undershirt.mp3,3,st3_sec3,
+v0721,toothache,歯痛,toothache.mp3,3,st3_sec3,
+v0722,Celsius,摂氏,Celsius.mp3,3,st3_sec3,
+v0723,patient,患者,patient.mp3,3,st3_sec3,
+v0724,economy,経済,economy.mp3,3,st3_sec3,

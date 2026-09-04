@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v1083,dye,染料・染める,dye.mp3,4,st4_sec2
-v1084,exhibition,展覧会,exhibition.mp3,4,st4_sec2
-v1085,geometry,幾何学,geometry.mp3,4,st4_sec2
-v1086,astronomer,天文学者,astronomer.mp3,4,st4_sec2
-v1087,sea otter,ラッコ,sea otter.mp3,4,st4_sec2
-v1088,diabetes,糖尿病,diabetes.mp3,4,st4_sec2
-v1089,sea horse,タツノオトシゴ,sea horse.mp3,4,st4_sec2
-v1090,hypothesis,仮説,hypothesis.mp3,4,st4_sec2
-v1091,identification,身分証明,identification.mp3,4,st4_sec2
-v1092,craftspeople,職人たち,craftspeople.mp3,4,st4_sec2
-v1093,council,議会・評議会,council.mp3,4,st4_sec2
-v1094,headquarters,本社・本部,headquarters.mp3,4,st4_sec2
-v1095,hardship,苦労・困難,hardship.mp3,4,st4_sec2
-v1096,deposit,預金・保証金,deposit.mp3,4,st4_sec2
-v1097,lever,レバー,lever.mp3,4,st4_sec2
-v1098,interviewee,インタビューを受ける人,interviewee.mp3,4,st4_sec2
-v1099,pistachio,ピスタチオ,pistachio.mp3,4,st4_sec2
-v1100,statistic,統計,statistic.mp3,4,st4_sec2
-v1101,menstrual cramps,生理痛,menstrual cramps.mp3,4,st4_sec2
-v1102,earthworm,ミミズ,earthworm.mp3,4,st4_sec2
-v1103,plantation,農園・プランテーション,plantation.mp3,4,st4_sec2
-v1104,folkcraft,民芸品,folkcraft.mp3,4,st4_sec2
-v1105,dustpan,ちりとり,dustpan.mp3,4,st4_sec2
-v1106,sea urchin,ウニ,sea urchin.mp3,4,st4_sec2
-v1107,interviewer,インタビュアー,interviewer.mp3,4,st4_sec2
-v1108,military,軍・軍隊,military.mp3,4,st4_sec2
-v1109,geology,地質学,geology.mp3,4,st4_sec2
-v1110,self-discipline,自己管理,self-discipline.mp3,4,st4_sec2
-v1111,inquiry,問い合わせ,inquiry.mp3,4,st4_sec2
-v1112,refugee,難民,refugee.mp3,4,st4_sec2
-v1113,globalization,グローバル化,globalization.mp3,4,st4_sec2
-v1114,merchant,商人,merchant.mp3,4,st4_sec2
-v1115,innovation,イノベーション,innovation.mp3,4,st4_sec2
-v1116,ume apricot,梅,ume apricot.mp3,4,st4_sec2
-v1117,plumber,配管工,plumber.mp3,4,st4_sec2
-v1118,governor,知事,governor.mp3,4,st4_sec2
-v1119,dried seaweed sheet,のり（海苔）,dried seaweed sheet.mp3,4,st4_sec2
-v1120,cicada,セミ,cicada.mp3,4,st4_sec2
-v1121,biography,伝記,biography.mp3,4,st4_sec2
-v1122,lotus root,レンコン,lotus root.mp3,4,st4_sec2
+word_id,word,ja,audio,stage,section_id,hint_image
+v1083,dye,染料・染める,dye.mp3,4,st4_sec2,
+v1084,exhibition,展覧会,exhibition.mp3,4,st4_sec2,
+v1085,geometry,幾何学,geometry.mp3,4,st4_sec2,
+v1086,astronomer,天文学者,astronomer.mp3,4,st4_sec2,
+v1087,sea otter,ラッコ,sea otter.mp3,4,st4_sec2,
+v1088,diabetes,糖尿病,diabetes.mp3,4,st4_sec2,
+v1089,sea horse,タツノオトシゴ,sea horse.mp3,4,st4_sec2,
+v1090,hypothesis,仮説,hypothesis.mp3,4,st4_sec2,
+v1091,identification,身分証明,identification.mp3,4,st4_sec2,
+v1092,craftspeople,職人たち,craftspeople.mp3,4,st4_sec2,
+v1093,council,議会・評議会,council.mp3,4,st4_sec2,
+v1094,headquarters,本社・本部,headquarters.mp3,4,st4_sec2,
+v1095,hardship,苦労・困難,hardship.mp3,4,st4_sec2,
+v1096,deposit,預金・保証金,deposit.mp3,4,st4_sec2,
+v1097,lever,レバー,lever.mp3,4,st4_sec2,
+v1098,interviewee,インタビューを受ける人,interviewee.mp3,4,st4_sec2,
+v1099,pistachio,ピスタチオ,pistachio.mp3,4,st4_sec2,
+v1100,statistic,統計,statistic.mp3,4,st4_sec2,
+v1101,menstrual cramps,生理痛,menstrual cramps.mp3,4,st4_sec2,
+v1102,earthworm,ミミズ,earthworm.mp3,4,st4_sec2,
+v1103,plantation,農園・プランテーション,plantation.mp3,4,st4_sec2,
+v1104,folkcraft,民芸品,folkcraft.mp3,4,st4_sec2,
+v1105,dustpan,ちりとり,dustpan.mp3,4,st4_sec2,
+v1106,sea urchin,ウニ,sea urchin.mp3,4,st4_sec2,
+v1107,interviewer,インタビュアー,interviewer.mp3,4,st4_sec2,
+v1108,military,軍・軍隊,military.mp3,4,st4_sec2,
+v1109,geology,地質学,geology.mp3,4,st4_sec2,
+v1110,self-discipline,自己管理,self-discipline.mp3,4,st4_sec2,
+v1111,inquiry,問い合わせ,inquiry.mp3,4,st4_sec2,
+v1112,refugee,難民,refugee.mp3,4,st4_sec2,
+v1113,globalization,グローバル化,globalization.mp3,4,st4_sec2,
+v1114,merchant,商人,merchant.mp3,4,st4_sec2,
+v1115,innovation,イノベーション,innovation.mp3,4,st4_sec2,
+v1116,ume apricot,梅,ume apricot.mp3,4,st4_sec2,
+v1117,plumber,配管工,plumber.mp3,4,st4_sec2,
+v1118,governor,知事,governor.mp3,4,st4_sec2,
+v1119,dried seaweed sheet,のり（海苔）,dried seaweed sheet.mp3,4,st4_sec2,
+v1120,cicada,セミ,cicada.mp3,4,st4_sec2,
+v1121,biography,伝記,biography.mp3,4,st4_sec2,
+v1122,lotus root,レンコン,lotus root.mp3,4,st4_sec2,

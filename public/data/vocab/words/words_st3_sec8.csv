@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0885,walnut,クルミ,walnut.mp3,3,st3_sec8
-v0886,cricket,クリケット,cricket.mp3,3,st3_sec8
-v0887,lobster,ロブスター,lobster.mp3,3,st3_sec8
-v0888,coal,石炭,coal.mp3,3,st3_sec8
-v0889,bullet train,新幹線,bullet train.mp3,3,st3_sec8
-v0890,almond,アーモンド,almond.mp3,3,st3_sec8
-v0891,mustard,マスタード,mustard.mp3,3,st3_sec8
-v0892,lecture,講義,lecture.mp3,3,st3_sec8
-v0893,press conference,記者会見,press conference.mp3,3,st3_sec8
-v0894,minister,大臣・牧師,minister.mp3,3,st3_sec8
-v0895,rumor,うわさ,rumor.mp3,3,st3_sec8
-v0896,dryer,乾燥機,dryer.mp3,3,st3_sec8
-v0897,reservation,予約,reservation.mp3,3,st3_sec8
-v0898,snail,カタツムリ,snail.mp3,3,st3_sec8
-v0899,mosquito,蚊,mosquito.mp3,3,st3_sec8
-v0900,elder,年長者,elder.mp3,3,st3_sec8
-v0901,cycling,サイクリング,cycling.mp3,3,st3_sec8
-v0902,art gallery,美術館,art gallery.mp3,3,st3_sec8
-v0903,drill,ドリル,drill.mp3,3,st3_sec8
-v0904,kettle,やかん,kettle.mp3,3,st3_sec8
-v0905,translator,翻訳者,translator.mp3,3,st3_sec8
-v0906,seaside,海辺,seaside.mp3,3,st3_sec8
-v0907,bargain,お買い得品,bargain.mp3,3,st3_sec8
-v0908,tray,トレー,tray.mp3,3,st3_sec8
-v0909,zipper,チャック・ジッパー,zipper.mp3,3,st3_sec8
-v0910,license,免許,license.mp3,3,st3_sec8
-v0911,secretary,秘書,secretary.mp3,3,st3_sec8
-v0912,script,台本・スクリプト,script.mp3,3,st3_sec8
-v0913,cockroach,ゴキブリ,cockroach.mp3,3,st3_sec8
-v0914,cop,警官,cop.mp3,3,st3_sec8
-v0915,sunscreen,日焼け止め,sunscreen.mp3,3,st3_sec8
-v0916,host family,ホストファミリー,host family.mp3,3,st3_sec8
-v0917,poet,詩人,poet.mp3,3,st3_sec8
-v0918,air force,空軍,air force.mp3,3,st3_sec8
-v0919,craft,工芸・手工芸,craft.mp3,3,st3_sec8
-v0920,seal,アザラシ,seal.mp3,3,st3_sec8
-v0921,broom,ほうき,broom.mp3,3,st3_sec8
-v0922,rank,ランク,rank.mp3,3,st3_sec8
-v0923,semester,学期,semester.mp3,3,st3_sec8
-v0924,chef,シェフ,chef.mp3,3,st3_sec8
+word_id,word,ja,audio,stage,section_id,hint_image
+v0885,walnut,クルミ,walnut.mp3,3,st3_sec8,
+v0886,cricket,クリケット,cricket.mp3,3,st3_sec8,
+v0887,lobster,ロブスター,lobster.mp3,3,st3_sec8,
+v0888,coal,石炭,coal.mp3,3,st3_sec8,
+v0889,bullet train,新幹線,bullet train.mp3,3,st3_sec8,
+v0890,almond,アーモンド,almond.mp3,3,st3_sec8,
+v0891,mustard,マスタード,mustard.mp3,3,st3_sec8,
+v0892,lecture,講義,lecture.mp3,3,st3_sec8,
+v0893,press conference,記者会見,press conference.mp3,3,st3_sec8,
+v0894,minister,大臣・牧師,minister.mp3,3,st3_sec8,
+v0895,rumor,うわさ,rumor.mp3,3,st3_sec8,
+v0896,dryer,乾燥機,dryer.mp3,3,st3_sec8,
+v0897,reservation,予約,reservation.mp3,3,st3_sec8,
+v0898,snail,カタツムリ,snail.mp3,3,st3_sec8,
+v0899,mosquito,蚊,mosquito.mp3,3,st3_sec8,
+v0900,elder,年長者,elder.mp3,3,st3_sec8,
+v0901,cycling,サイクリング,cycling.mp3,3,st3_sec8,
+v0902,art gallery,美術館,art gallery.mp3,3,st3_sec8,
+v0903,drill,ドリル,drill.mp3,3,st3_sec8,
+v0904,kettle,やかん,kettle.mp3,3,st3_sec8,
+v0905,translator,翻訳者,translator.mp3,3,st3_sec8,
+v0906,seaside,海辺,seaside.mp3,3,st3_sec8,
+v0907,bargain,お買い得品,bargain.mp3,3,st3_sec8,
+v0908,tray,トレー,tray.mp3,3,st3_sec8,
+v0909,zipper,チャック・ジッパー,zipper.mp3,3,st3_sec8,
+v0910,license,免許,license.mp3,3,st3_sec8,
+v0911,secretary,秘書,secretary.mp3,3,st3_sec8,
+v0912,script,台本・スクリプト,script.mp3,3,st3_sec8,
+v0913,cockroach,ゴキブリ,cockroach.mp3,3,st3_sec8,
+v0914,cop,警官,cop.mp3,3,st3_sec8,
+v0915,sunscreen,日焼け止め,sunscreen.mp3,3,st3_sec8,
+v0916,host family,ホストファミリー,host family.mp3,3,st3_sec8,
+v0917,poet,詩人,poet.mp3,3,st3_sec8,
+v0918,air force,空軍,air force.mp3,3,st3_sec8,
+v0919,craft,工芸・手工芸,craft.mp3,3,st3_sec8,
+v0920,seal,アザラシ,seal.mp3,3,st3_sec8,
+v0921,broom,ほうき,broom.mp3,3,st3_sec8,
+v0922,rank,ランク,rank.mp3,3,st3_sec8,
+v0923,semester,学期,semester.mp3,3,st3_sec8,
+v0924,chef,シェフ,chef.mp3,3,st3_sec8,

@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v1123,unemployment,失業,unemployment.mp3,4,st4_sec3
-v1124,hospitality,おもてなし,hospitality.mp3,4,st4_sec3
-v1125,superstition,迷信,superstition.mp3,4,st4_sec3
-v1126,racism,人種差別,racism.mp3,4,st4_sec3
-v1127,prescription,処方箋,prescription.mp3,4,st4_sec3
-v1128,migraine,偏頭痛,migraine.mp3,4,st4_sec3
-v1129,quotation,引用・見積もり,quotation.mp3,4,st4_sec3
-v1130,gene,遺伝子,gene.mp3,4,st4_sec3
-v1131,dahlia,ダリア,dahlia.mp3,4,st4_sec3
-v1132,persimmon,柿,persimmon.mp3,4,st4_sec3
-v1133,salmon roe,イクラ,salmon roe.mp3,4,st4_sec3
-v1134,symphony,交響曲,symphony.mp3,4,st4_sec3
-v1135,tide,潮,tide.mp3,4,st4_sec3
-v1136,residence,居住地,residence.mp3,4,st4_sec3
-v1137,attorney,弁護士,attorney.mp3,4,st4_sec3
-v1138,centipede,ムカデ,centipede.mp3,4,st4_sec3
-v1139,flow chart,フローチャート,flow chart.mp3,4,st4_sec3
-v1140,marketing,マーケティング,marketing.mp3,4,st4_sec3
-v1141,handicraft,手工芸,handicraft.mp3,4,st4_sec3
-v1142,federal,連邦の,federal.mp3,4,st4_sec3
-v1143,itinerary,旅程,itinerary.mp3,4,st4_sec3
-v1144,shredder,シュレッダー,shredder.mp3,4,st4_sec3
-v1145,philosophy,哲学,philosophy.mp3,4,st4_sec3
-v1146,canola flower,菜の花,canola flower.mp3,4,st4_sec3
-v1147,nausea,吐き気,nausea.mp3,4,st4_sec3
-v1148,liberty,自由,liberty.mp3,4,st4_sec3
-v1149,fair trade,フェアトレード,fair trade.mp3,4,st4_sec3
-v1150,psychologist,心理士,psychologist.mp3,4,st4_sec3
-v1151,masterpiece,傑作,masterpiece.mp3,4,st4_sec3
-v1152,auditorium,講堂,auditorium.mp3,4,st4_sec3
-v1153,infant,乳児,infant.mp3,4,st4_sec3
-v1154,colander,水切りざる,colander.mp3,4,st4_sec3
-v1155,peeler,ピーラー,peeler.mp3,4,st4_sec3
-v1156,scallion,ネギ,scallion.mp3,4,st4_sec3
-v1157,mince,ひき肉,mince.mp3,4,st4_sec3
-v1158,autobiography,自伝,autobiography.mp3,4,st4_sec3
-v1159,symptom,症状,symptom.mp3,4,st4_sec3
-v1160,sea lion,アシカ,sea lion.mp3,4,st4_sec3
-v1161,investigator,調査員,investigator.mp3,4,st4_sec3
-v1162,crowd funding,クラウドファンディング,crowd funding.mp3,4,st4_sec3
+word_id,word,ja,audio,stage,section_id,hint_image
+v1123,unemployment,失業,unemployment.mp3,4,st4_sec3,
+v1124,hospitality,おもてなし,hospitality.mp3,4,st4_sec3,
+v1125,superstition,迷信,superstition.mp3,4,st4_sec3,
+v1126,racism,人種差別,racism.mp3,4,st4_sec3,
+v1127,prescription,処方箋,prescription.mp3,4,st4_sec3,
+v1128,migraine,偏頭痛,migraine.mp3,4,st4_sec3,
+v1129,quotation,引用・見積もり,quotation.mp3,4,st4_sec3,
+v1130,gene,遺伝子,gene.mp3,4,st4_sec3,
+v1131,dahlia,ダリア,dahlia.mp3,4,st4_sec3,
+v1132,persimmon,柿,persimmon.mp3,4,st4_sec3,
+v1133,salmon roe,イクラ,salmon roe.mp3,4,st4_sec3,
+v1134,symphony,交響曲,symphony.mp3,4,st4_sec3,
+v1135,tide,潮,tide.mp3,4,st4_sec3,
+v1136,residence,居住地,residence.mp3,4,st4_sec3,
+v1137,attorney,弁護士,attorney.mp3,4,st4_sec3,
+v1138,centipede,ムカデ,centipede.mp3,4,st4_sec3,
+v1139,flow chart,フローチャート,flow chart.mp3,4,st4_sec3,
+v1140,marketing,マーケティング,marketing.mp3,4,st4_sec3,
+v1141,handicraft,手工芸,handicraft.mp3,4,st4_sec3,
+v1142,federal,連邦の,federal.mp3,4,st4_sec3,
+v1143,itinerary,旅程,itinerary.mp3,4,st4_sec3,
+v1144,shredder,シュレッダー,shredder.mp3,4,st4_sec3,
+v1145,philosophy,哲学,philosophy.mp3,4,st4_sec3,
+v1146,canola flower,菜の花,canola flower.mp3,4,st4_sec3,
+v1147,nausea,吐き気,nausea.mp3,4,st4_sec3,
+v1148,liberty,自由,liberty.mp3,4,st4_sec3,
+v1149,fair trade,フェアトレード,fair trade.mp3,4,st4_sec3,
+v1150,psychologist,心理士,psychologist.mp3,4,st4_sec3,
+v1151,masterpiece,傑作,masterpiece.mp3,4,st4_sec3,
+v1152,auditorium,講堂,auditorium.mp3,4,st4_sec3,
+v1153,infant,乳児,infant.mp3,4,st4_sec3,
+v1154,colander,水切りざる,colander.mp3,4,st4_sec3,
+v1155,peeler,ピーラー,peeler.mp3,4,st4_sec3,
+v1156,scallion,ネギ,scallion.mp3,4,st4_sec3,
+v1157,mince,ひき肉,mince.mp3,4,st4_sec3,
+v1158,autobiography,自伝,autobiography.mp3,4,st4_sec3,
+v1159,symptom,症状,symptom.mp3,4,st4_sec3,
+v1160,sea lion,アシカ,sea lion.mp3,4,st4_sec3,
+v1161,investigator,調査員,investigator.mp3,4,st4_sec3,
+v1162,crowd funding,クラウドファンディング,crowd funding.mp3,4,st4_sec3,

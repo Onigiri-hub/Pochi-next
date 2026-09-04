@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0965,coral reef,サンゴ礁,coral reef.mp3,3,st3_sec10
-v0966,charity,慈善活動,charity.mp3,3,st3_sec10
-v0967,job opening,求人,job opening.mp3,3,st3_sec10
-v0968,kingdom,王国,kingdom.mp3,3,st3_sec10
-v0969,trap,罠,trap.mp3,3,st3_sec10
-v0970,granddaughter,孫娘,granddaughter.mp3,3,st3_sec10
-v0971,bean paste,味噌,bean paste.mp3,3,st3_sec10
-v0972,stomachache,腹痛,stomachache.mp3,3,st3_sec10
-v0973,gymnastics,体操,gymnastics.mp3,3,st3_sec10
-v0974,Japanese radish,大根,Japanese radish.mp3,3,st3_sec10
-v0975,heatstroke,熱中症,heatstroke.mp3,3,st3_sec10
-v0976,red meat,赤身肉,red meat.mp3,3,st3_sec10
-v0977,scanner,スキャナー,scanner.mp3,3,st3_sec10
-v0978,vinegar,酢,vinegar.mp3,3,st3_sec10
-v0979,ferry,フェリー,ferry.mp3,3,st3_sec10
-v0980,homestay,ホームステイ,homestay.mp3,3,st3_sec10
-v0981,Chinese cabbage,白菜,Chinese cabbage.mp3,3,st3_sec10
-v0982,chimney,煙突,chimney.mp3,3,st3_sec10
-v0983,ingredient,材料・成分,ingredient.mp3,3,st3_sec10
-v0984,technique,技術・テクニック,technique.mp3,3,st3_sec10
-v0985,influenza,インフルエンザ,influenza.mp3,3,st3_sec10
-v0986,engineering,工学,engineering.mp3,3,st3_sec10
-v0987,cutting board,まな板,cutting board.mp3,3,st3_sec10
-v0988,prize,賞・賞品,prize.mp3,3,st3_sec10
-v0989,pin,ピン,pin.mp3,3,st3_sec10
-v0990,punishment,罰,punishment.mp3,3,st3_sec10
-v0991,reminder,リマインダー,reminder.mp3,3,st3_sec10
-v0992,blood pressure,血圧,blood pressure.mp3,3,st3_sec10
-v0993,van,バン,van.mp3,3,st3_sec10
-v0994,stapler,ホッチキス,stapler.mp3,3,st3_sec10
-v0995,jellyfish,クラゲ,jellyfish.mp3,3,st3_sec10
-v0996,fog,霧,fog.mp3,3,st3_sec10
-v0997,emoticon,絵文字,emoticon.mp3,3,st3_sec10
-v0998,classical music,クラシック音楽,classical music.mp3,3,st3_sec10
-v0999,security guard,警備員,security guard.mp3,3,st3_sec10
-v1000,savings,貯金,savings.mp3,3,st3_sec10
-v1001,squid,イカ,squid.mp3,3,st3_sec10
-v1002,track and field,陸上競技,track and field.mp3,3,st3_sec10
-v1003,commuter,通勤者,commuter.mp3,3,st3_sec10
-v1004,lily,ユリ,lily.mp3,3,st3_sec10
+word_id,word,ja,audio,stage,section_id,hint_image
+v0965,coral reef,サンゴ礁,coral reef.mp3,3,st3_sec10,
+v0966,charity,慈善活動,charity.mp3,3,st3_sec10,
+v0967,job opening,求人,job opening.mp3,3,st3_sec10,
+v0968,kingdom,王国,kingdom.mp3,3,st3_sec10,
+v0969,trap,罠,trap.mp3,3,st3_sec10,
+v0970,granddaughter,孫娘,granddaughter.mp3,3,st3_sec10,
+v0971,bean paste,味噌,bean paste.mp3,3,st3_sec10,
+v0972,stomachache,腹痛,stomachache.mp3,3,st3_sec10,
+v0973,gymnastics,体操,gymnastics.mp3,3,st3_sec10,
+v0974,Japanese radish,大根,Japanese radish.mp3,3,st3_sec10,
+v0975,heatstroke,熱中症,heatstroke.mp3,3,st3_sec10,
+v0976,red meat,赤身肉,red meat.mp3,3,st3_sec10,
+v0977,scanner,スキャナー,scanner.mp3,3,st3_sec10,
+v0978,vinegar,酢,vinegar.mp3,3,st3_sec10,
+v0979,ferry,フェリー,ferry.mp3,3,st3_sec10,
+v0980,homestay,ホームステイ,homestay.mp3,3,st3_sec10,
+v0981,Chinese cabbage,白菜,Chinese cabbage.mp3,3,st3_sec10,
+v0982,chimney,煙突,chimney.mp3,3,st3_sec10,
+v0983,ingredient,材料・成分,ingredient.mp3,3,st3_sec10,
+v0984,technique,技術・テクニック,technique.mp3,3,st3_sec10,
+v0985,influenza,インフルエンザ,influenza.mp3,3,st3_sec10,
+v0986,engineering,工学,engineering.mp3,3,st3_sec10,
+v0987,cutting board,まな板,cutting board.mp3,3,st3_sec10,
+v0988,prize,賞・賞品,prize.mp3,3,st3_sec10,
+v0989,pin,ピン,pin.mp3,3,st3_sec10,
+v0990,punishment,罰,punishment.mp3,3,st3_sec10,
+v0991,reminder,リマインダー,reminder.mp3,3,st3_sec10,
+v0992,blood pressure,血圧,blood pressure.mp3,3,st3_sec10,
+v0993,van,バン,van.mp3,3,st3_sec10,
+v0994,stapler,ホッチキス,stapler.mp3,3,st3_sec10,
+v0995,jellyfish,クラゲ,jellyfish.mp3,3,st3_sec10,
+v0996,fog,霧,fog.mp3,3,st3_sec10,
+v0997,emoticon,絵文字,emoticon.mp3,3,st3_sec10,
+v0998,classical music,クラシック音楽,classical music.mp3,3,st3_sec10,
+v0999,security guard,警備員,security guard.mp3,3,st3_sec10,
+v1000,savings,貯金,savings.mp3,3,st3_sec10,
+v1001,squid,イカ,squid.mp3,3,st3_sec10,
+v1002,track and field,陸上競技,track and field.mp3,3,st3_sec10,
+v1003,commuter,通勤者,commuter.mp3,3,st3_sec10,
+v1004,lily,ユリ,lily.mp3,3,st3_sec10,

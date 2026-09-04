@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0504,umbrella,傘,umbrella.mp3,2,st2_sec8
-v0505,pasta,パスタ,pasta.mp3,2,st2_sec8
-v0506,shampoo,シャンプー,shampoo.mp3,2,st2_sec8
-v0507,lettuce,レタス,lettuce.mp3,2,st2_sec8
-v0508,pond,池,pond.mp3,2,st2_sec8
-v0509,camel,ラクダ,camel.mp3,2,st2_sec8
-v0510,code,コード・暗号,code.mp3,2,st2_sec8
-v0511,frying pan,フライパン,frying pan.mp3,2,st2_sec8
-v0512,gorilla,ゴリラ,gorilla.mp3,2,st2_sec8
-v0513,item,項目・品物,item.mp3,2,st2_sec8
-v0514,crab,カニ,crab.mp3,2,st2_sec8
-v0515,fried rice,チャーハン,fried rice.mp3,2,st2_sec8
-v0516,trip,旅行,trip.mp3,2,st2_sec8
-v0517,towel,タオル,towel.mp3,2,st2_sec8
-v0518,gift,贈り物,gift.mp3,2,st2_sec8
-v0519,museum,博物館・美術館,museum.mp3,2,st2_sec8
-v0520,microwave,電子レンジ,microwave.mp3,2,st2_sec8
-v0521,postcard,はがき,postcard.mp3,2,st2_sec8
-v0522,brush,ブラシ,brush.mp3,2,st2_sec8
-v0523,pot,鍋・ポット,pot.mp3,2,st2_sec8
-v0524,sand,砂,sand.mp3,2,st2_sec8
-v0525,hoodie,パーカー,hoodie.mp3,2,st2_sec8
-v0526,cucumber,キュウリ,cucumber.mp3,2,st2_sec8
-v0527,anime,アニメ,anime.mp3,2,st2_sec8
-v0528,height,身長・高さ,height.mp3,2,st2_sec8
-v0529,lamp,ランプ,lamp.mp3,2,st2_sec8
-v0530,avocado,アボカド,avocado.mp3,2,st2_sec8
-v0531,language,言語,language.mp3,2,st2_sec8
-v0532,flu,インフルエンザ,flu.mp3,2,st2_sec8
-v0533,chopsticks,箸,chopsticks.mp3,2,st2_sec8
-v0534,universe,宇宙,universe.mp3,2,st2_sec8
-v0535,hill,丘,hill.mp3,2,st2_sec8
-v0536,blueberry,ブルーベリー,blueberry.mp3,2,st2_sec8
-v0537,field,野原・分野,field.mp3,2,st2_sec8
-v0538,sandals,サンダル,sandals.mp3,2,st2_sec8
-v0539,sweet potato,サツマイモ,sweet potato.mp3,2,st2_sec8
-v0540,island,島,island.mp3,2,st2_sec8
-v0541,eyebrow,眉毛,eyebrow.mp3,2,st2_sec8
-v0542,eraser,消しゴム,eraser.mp3,2,st2_sec8
-v0543,fast food,ファストフード,fast food.mp3,2,st2_sec8
+word_id,word,ja,audio,stage,section_id,hint_image
+v0504,umbrella,傘,umbrella.mp3,2,st2_sec8,
+v0505,pasta,パスタ,pasta.mp3,2,st2_sec8,
+v0506,shampoo,シャンプー,shampoo.mp3,2,st2_sec8,
+v0507,lettuce,レタス,lettuce.mp3,2,st2_sec8,
+v0508,pond,池,pond.mp3,2,st2_sec8,
+v0509,camel,ラクダ,camel.mp3,2,st2_sec8,
+v0510,code,コード・暗号,code.mp3,2,st2_sec8,
+v0511,frying pan,フライパン,frying pan.mp3,2,st2_sec8,
+v0512,gorilla,ゴリラ,gorilla.mp3,2,st2_sec8,
+v0513,item,項目・品物,item.mp3,2,st2_sec8,
+v0514,crab,カニ,crab.mp3,2,st2_sec8,
+v0515,fried rice,チャーハン,fried rice.mp3,2,st2_sec8,
+v0516,trip,旅行,trip.mp3,2,st2_sec8,
+v0517,towel,タオル,towel.mp3,2,st2_sec8,
+v0518,gift,贈り物,gift.mp3,2,st2_sec8,
+v0519,museum,博物館・美術館,museum.mp3,2,st2_sec8,
+v0520,microwave,電子レンジ,microwave.mp3,2,st2_sec8,
+v0521,postcard,はがき,postcard.mp3,2,st2_sec8,
+v0522,brush,ブラシ,brush.mp3,2,st2_sec8,
+v0523,pot,鍋・ポット,pot.mp3,2,st2_sec8,
+v0524,sand,砂,sand.mp3,2,st2_sec8,
+v0525,hoodie,パーカー,hoodie.mp3,2,st2_sec8,
+v0526,cucumber,キュウリ,cucumber.mp3,2,st2_sec8,
+v0527,anime,アニメ,anime.mp3,2,st2_sec8,
+v0528,height,身長・高さ,height.mp3,2,st2_sec8,
+v0529,lamp,ランプ,lamp.mp3,2,st2_sec8,
+v0530,avocado,アボカド,avocado.mp3,2,st2_sec8,
+v0531,language,言語,language.mp3,2,st2_sec8,
+v0532,flu,インフルエンザ,flu.mp3,2,st2_sec8,
+v0533,chopsticks,箸,chopsticks.mp3,2,st2_sec8,
+v0534,universe,宇宙,universe.mp3,2,st2_sec8,
+v0535,hill,丘,hill.mp3,2,st2_sec8,
+v0536,blueberry,ブルーベリー,blueberry.mp3,2,st2_sec8,
+v0537,field,野原・分野,field.mp3,2,st2_sec8,
+v0538,sandals,サンダル,sandals.mp3,2,st2_sec8,
+v0539,sweet potato,サツマイモ,sweet potato.mp3,2,st2_sec8,
+v0540,island,島,island.mp3,2,st2_sec8,
+v0541,eyebrow,眉毛,eyebrow.mp3,2,st2_sec8,
+v0542,eraser,消しゴム,eraser.mp3,2,st2_sec8,
+v0543,fast food,ファストフード,fast food.mp3,2,st2_sec8,

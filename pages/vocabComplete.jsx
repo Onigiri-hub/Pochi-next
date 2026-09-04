@@ -84,11 +84,17 @@ export default function VocabComplete() {
           rounds.forEach(r => allRoundIds.push(r.round_id))
         }))
 
-        // vocab_roundsに全round_idが存在するか確認
+        // 完了判定に必要なのは「今のStageのセクション」だけなので、その分だけ読む（全体スキャン不要）
         const user = auth.currentUser
-        const { getDocs, collection } = await import("firebase/firestore")
-        const roundsSnap = await getDocs(collection(db, "users", user.uid, "vocab_rounds"))
-        const clearedRoundIds = new Set(roundsSnap.docs.map(d => d.id))
+        const { doc, getDoc } = await import("firebase/firestore")
+        const clearedRoundIds = new Set()
+        await Promise.all(stageSections.map(async (sec) => {
+          const snap = await getDoc(doc(db, "users", user.uid, "vocab_section_state", sec.section_id))
+          if (snap.exists()) {
+            const cr = snap.data().clearedRounds || {}
+            Object.keys(cr).forEach(rid => { if (cr[rid]) clearedRoundIds.add(rid) })
+          }
+        }))
 
         const isStageComplete = allRoundIds.every(id => clearedRoundIds.has(id))
         if (isStageComplete) completedStages.push(stageId)

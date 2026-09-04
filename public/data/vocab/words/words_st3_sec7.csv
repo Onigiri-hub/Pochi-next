@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0845,weapon,武器,weapon.mp3,3,st3_sec7
-v0846,bandage,包帯,bandage.mp3,3,st3_sec7
-v0847,breeze,そよ風,breeze.mp3,3,st3_sec7
-v0848,record-holder,記録保持者,record-holder.mp3,3,st3_sec7
-v0849,soul,魂,soul.mp3,3,st3_sec7
-v0850,lung,肺,lung.mp3,3,st3_sec7
-v0851,stockings,ストッキング,stockings.mp3,3,st3_sec7
-v0852,job seeker,求職者,job seeker.mp3,3,st3_sec7
-v0853,wrist,手首,wrist.mp3,3,st3_sec7
-v0854,lacrosse,ラクロス,lacrosse.mp3,3,st3_sec7
-v0855,vehicle,乗り物,vehicle.mp3,3,st3_sec7
-v0856,instructor,インストラクター,instructor.mp3,3,st3_sec7
-v0857,handball,ハンドボール,handball.mp3,3,st3_sec7
-v0858,marshmallow,マシュマロ,marshmallow.mp3,3,st3_sec7
-v0859,invention,発明,invention.mp3,3,st3_sec7
-v0860,fossil,化石,fossil.mp3,3,st3_sec7
-v0861,examination,試験・検査,examination.mp3,3,st3_sec7
-v0862,drug,薬・麻薬,drug.mp3,3,st3_sec7
-v0863,Pacific,太平洋,Pacific.mp3,3,st3_sec7
-v0864,religion,宗教,religion.mp3,3,st3_sec7
-v0865,captain,船長・キャプテン,captain.mp3,3,st3_sec7
-v0866,first aid,応急処置,first aid.mp3,3,st3_sec7
-v0867,day care,保育,day care.mp3,3,st3_sec7
-v0868,biology,生物学,biology.mp3,3,st3_sec7
-v0869,nightmare,悪夢,nightmare.mp3,3,st3_sec7
-v0870,rugby,ラグビー,rugby.mp3,3,st3_sec7
-v0871,fiction,フィクション・小説,fiction.mp3,3,st3_sec7
-v0872,virus,ウイルス,virus.mp3,3,st3_sec7
-v0873,cafeteria,カフェテリア,cafeteria.mp3,3,st3_sec7
-v0874,firefly,ホタル,firefly.mp3,3,st3_sec7
-v0875,professor,教授,professor.mp3,3,st3_sec7
-v0876,thief,泥棒,thief.mp3,3,st3_sec7
-v0877,grasshopper,バッタ,grasshopper.mp3,3,st3_sec7
-v0878,workplace,職場,workplace.mp3,3,st3_sec7
-v0879,balcony,バルコニー,balcony.mp3,3,st3_sec7
-v0880,basement,地下室,basement.mp3,3,st3_sec7
-v0881,patrol car,パトカー,patrol car.mp3,3,st3_sec7
-v0882,couch,ソファ,couch.mp3,3,st3_sec7
-v0883,amusement,娯楽施設,amusement.mp3,3,st3_sec7
-v0884,palace,宮殿・城,palace.mp3,3,st3_sec7
+word_id,word,ja,audio,stage,section_id,hint_image
+v0845,weapon,武器,weapon.mp3,3,st3_sec7,
+v0846,bandage,包帯,bandage.mp3,3,st3_sec7,
+v0847,breeze,そよ風,breeze.mp3,3,st3_sec7,
+v0848,record-holder,記録保持者,record-holder.mp3,3,st3_sec7,
+v0849,soul,魂,soul.mp3,3,st3_sec7,
+v0850,lung,肺,lung.mp3,3,st3_sec7,
+v0851,stockings,ストッキング,stockings.mp3,3,st3_sec7,
+v0852,job seeker,求職者,job seeker.mp3,3,st3_sec7,
+v0853,wrist,手首,wrist.mp3,3,st3_sec7,
+v0854,lacrosse,ラクロス,lacrosse.mp3,3,st3_sec7,
+v0855,vehicle,乗り物,vehicle.mp3,3,st3_sec7,
+v0856,instructor,インストラクター,instructor.mp3,3,st3_sec7,
+v0857,handball,ハンドボール,handball.mp3,3,st3_sec7,
+v0858,marshmallow,マシュマロ,marshmallow.mp3,3,st3_sec7,
+v0859,invention,発明,invention.mp3,3,st3_sec7,
+v0860,fossil,化石,fossil.mp3,3,st3_sec7,
+v0861,examination,試験・検査,examination.mp3,3,st3_sec7,
+v0862,drug,薬・麻薬,drug.mp3,3,st3_sec7,
+v0863,Pacific,太平洋,Pacific.mp3,3,st3_sec7,
+v0864,religion,宗教,religion.mp3,3,st3_sec7,
+v0865,captain,船長・キャプテン,captain.mp3,3,st3_sec7,
+v0866,first aid,応急処置,first aid.mp3,3,st3_sec7,
+v0867,day care,保育,day care.mp3,3,st3_sec7,
+v0868,biology,生物学,biology.mp3,3,st3_sec7,
+v0869,nightmare,悪夢,nightmare.mp3,3,st3_sec7,
+v0870,rugby,ラグビー,rugby.mp3,3,st3_sec7,
+v0871,fiction,フィクション・小説,fiction.mp3,3,st3_sec7,
+v0872,virus,ウイルス,virus.mp3,3,st3_sec7,
+v0873,cafeteria,カフェテリア,cafeteria.mp3,3,st3_sec7,
+v0874,firefly,ホタル,firefly.mp3,3,st3_sec7,
+v0875,professor,教授,professor.mp3,3,st3_sec7,
+v0876,thief,泥棒,thief.mp3,3,st3_sec7,
+v0877,grasshopper,バッタ,grasshopper.mp3,3,st3_sec7,
+v0878,workplace,職場,workplace.mp3,3,st3_sec7,
+v0879,balcony,バルコニー,balcony.mp3,3,st3_sec7,
+v0880,basement,地下室,basement.mp3,3,st3_sec7,
+v0881,patrol car,パトカー,patrol car.mp3,3,st3_sec7,
+v0882,couch,ソファ,couch.mp3,3,st3_sec7,
+v0883,amusement,娯楽施設,amusement.mp3,3,st3_sec7,
+v0884,palace,宮殿・城,palace.mp3,3,st3_sec7,

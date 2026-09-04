@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v0464,cookie,クッキー,cookie.mp3,2,st2_sec7
-v0465,hiking,ハイキング,hiking.mp3,2,st2_sec7
-v0466,lake,湖,lake.mp3,2,st2_sec7
-v0467,table tennis,卓球,table tennis.mp3,2,st2_sec7
-v0468,rainbow,虹,rainbow.mp3,2,st2_sec7
-v0469,engine,エンジン,engine.mp3,2,st2_sec7
-v0470,sunlight,日光,sunlight.mp3,2,st2_sec7
-v0471,stove,コンロ,stove.mp3,2,st2_sec7
-v0472,iron,アイロン・鉄,iron.mp3,2,st2_sec7
-v0473,voice,声,voice.mp3,2,st2_sec7
-v0474,sentence,文・判決,sentence.mp3,2,st2_sec7
-v0475,rubber,ゴム,rubber.mp3,2,st2_sec7
-v0476,band,バンド,band.mp3,2,st2_sec7
-v0477,bench,ベンチ,bench.mp3,2,st2_sec7
-v0478,peanut,ピーナッツ,peanut.mp3,2,st2_sec7
-v0479,centimeter,センチメートル,centimeter.mp3,2,st2_sec7
-v0480,jam,ジャム,jam.mp3,2,st2_sec7
-v0481,leader,リーダー,leader.mp3,2,st2_sec7
-v0482,comic book,漫画本,comic book.mp3,2,st2_sec7
-v0483,penguin,ペンギン,penguin.mp3,2,st2_sec7
-v0484,earrings,イヤリング,earrings.mp3,2,st2_sec7
-v0485,candy store,お菓子屋,candy store.mp3,2,st2_sec7
-v0486,ship,船,ship.mp3,2,st2_sec7
-v0487,vacation,休暇・バカンス,vacation.mp3,2,st2_sec7
-v0488,motorcycle,バイク,motorcycle.mp3,2,st2_sec7
-v0489,movie star,映画スター,movie star.mp3,2,st2_sec7
-v0490,wine,ワイン,wine.mp3,2,st2_sec7
-v0491,pepper,コショウ・ピーマン,pepper.mp3,2,st2_sec7
-v0492,anger,怒り,anger.mp3,2,st2_sec7
-v0493,spinach,ほうれん草,spinach.mp3,2,st2_sec7
-v0494,shrimp,エビ,shrimp.mp3,2,st2_sec7
-v0495,police car,パトカー,police car.mp3,2,st2_sec7
-v0496,dolphin,イルカ,dolphin.mp3,2,st2_sec7
-v0497,earthquake,地震,earthquake.mp3,2,st2_sec7
-v0498,astronaut,宇宙飛行士,astronaut.mp3,2,st2_sec7
-v0499,medicine,薬,medicine.mp3,2,st2_sec7
-v0500,text message,テキストメッセージ,text message.mp3,2,st2_sec7
-v0501,grade,成績・学年,grade.mp3,2,st2_sec7
-v0502,mail,郵便・メール,mail.mp3,2,st2_sec7
-v0503,alarm clock,目覚まし時計,alarm clock.mp3,2,st2_sec7
+word_id,word,ja,audio,stage,section_id,hint_image
+v0464,cookie,クッキー,cookie.mp3,2,st2_sec7,
+v0465,hiking,ハイキング,hiking.mp3,2,st2_sec7,
+v0466,lake,湖,lake.mp3,2,st2_sec7,
+v0467,table tennis,卓球,table tennis.mp3,2,st2_sec7,
+v0468,rainbow,虹,rainbow.mp3,2,st2_sec7,
+v0469,engine,エンジン,engine.mp3,2,st2_sec7,
+v0470,sunlight,日光,sunlight.mp3,2,st2_sec7,
+v0471,stove,コンロ,stove.mp3,2,st2_sec7,
+v0472,iron,アイロン・鉄,iron.mp3,2,st2_sec7,
+v0473,voice,声,voice.mp3,2,st2_sec7,
+v0474,sentence,文・判決,sentence.mp3,2,st2_sec7,
+v0475,rubber,ゴム,rubber.mp3,2,st2_sec7,
+v0476,band,バンド,band.mp3,2,st2_sec7,
+v0477,bench,ベンチ,bench.mp3,2,st2_sec7,
+v0478,peanut,ピーナッツ,peanut.mp3,2,st2_sec7,
+v0479,centimeter,センチメートル,centimeter.mp3,2,st2_sec7,
+v0480,jam,ジャム,jam.mp3,2,st2_sec7,
+v0481,leader,リーダー,leader.mp3,2,st2_sec7,
+v0482,comic book,漫画本,comic book.mp3,2,st2_sec7,
+v0483,penguin,ペンギン,penguin.mp3,2,st2_sec7,
+v0484,earrings,イヤリング,earrings.mp3,2,st2_sec7,
+v0485,candy store,お菓子屋,candy store.mp3,2,st2_sec7,
+v0486,ship,船,ship.mp3,2,st2_sec7,
+v0487,vacation,休暇・バカンス,vacation.mp3,2,st2_sec7,
+v0488,motorcycle,バイク,motorcycle.mp3,2,st2_sec7,
+v0489,movie star,映画スター,movie star.mp3,2,st2_sec7,
+v0490,wine,ワイン,wine.mp3,2,st2_sec7,
+v0491,pepper,コショウ・ピーマン,pepper.mp3,2,st2_sec7,
+v0492,anger,怒り,anger.mp3,2,st2_sec7,
+v0493,spinach,ほうれん草,spinach.mp3,2,st2_sec7,
+v0494,shrimp,エビ,shrimp.mp3,2,st2_sec7,
+v0495,police car,パトカー,police car.mp3,2,st2_sec7,
+v0496,dolphin,イルカ,dolphin.mp3,2,st2_sec7,
+v0497,earthquake,地震,earthquake.mp3,2,st2_sec7,
+v0498,astronaut,宇宙飛行士,astronaut.mp3,2,st2_sec7,
+v0499,medicine,薬,medicine.mp3,2,st2_sec7,
+v0500,text message,テキストメッセージ,text message.mp3,2,st2_sec7,
+v0501,grade,成績・学年,grade.mp3,2,st2_sec7,
+v0502,mail,郵便・メール,mail.mp3,2,st2_sec7,
+v0503,alarm clock,目覚まし時計,alarm clock.mp3,2,st2_sec7,

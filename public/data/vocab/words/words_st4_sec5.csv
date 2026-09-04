@@ -1,41 +1,41 @@
-word_id,word,ja,audio,stage,section_id
-v1203,capybara,カピバラ,capybara.mp3,4,st4_sec5
-v1204,terrorism,テロリズム,terrorism.mp3,4,st4_sec5
-v1205,sleeper train,夜行列車,sleeper train.mp3,4,st4_sec5
-v1206,qualification,資格,qualification.mp3,4,st4_sec5
-v1207,bonito,カツオ,bonito.mp3,4,st4_sec5
-v1208,constipation,便秘,constipation.mp3,4,st4_sec5
-v1209,morning glory,アサガオ,morning glory.mp3,4,st4_sec5
-v1210,astronomy,天文学,astronomy.mp3,4,st4_sec5
-v1211,diarrhea,下痢,diarrhea.mp3,4,st4_sec5
-v1212,cashew nut,カシューナッツ,cashew nut.mp3,4,st4_sec5
-v1213,wisdom,知恵,wisdom.mp3,4,st4_sec5
-v1214,scallop,ホタテ,scallop.mp3,4,st4_sec5
-v1215,measuring spoon,計量スプーン,measuring spoon.mp3,4,st4_sec5
-v1216,facecloth,フェイスタオル,facecloth.mp3,4,st4_sec5
-v1217,profession,職業,profession.mp3,4,st4_sec5
-v1218,wage,賃金,wage.mp3,4,st4_sec5
-v1219,county,郡・州,county.mp3,4,st4_sec5
-v1220,mime,パントマイム,mime.mp3,4,st4_sec5
-v1221,heritage,遺産,heritage.mp3,4,st4_sec5
-v1222,prescription medicine,処方薬,prescription medicine.mp3,4,st4_sec5
-v1223,psychology,心理学,psychology.mp3,4,st4_sec5
-v1224,nutritionist,栄養士,nutritionist.mp3,4,st4_sec5
-v1225,foundation,財団・基盤,foundation.mp3,4,st4_sec5
-v1226,walrus,セイウチ,walrus.mp3,4,st4_sec5
-v1227,manufacturer,製造業者,manufacturer.mp3,4,st4_sec5
-v1228,saucer,受け皿,saucer.mp3,4,st4_sec5
-v1229,pansy,パンジー,pansy.mp3,4,st4_sec5
-v1230,nursing home,介護施設,nursing home.mp3,4,st4_sec5
-v1231,physics,物理学,physics.mp3,4,st4_sec5
-v1232,equality,平等,equality.mp3,4,st4_sec5
-v1233,interpreter,通訳者,interpreter.mp3,4,st4_sec5
-v1234,clam,ハマグリ,clam.mp3,4,st4_sec5
-v1235,dusk,夕暮れ,dusk.mp3,4,st4_sec5
-v1236,donor,寄付者・ドナー,donor.mp3,4,st4_sec5
-v1237,memorial service,追悼式,memorial service.mp3,4,st4_sec5
-v1238,therapist,セラピスト,therapist.mp3,4,st4_sec5
-v1239,asthma,喘息,asthma.mp3,4,st4_sec5
-v1240,spectator,観客,spectator.mp3,4,st4_sec5
-v1241,cod,タラ,cod.mp3,4,st4_sec5
-v1242,newscaster,ニュースキャスター,newscaster.mp3,4,st4_sec5
+word_id,word,ja,audio,stage,section_id,hint_image
+v1203,capybara,カピバラ,capybara.mp3,4,st4_sec5,
+v1204,terrorism,テロリズム,terrorism.mp3,4,st4_sec5,
+v1205,sleeper train,夜行列車,sleeper train.mp3,4,st4_sec5,
+v1206,qualification,資格,qualification.mp3,4,st4_sec5,
+v1207,bonito,カツオ,bonito.mp3,4,st4_sec5,
+v1208,constipation,便秘,constipation.mp3,4,st4_sec5,
+v1209,morning glory,アサガオ,morning glory.mp3,4,st4_sec5,
+v1210,astronomy,天文学,astronomy.mp3,4,st4_sec5,
+v1211,diarrhea,下痢,diarrhea.mp3,4,st4_sec5,
+v1212,cashew nut,カシューナッツ,cashew nut.mp3,4,st4_sec5,
+v1213,wisdom,知恵,wisdom.mp3,4,st4_sec5,
+v1214,scallop,ホタテ,scallop.mp3,4,st4_sec5,
+v1215,measuring spoon,計量スプーン,measuring spoon.mp3,4,st4_sec5,
+v1216,facecloth,フェイスタオル,facecloth.mp3,4,st4_sec5,
+v1217,profession,職業,profession.mp3,4,st4_sec5,
+v1218,wage,賃金,wage.mp3,4,st4_sec5,
+v1219,county,郡・州,county.mp3,4,st4_sec5,
+v1220,mime,パントマイム,mime.mp3,4,st4_sec5,
+v1221,heritage,遺産,heritage.mp3,4,st4_sec5,
+v1222,prescription medicine,処方薬,prescription medicine.mp3,4,st4_sec5,
+v1223,psychology,心理学,psychology.mp3,4,st4_sec5,
+v1224,nutritionist,栄養士,nutritionist.mp3,4,st4_sec5,
+v1225,foundation,財団・基盤,foundation.mp3,4,st4_sec5,
+v1226,walrus,セイウチ,walrus.mp3,4,st4_sec5,
+v1227,manufacturer,製造業者,manufacturer.mp3,4,st4_sec5,
+v1228,saucer,受け皿,saucer.mp3,4,st4_sec5,
+v1229,pansy,パンジー,pansy.mp3,4,st4_sec5,
+v1230,nursing home,介護施設,nursing home.mp3,4,st4_sec5,
+v1231,physics,物理学,physics.mp3,4,st4_sec5,
+v1232,equality,平等,equality.mp3,4,st4_sec5,
+v1233,interpreter,通訳者,interpreter.mp3,4,st4_sec5,
+v1234,clam,ハマグリ,clam.mp3,4,st4_sec5,
+v1235,dusk,夕暮れ,dusk.mp3,4,st4_sec5,
+v1236,donor,寄付者・ドナー,donor.mp3,4,st4_sec5,
+v1237,memorial service,追悼式,memorial service.mp3,4,st4_sec5,
+v1238,therapist,セラピスト,therapist.mp3,4,st4_sec5,
+v1239,asthma,喘息,asthma.mp3,4,st4_sec5,
+v1240,spectator,観客,spectator.mp3,4,st4_sec5,
+v1241,cod,タラ,cod.mp3,4,st4_sec5,
+v1242,newscaster,ニュースキャスター,newscaster.mp3,4,st4_sec5,
