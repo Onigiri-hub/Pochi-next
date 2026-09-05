@@ -132,7 +132,7 @@ export default function MyStoryForm() {
               ))}
             </div>
             <div style={{ fontSize: "12px", color: "#999", marginTop: "6px" }}>
-              ◎ 初学者おすすめ。「くだけた表現」はスラングや省略が入るぶん、少し難しめです。
+              ◎ 初学者おすすめ。「カジュアル」はスラングや省略が入るぶん、少し難しめです。
             </div>
           </div>
         )}
