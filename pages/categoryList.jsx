@@ -23,7 +23,16 @@ export default function CategoryList(){
       const sorted = catData
         .filter(c => c.category_id)
         .sort((a, b) => Number(a.order) - Number(b.order))
-      setCategories(sorted)
+
+      // 特別カテゴリー「めっちゃMy長文」（ユーザー投稿専用・CSV外）を末尾に差し込む
+      const myStoryCategory = {
+        category_id: "cMy",
+        category_name: "めっちゃMy長文",
+        color: "#e8963c",
+        order: 999,
+        isMyStory: true,
+      }
+      setCategories([...sorted, myStoryCategory])
 
       // カテゴリごとのストーリー数
       const counts = {}
@@ -51,9 +60,13 @@ export default function CategoryList(){
     }
   }, [categories]);
 
-  function openCategory(categoryId){
-    localStorage.setItem("lastPlayedCategory", categoryId);
-    router.push(`/storyList?category=${categoryId}`)
+  function openCategory(cat){
+    localStorage.setItem("lastPlayedCategory", cat.category_id);
+    if (cat.isMyStory) {
+      router.push("/myStoryList")   // ユーザー投稿専用一覧へ
+    } else {
+      router.push(`/storyList?category=${cat.category_id}`)
+    }
   }
 
   return(
@@ -78,7 +91,7 @@ export default function CategoryList(){
               className="unitCard"
               key={cat.category_id}
               ref={(el) => (scrollRefs.current[cat.category_id] = el)}
-              onClick={() => openCategory(cat.category_id)}
+              onClick={() => openCategory(cat)}
               data-sound
             >
               <img src="/images/illustrations/unitlist_button.png" className="unitCardBg" />
