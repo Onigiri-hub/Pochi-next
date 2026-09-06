@@ -1,8 +1,27 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import { auth } from "../firebase"
 import Navigation from "../components/Navigation"
 import { DIFFICULTY_LEVELS, TONE_LEVELS, DEFAULT_DIFFICULTY, DEFAULT_TONE } from "../lib/difficulty"
+import { preloadVoices, warmUpSpeech } from "../utils/ttsPlayer"
+
+// 入力言語とモードのズレを判定する（送信時の確認モーダル用）。
+// 返り値: "ja"（英語モードに日本語が混入）/ "en"（日本語モードに英語優勢）/ null（問題なし）。
+//   - 英語モード: 日本語が1文字でもあれば警告（英文に和字は基本ありえない）
+//   - 日本語モード: 英語が優勢（英字数 > 日本語文字数）なら警告
+function langWarning(text, inputLang) {
+  const t = text || ""
+  const ja = (t.match(/[぀-ゟ゠-ヿ一-鿿]/g) || []).length // かな・カナ・漢字
+  const en = (t.match(/[A-Za-z]/g) || []).length
+  if (inputLang === "en" && ja >= 1) return "ja"
+  if (inputLang === "ja" && en > 0 && en > ja) return "en"
+  return null
+}
+// モーダルの本文（warn の種類ごと）
+const WARN_MESSAGE = {
+  ja: "英語入力モードに日本語が入力されているようです。このまま続けますか？",
+  en: "日本語入力モードに英語が入力されているようです。このまま続けますか？",
+}
 
 // めっちゃMy長文の作成フォーム。
 // フェーズ1（無料版）: /api/story/generate を叩き、返ってきた sentences を sessionStorage に置いて
@@ -16,6 +35,10 @@ export default function MyStoryForm() {
   const [tone, setTone] = useState(DEFAULT_TONE)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const [showLangModal, setShowLangModal] = useState(false)
+
+  // マウント時に声リストを事前ロード（再生時のもたつき防止）
+  useEffect(() => { preloadVoices() }, [])
 
   // 無料版の上限（表示用）。将来はプランに応じて出し分ける。
   const limit = inputLang === "en" ? { unit: "語", max: 50 } : { unit: "字", max: 200 }
@@ -23,6 +46,8 @@ export default function MyStoryForm() {
     ? (text.trim() ? text.trim().split(/\s+/).length : 0)
     : text.trim().length
   const over = count > limit.max
+  // 入力言語とモードのズレ（送信時に確認モーダルを出す）
+  const langWarn = langWarning(text, inputLang)
 
   // 3択ボタン（セグメント）の共通スタイル
   const segStyle = (active) => ({
@@ -32,8 +57,23 @@ export default function MyStoryForm() {
     color: "#333", fontWeight: "bold",
   })
 
-  async function submit() {
+  // 送信ボタン: 入力言語のズレがあれば確認モーダルを挟む。無ければそのまま生成。
+  function submit() {
     if (!text.trim() || loading || over) return
+    if (langWarn) {
+      setShowLangModal(true)
+      return
+    }
+    runGenerate()
+  }
+
+  // 実際の生成処理（モーダルで「このまま続ける」を押したときもここへ）
+  async function runGenerate() {
+    if (!text.trim() || loading || over) return
+    // ユーザー操作中に音声エンジンを起こしておく（await より前＝iOSのジェスチャ要件を満たす）。
+    // 生成完了→/story 遷移後、最初のタップで即再生できる。
+    warmUpSpeech()
+    setShowLangModal(false)
     setLoading(true)
     setError("")
     try {
@@ -67,6 +107,27 @@ export default function MyStoryForm() {
     } finally {
       setLoading(false)
     }
+  }
+
+  // 生成中スクリーン（API待ちの間フル画面。この間に音声エンジンも温まる）
+  if (loading) {
+    return (
+      <div style={{
+        position: "fixed", inset: 0, background: "#ebebeb",
+        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "20px",
+      }}>
+        <video
+          src="/animations/pochi-tokotoko.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: "220px" }}
+        />
+        <div style={{ fontSize: "17px", fontWeight: "bold", color: "#8a5a1a" }}>生成中…</div>
+        <div style={{ fontSize: "13px", color: "#999" }}>並べ替え問題と音声を準備しています</div>
+      </div>
+    )
   }
 
   return (
@@ -103,6 +164,29 @@ export default function MyStoryForm() {
           ))}
         </div>
 
+        {/* タイトル（任意） */}
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="タイトル（任意）"
+          style={{ padding: "12px", borderRadius: "10px", border: "1px solid #ccc", fontSize: "15px" }}
+        />
+
+        {/* 本文 */}
+        <textarea
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder={inputLang === "en" ? "英語の文章を入力してね" : "日本語の文章を入力してね"}
+          rows={7}
+          style={{ padding: "12px", borderRadius: "10px", border: "1px solid #ccc", fontSize: "15px", lineHeight: 1.6, resize: "vertical" }}
+        />
+
+        {/* カウンター */}
+        <div style={{ textAlign: "right", fontSize: "13px", color: over ? "#d9534f" : "#888" }}>
+          {count} / {limit.max}{limit.unit}
+        </div>
+
         {/* 語彙・文法レベル */}
         <div>
           <div style={{ fontSize: "13px", fontWeight: "bold", color: "#666", marginBottom: "6px" }}>英語のレベル</div>
@@ -137,29 +221,6 @@ export default function MyStoryForm() {
           </div>
         )}
 
-        {/* タイトル（任意） */}
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="タイトル（任意）"
-          style={{ padding: "12px", borderRadius: "10px", border: "1px solid #ccc", fontSize: "15px" }}
-        />
-
-        {/* 本文 */}
-        <textarea
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder={inputLang === "en" ? "英語の文章を入力してね" : "日本語の文章を入力してね"}
-          rows={7}
-          style={{ padding: "12px", borderRadius: "10px", border: "1px solid #ccc", fontSize: "15px", lineHeight: 1.6, resize: "vertical" }}
-        />
-
-        {/* カウンター */}
-        <div style={{ textAlign: "right", fontSize: "13px", color: over ? "#d9534f" : "#888" }}>
-          {count} / {limit.max}{limit.unit}
-        </div>
-
         {error && (
           <div style={{ color: "#d9534f", fontSize: "14px", textAlign: "center" }}>{error}</div>
         )}
@@ -182,6 +243,51 @@ export default function MyStoryForm() {
           {loading ? "作成中…" : "並べ替え問題を作る"}
         </button>
       </div>
+
+      {/* 入力言語ズレの確認モーダル（送信時の抑止） */}
+      {showLangModal && (
+        <div
+          onClick={() => setShowLangModal(false)}
+          style={{
+            position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: "24px", zIndex: 1000,
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "#fff", borderRadius: "16px", padding: "24px 20px",
+              maxWidth: "340px", width: "100%", textAlign: "center",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
+            }}
+          >
+            <div style={{ fontSize: "15px", color: "#333", fontWeight: "bold", lineHeight: 1.7, marginBottom: "20px" }}>
+              {WARN_MESSAGE[langWarn]}
+            </div>
+            <div style={{ display: "flex", gap: "10px" }}>
+              <button
+                onClick={() => setShowLangModal(false)}
+                style={{
+                  flex: 1, padding: "13px", borderRadius: "12px", border: "1px solid #ccc",
+                  background: "#fff", color: "#666", fontWeight: "bold", fontSize: "15px", cursor: "pointer",
+                }}
+              >
+                戻る
+              </button>
+              <button
+                onClick={runGenerate}
+                style={{
+                  flex: 1, padding: "13px", borderRadius: "12px", border: "none",
+                  background: "#e8963c", color: "#fff", fontWeight: "bold", fontSize: "15px", cursor: "pointer",
+                }}
+              >
+                このまま続ける
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Navigation />
     </div>

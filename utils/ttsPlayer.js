@@ -7,6 +7,32 @@ export function isWebSpeechSupported() {
   return typeof window !== "undefined" && !!window.speechSynthesis
 }
 
+// 声リスト(getVoices)は非同期ロードで初回は空になりがち。
+// マウント時などに呼んでおくと、再生時には声が揃っている。
+export function preloadVoices() {
+  if (!isWebSpeechSupported()) return
+  try {
+    window.speechSynthesis.getVoices()
+    // 一部ブラウザは voiceschanged 後に確定するので軽く待たせる
+    window.speechSynthesis.onvoiceschanged = () => { window.speechSynthesis.getVoices() }
+  } catch {}
+}
+
+// 音声エンジンのウォームアップ。初回発話はコールドスタートで遅れる/無音になりがちなので、
+// ユーザー操作（生成ボタン等）の中で無音の短い発話を流してエンジンを起こしておく。
+// ※iOS Safari は最初の speak をユーザー操作内で呼ぶ必要があるため、必ずクリック直後に同期実行すること。
+let _warmed = false
+export function warmUpSpeech() {
+  if (_warmed || !isWebSpeechSupported()) return
+  try {
+    window.speechSynthesis.getVoices()
+    const u = new SpeechSynthesisUtterance(" ")
+    u.volume = 0
+    window.speechSynthesis.speak(u)
+    _warmed = true
+  } catch {}
+}
+
 // 文単位の音声再生。audioUrl があればそれを再生、無ければ Web Speech にフォールバック。
 export function playSentenceAudio({ text, audioUrl }) {
   if (audioUrl) {
