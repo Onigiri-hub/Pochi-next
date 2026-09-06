@@ -53,6 +53,13 @@ export async function saveMyStory({ storyId, title, inputLang, sentences }) {
   })
 }
 
+// タイトルだけ変更（他のフィールドは維持）
+export async function renameMyStory(storyId, title) {
+  const user = auth.currentUser
+  if (!user || !storyId) return
+  await setDoc(doc(db, "users", user.uid, "myStories", storyId), { title: title || "" }, { merge: true })
+}
+
 // 削除
 export async function deleteMyStory(storyId) {
   const user = auth.currentUser

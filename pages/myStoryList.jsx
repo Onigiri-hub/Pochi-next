@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
-import { listMyStories, deleteMyStory, MY_STORY_LIMIT } from "../utils/myStoryManager"
+import { listMyStories, deleteMyStory, renameMyStory, MY_STORY_LIMIT } from "../utils/myStoryManager"
 
 // めっちゃMy長文の一覧画面。
 // 保存済み（Firestore users/{uid}/myStories）を読み込んで表示。保存枠は MY_STORY_LIMIT 件。
@@ -12,6 +12,9 @@ export default function MyStoryList() {
   const [menuOpenId, setMenuOpenId] = useState(null) // ⋯メニューを開いている story
   const [showLimitModal, setShowLimitModal] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(null) // 削除確認中の story
+  const [renameTarget, setRenameTarget] = useState(null)   // 名前変更中の story
+  const [renameValue, setRenameValue] = useState("")
+  const [renaming, setRenaming] = useState(false)
 
   async function refresh() {
     setLoading(true)
@@ -35,6 +38,19 @@ export default function MyStoryList() {
   async function handleDelete(storyId) {
     await deleteMyStory(storyId)
     setConfirmDelete(null)
+    await refresh()
+  }
+
+  function openRename(story) {
+    setRenameValue(story.title || "")
+    setRenameTarget(story)
+  }
+  async function handleRename() {
+    if (!renameTarget || renaming) return
+    setRenaming(true)
+    await renameMyStory(renameTarget.storyId, renameValue.trim())
+    setRenaming(false)
+    setRenameTarget(null)
     await refresh()
   }
 
@@ -100,10 +116,20 @@ export default function MyStoryList() {
                 }}
               >
                 <button
+                  onClick={(e) => { e.stopPropagation(); setMenuOpenId(null); openRename(s) }}
+                  style={{
+                    display: "block", width: "100%", padding: "12px 24px", background: "none",
+                    border: "none", borderBottom: "1px solid #eee",
+                    color: "#333", fontSize: "15px", fontWeight: "bold", cursor: "pointer", whiteSpace: "nowrap", textAlign: "left",
+                  }}
+                >
+                  名前を変更
+                </button>
+                <button
                   onClick={(e) => { e.stopPropagation(); setMenuOpenId(null); setConfirmDelete(s) }}
                   style={{
-                    display: "block", padding: "12px 24px", background: "none", border: "none",
-                    color: "#d9534f", fontSize: "15px", fontWeight: "bold", cursor: "pointer", whiteSpace: "nowrap",
+                    display: "block", width: "100%", padding: "12px 24px", background: "none", border: "none",
+                    color: "#d9534f", fontSize: "15px", fontWeight: "bold", cursor: "pointer", whiteSpace: "nowrap", textAlign: "left",
                   }}
                 >
                   削除
@@ -166,6 +192,43 @@ export default function MyStoryList() {
                 style={{ flex: 1, padding: "13px", borderRadius: "12px", border: "none", background: "#333333", color: "#fff", fontWeight: "bold", fontSize: "15px", cursor: "pointer" }}
               >
                 作りにいく
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 名前変更モーダル */}
+      {renameTarget && (
+        <div
+          onClick={() => setRenameTarget(null)}
+          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px", zIndex: 1000 }}
+        >
+          <div onClick={(e) => e.stopPropagation()} style={{ background: "#fff", borderRadius: "16px", padding: "24px 20px", maxWidth: "340px", width: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.2)" }}>
+            <div style={{ fontSize: "15px", color: "#333", fontWeight: "bold", marginBottom: "14px", textAlign: "center" }}>
+              名前を変更
+            </div>
+            <input
+              type="text"
+              value={renameValue}
+              onChange={(e) => setRenameValue(e.target.value)}
+              placeholder="タイトル"
+              autoFocus
+              style={{ width: "100%", padding: "12px", borderRadius: "10px", border: "1px solid #ccc", fontSize: "15px", marginBottom: "18px", boxSizing: "border-box" }}
+            />
+            <div style={{ display: "flex", gap: "10px" }}>
+              <button
+                onClick={() => setRenameTarget(null)}
+                style={{ flex: 1, padding: "13px", borderRadius: "12px", border: "1px solid #ccc", background: "#fff", color: "#666", fontWeight: "bold", fontSize: "15px", cursor: "pointer" }}
+              >
+                やめる
+              </button>
+              <button
+                onClick={handleRename}
+                disabled={renaming}
+                style={{ flex: 1, padding: "13px", borderRadius: "12px", border: "none", background: renaming ? "#ccc" : "#333333", color: "#fff", fontWeight: "bold", fontSize: "15px", cursor: renaming ? "default" : "pointer" }}
+              >
+                {renaming ? "保存中…" : "保存"}
               </button>
             </div>
           </div>
