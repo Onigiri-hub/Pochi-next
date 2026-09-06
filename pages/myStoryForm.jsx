@@ -122,7 +122,7 @@ export default function MyStoryForm() {
           muted
           loop
           playsInline
-          style={{ width: "220px" }}
+          style={{ width: "110px" }}
         />
         <div style={{ fontSize: "17px", fontWeight: "bold", color: "#8a5a1a" }}>生成中…</div>
         <div style={{ fontSize: "13px", color: "#999" }}>並べ替え問題と音声を準備しています</div>
@@ -234,9 +234,9 @@ export default function MyStoryForm() {
           onClick={submit}
           disabled={!text.trim() || over || loading}
           style={{
-            padding: "16px", borderRadius: "14px", border: "none", fontSize: "17px", fontWeight: "bold",
+            padding: "16px", borderRadius: "999px", border: "none", fontSize: "17px", fontWeight: "bold",
             color: "#fff",
-            background: (!text.trim() || over || loading) ? "#ccc" : "#e8963c",
+            background: (!text.trim() || over || loading) ? "#ccc" : "#333333",
             cursor: (!text.trim() || over || loading) ? "default" : "pointer",
           }}
         >

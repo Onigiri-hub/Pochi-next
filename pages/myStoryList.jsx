@@ -36,9 +36,9 @@ export default function MyStoryList() {
           style={{
             width: "100%",
             padding: "16px",
-            borderRadius: "14px",
+            borderRadius: "999px",
             border: "none",
-            background: "#e8963c",
+            background: "#333333",
             color: "#ffffff",
             fontSize: "17px",
             fontWeight: "bold",
