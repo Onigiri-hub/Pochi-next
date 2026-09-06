@@ -218,7 +218,7 @@ export default function Story() {
     if (index < sentences.length - 1) {
       setIndex(i => i + 1)
     } else if (isMy) {
-      router.replace("/myStoryList")
+      router.replace("/myStoryComplete")
     } else {
       router.replace(`/storyComplete?category=${category}&order=${order}&storyId=${id}`)
     }
