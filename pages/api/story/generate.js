@@ -174,6 +174,12 @@ export default async function handler(req, res) {
     if (e && e.code === "content_blocked") {
       return res.status(400).json({ error: "content_blocked", detail: "この内容では問題を作成できませんでした。表現を見直してください。" })
     }
+    if (e && e.code === "rate_limited") {
+      return res.status(429).json({ error: "rate_limited", detail: "ただいまアクセスが集中しています。しばらく時間をおいて、もう一度お試しください。" })
+    }
+    if (e && e.code === "unavailable") {
+      return res.status(503).json({ error: "unavailable", detail: "現在AIサーバーが混み合っています。少し時間をおいて、もう一度お試しください。" })
+    }
     console.error("[/api/story/generate]", e)
     return res.status(500).json({ error: "server_error" })
   }

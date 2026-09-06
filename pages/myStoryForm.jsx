@@ -103,9 +103,9 @@ export default function MyStoryForm() {
           ))}
         </div>
 
-        {/* 難易度 */}
+        {/* 語彙・文法レベル */}
         <div>
-          <div style={{ fontSize: "13px", fontWeight: "bold", color: "#666", marginBottom: "6px" }}>難易度</div>
+          <div style={{ fontSize: "13px", fontWeight: "bold", color: "#666", marginBottom: "6px" }}>英語のレベル</div>
           <div style={{ display: "flex", gap: "8px" }}>
             {Object.entries(DIFFICULTY_LEVELS).map(([val, def]) => (
               <button key={val} onClick={() => setDifficulty(val)} style={segStyle(difficulty === val)}>
