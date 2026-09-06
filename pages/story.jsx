@@ -7,6 +7,7 @@ import Navigation from "../components/Navigation"
 import { useDictionary } from "../utils/useDictionary"
 import WordPopup from "../components/WordPopup"
 import { playSentenceAudio, playAllSentences } from "../utils/ttsPlayer"
+import { getMyStory, saveMyStory, listMyStories, deleteMyStory, MY_STORY_LIMIT } from "../utils/myStoryManager"
 
 function shuffle(array) {
   const copy = [...array]
@@ -28,6 +29,14 @@ export default function Story() {
   const [sentences, setSentences] = useState([])
   const [storyName, setStoryName] = useState("")
   const [phase, setPhase] = useState("preview") // "preview" | "arrange"
+
+  // --- My長文の保存用 ---
+  const rawStoryRef = useRef(null)                 // { title, inputLang, sentences: base[] } 保存に使う元データ
+  const [saved, setSaved] = useState(false)        // 保存済みか（保存版で開いた/保存した）
+  const [saving, setSaving] = useState(false)
+  const [saveMsg, setSaveMsg] = useState("")       // 「ログインが必要」等の通知
+  const [showSaveModal, setShowSaveModal] = useState(false) // 上限時の上書き選択
+  const [overwriteList, setOverwriteList] = useState([])
 
   // --- プレビュー用 ---
   const [showEn, setShowEn] = useState(false)
@@ -67,29 +76,44 @@ export default function Story() {
 
   useEffect(() => {
     if (!router.isReady || !id) return
+    // base sentence {id,en,ja,answer,chips,audio} → 本家CSVと同じ列構造へ
+    function mapToSData(base) {
+      return (base || []).map((s, i) => {
+        const answer = s.answer || s.en
+        return {
+          question_id: s.id || `s${i + 1}`,
+          question_NO: String(i + 1),
+          en: s.en,
+          ja: s.ja,
+          answer,
+          chips: s.chips || (answer || "").trim().split(/\s+/).join("|"),
+          audio: s.audio || null,       // free時はnull → Web Speechにフォールバック
+          audio_auto: "0",
+          icon_first: "user",
+          position_first: "left",
+        }
+      })
+    }
+
     async function load() {
-      // --- My長文: sessionStorage から読み込み（本家CSVと同じ列構造にマッピング）---
+      // --- My長文: まず sessionStorage（その場プレイ）、無ければ Firestore（保存版）---
       if (isMy) {
         const raw = typeof window !== "undefined" ? sessionStorage.getItem(`myStory:${id}`) : null
-        if (!raw) return
-        const parsed = JSON.parse(raw)
-        const sData = (parsed.sentences || []).map((s, i) => {
-          const answer = s.answer || s.en
-          return {
-            question_id: s.id || `s${i + 1}`,
-            question_NO: String(i + 1),
-            en: s.en,
-            ja: s.ja,
-            answer,
-            chips: s.chips || (answer || "").trim().split(/\s+/).join("|"),
-            audio: s.audio || null,       // free時はnull → Web Speechにフォールバック
-            audio_auto: "0",
-            icon_first: "user",
-            position_first: "left",
-          }
-        })
-        setSentences(sData)
-        setStoryName(parsed.title || "My長文")
+        let payload = null
+        let alreadySaved = false
+        if (raw) {
+          payload = JSON.parse(raw) // { title, inputLang, sentences: base[] }
+        } else {
+          const doc = await getMyStory(id) // 保存版
+          if (!doc) return
+          payload = doc
+          alreadySaved = true
+        }
+        const base = payload.sentences || []
+        rawStoryRef.current = { title: payload.title || "My長文", inputLang: payload.inputLang || "en", sentences: base }
+        setSaved(alreadySaved)
+        setSentences(mapToSData(base))
+        setStoryName(payload.title || "My長文")
         return
       }
 
@@ -231,6 +255,38 @@ export default function Story() {
     setPhase("arrange")
   }
 
+  // --- My長文の保存 ---
+  async function handleSaveMyStory() {
+    if (saved || saving || !rawStoryRef.current) return
+    setSaveMsg("")
+    const list = await listMyStories()
+    const alreadyThis = list.some(x => x.storyId === id)
+    if (list.length >= MY_STORY_LIMIT && !alreadyThis) {
+      // 上限 → 上書き対象を選ばせる
+      setOverwriteList(list)
+      setShowSaveModal(true)
+      return
+    }
+    await doSaveMyStory(null)
+  }
+
+  // overwriteId を指定するとその保存を消してから新規保存（＝上書き）
+  async function doSaveMyStory(overwriteId) {
+    setSaving(true)
+    setSaveMsg("")
+    try {
+      if (overwriteId) await deleteMyStory(overwriteId)
+      const r = rawStoryRef.current
+      await saveMyStory({ storyId: id, title: r.title, inputLang: r.inputLang, sentences: r.sentences })
+      setSaved(true)
+      setShowSaveModal(false)
+    } catch (e) {
+      setSaveMsg(e?.message === "not_signed_in" ? "保存にはログインが必要です。" : "保存に失敗しました。")
+    } finally {
+      setSaving(false)
+    }
+  }
+
   if (!id || sentences.length === 0) return <div>loading...</div>
 
   function renderSentence(text) {
@@ -250,14 +306,34 @@ export default function Story() {
   if (phase === "preview") {
     return (
       <div className="app" style={{ paddingBottom: "180px" }}>
-        <div style={{ padding: "10px 20px" }}>
+        <div style={{ padding: "10px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <button
             onClick={() => router.push(isMy ? "/myStoryList" : `/storyList?category=${category}`)}
             style={{ background: "none", border: "none", fontSize: "15px", fontWeight: "bold", color: "#333333", cursor: "pointer" }}
           >
             ◀
           </button>
+          {isMy && (
+            saved ? (
+              <span style={{ fontSize: "14px", fontWeight: "bold", color: "#5cb85c" }}>保存済み ✓</span>
+            ) : (
+              <button
+                onClick={handleSaveMyStory}
+                disabled={saving}
+                style={{
+                  padding: "7px 16px", borderRadius: "999px", border: "none",
+                  background: saving ? "#ccc" : "#333333", color: "#fff",
+                  fontSize: "13px", fontWeight: "bold", cursor: saving ? "default" : "pointer",
+                }}
+              >
+                {saving ? "保存中…" : "保存する"}
+              </button>
+            )
+          )}
         </div>
+        {isMy && saveMsg && (
+          <div style={{ textAlign: "center", color: "#d9534f", fontSize: "13px", marginBottom: "6px" }}>{saveMsg}</div>
+        )}
 
         <div style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold", color: "#333", margin: "10px 0 40px" }}>
           {isMy ? storyName : `${storyId?.slice(1)} ${storyName}`}
@@ -298,6 +374,38 @@ export default function Story() {
         <div className="bottomArea">
           <button className="mainButton" onClick={startArrange}>学習開始！</button>
         </div>
+
+        {/* 保存枠が満杯のときの上書き選択モーダル */}
+        {showSaveModal && (
+          <div
+            onClick={() => setShowSaveModal(false)}
+            style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px", zIndex: 1000 }}
+          >
+            <div onClick={(e) => e.stopPropagation()} style={{ background: "#fff", borderRadius: "16px", padding: "22px 18px", maxWidth: "360px", width: "100%", boxShadow: "0 10px 40px rgba(0,0,0,0.2)" }}>
+              <div style={{ fontSize: "15px", color: "#333", fontWeight: "bold", lineHeight: 1.6, marginBottom: "14px", textAlign: "center" }}>
+                保存枠がいっぱいです。<br />どの長文に上書きしますか？
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", maxHeight: "40vh", overflowY: "auto" }}>
+                {overwriteList.map(s => (
+                  <button
+                    key={s.storyId}
+                    onClick={() => doSaveMyStory(s.storyId)}
+                    disabled={saving}
+                    style={{ padding: "12px 14px", borderRadius: "10px", border: "1px solid #e0e0e0", background: "#fff", color: "#333", fontSize: "14px", fontWeight: "bold", textAlign: "left", cursor: "pointer" }}
+                  >
+                    {s.title || "無題の長文"}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => setShowSaveModal(false)}
+                style={{ marginTop: "14px", width: "100%", padding: "12px", borderRadius: "12px", border: "1px solid #ccc", background: "#fff", color: "#666", fontWeight: "bold", fontSize: "15px", cursor: "pointer" }}
+              >
+                やっぱりやめる
+              </button>
+            </div>
+          </div>
+        )}
 
         <WordPopup entry={popupEntry} onClose={() => setPopupEntry(null)} />
         <Navigation />

@@ -24,6 +24,7 @@ export default function DeleteAccount() {
         "vocab_section_state", "arrange_word_status",
         "streak", "badges",
         "completedUnits", "items", "unlocked",
+        "myStories",
       ];
       await Promise.all(
         subCollections.map(async (colName) => {

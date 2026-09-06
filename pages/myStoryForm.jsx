@@ -99,7 +99,7 @@ export default function MyStoryForm() {
       // その場プレイ用に sessionStorage へ保存して story へ遷移
       sessionStorage.setItem(
         `myStory:${data.storyId}`,
-        JSON.stringify({ title: data.title, sentences: data.sentences })
+        JSON.stringify({ title: data.title, inputLang: data.inputLang, sentences: data.sentences })
       )
       router.push(`/story?source=my&id=${data.storyId}`)
     } catch {
