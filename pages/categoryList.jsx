@@ -98,9 +98,12 @@ export default function CategoryList(){
               <div className="unitCardContent">
                 <div className="unitTitle">{cat.category_id.slice(1)}</div>
                 <div className="unitName">{cat.category_name}</div>
-                <div className="unitBarRow">
-                  <div className="progressText" style={{ minWidth: 0, textAlign: "center" }}>{clearedCount}/{total}</div>
-                </div>
+                {/* My長文は進捗管理をしないので数字を出さない */}
+                {!cat.isMyStory && (
+                  <div className="unitBarRow">
+                    <div className="progressText" style={{ minWidth: 0, textAlign: "center" }}>{clearedCount}/{total}</div>
+                  </div>
+                )}
               </div>
             </div>
           );
