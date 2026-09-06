@@ -52,26 +52,36 @@ export default function Terms() {
           <p>そのため、内容に誤りが含まれる可能性があります。</p>
           <p>当方は、内容の正確性・完全性を保証しません。</p>
 
-          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第4条（知的財産権）</h3>
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第4条（ユーザーが入力するコンテンツ・AIの利用）</h3>
+          <p>「めっちゃMy長文」等の一部機能では、ユーザーが入力した文章をAI（Google Gemini等）で処理し、翻訳・問題の生成を行います。入力された文章は、処理のため外部のAIサービスに送信されます。</p>
+          <p>ユーザーは、次の内容を入力してはなりません。</p>
+          <p>・法令または公序良俗に反する内容</p>
+          <p>・他者の権利（著作権・プライバシー等）を侵害する内容</p>
+          <p>・第三者の個人情報、その他他人に知られたくない情報</p>
+          <p>入力された内容および生成された結果は、ユーザー自身の責任に属します。当方は、生成結果の正確性・適切性を保証せず、入力・生成に起因して生じた損害について一切の責任を負いません。</p>
+          <p>当方およびAIサービスは、不適切と判断した入力の処理を拒否・制限することがあります（AIの安全機能により生成が行われない場合があります）。</p>
+
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第5条（知的財産権）</h3>
           <p>本サービスに含まれる文章・画像・コンテンツの著作権は、ミエリカ・ワークスに帰属します。</p>
           <p>無断転載・複製を禁止します。</p>
 
-          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第5条（サービスの変更・停止）</h3>
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第6条（サービスの変更・停止）</h3>
           <p>当方は、予告なく本サービスの内容を変更・追加・削除することがあります。</p>
           <p>また、サービスを停止する場合は、原則としてアプリ上で1か月前に告知します。</p>
 
-          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第6条（免責事項）</h3>
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第7条（免責事項）</h3>
           <p>当方は、以下について一切の責任を負いません。</p>
           <p>・本サービスの利用による学習成果</p>
           <p>・バグ、不具合による影響</p>
           <p>・データの消失・損失</p>
+          <p>・ユーザーが入力した内容、およびAIによる生成結果</p>
           <p>・その他、本サービスに関連して生じた損害</p>
           <p>個人開発のため、修正対応には限界があることをご理解ください。</p>
 
-          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第7条（広告）</h3>
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第8条（広告）</h3>
           <p>本サービスでは、今後広告（Google AdMob等）が表示される場合があります。</p>
 
-          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第8条（準拠法）</h3>
+          <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第9条（準拠法）</h3>
           <p>本規約は日本法に準拠します。</p>
 
         </div>
@@ -90,7 +100,8 @@ export default function Terms() {
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第1条（収集する情報）</h3>
           <p>本サービスでは以下の情報を取得します。</p>
           <p>・Googleアカウント情報（ログイン時）</p>
-          <p>・学習履歴・利用データ</p>        
+          <p>・学習履歴・利用データ</p>
+          <p>・AI機能（長文生成等）の利用時に、ユーザーが入力した文章</p>
           
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px", marginTop: "20px" }}>第2条（利用目的）</h3>
           <p>取得した情報は以下の目的で使用します。</p>
@@ -105,7 +116,9 @@ export default function Terms() {
           <p>本サービスでは、以下の第三者サービスを利用しています。</p>
           <p>・Firebase（Google LLC）</p>
           <p>・Googleログイン</p>
+          <p>・生成AIサービス（Google Gemini 等）</p>
           <p>・Google AdSense（広告配信）（予定）</p>
+          <p>AI機能をご利用の際、入力された文章は生成AIサービスに送信されます。プランや提供元の設定によっては、送信内容が当該サービスの品質改善に利用される場合があります。個人情報や他人に知られたくない内容は入力しないでください。</p>
           <p>これらのサービスにおけるデータの取り扱いについては、以下をご確認ください。</p>
           <p>https://policies.google.com/privacy</p>
           <p>https://policies.google.com/terms</p>

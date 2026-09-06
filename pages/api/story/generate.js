@@ -109,7 +109,9 @@ export default async function handler(req, res) {
       }
     }
 
-    // TODO(フェーズ2): usage/{今日(JST)} を読んで storyPerDay 上限チェック → 処理後インクリメント
+    // TODO(フェーズ2・有料枠前に必須): usage/{今日(JST)} を読んで storyPerDay 上限チェック → 処理後インクリメント。
+    //   ※安全フィルタで拒否された試行もトークンを消費し得るため、「成功＋content_blocked」の両方をカウントする
+    //     （こちら側の一時エラー=server_error はカウントしない）。要 firebase-admin + Firestore + 実uid。
 
     let sentences
     if (inputLang === "en") {
@@ -169,6 +171,9 @@ export default async function handler(req, res) {
       sentences,
     })
   } catch (e) {
+    if (e && e.code === "content_blocked") {
+      return res.status(400).json({ error: "content_blocked", detail: "この内容では問題を作成できませんでした。表現を見直してください。" })
+    }
     console.error("[/api/story/generate]", e)
     return res.status(500).json({ error: "server_error" })
   }

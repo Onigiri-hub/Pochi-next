@@ -164,6 +164,11 @@ export default function MyStoryForm() {
           <div style={{ color: "#d9534f", fontSize: "14px", textAlign: "center" }}>{error}</div>
         )}
 
+        {/* AI利用・入力内容に関する注意 */}
+        <div style={{ fontSize: "12px", color: "#999", lineHeight: 1.6, background: "#f7f7f7", borderRadius: "8px", padding: "10px 12px" }}>
+          この機能はAIで翻訳・問題生成を行います。入力内容はAIサービスに送信され、サービス改善に利用される場合があります。個人情報や見られたくない文章、法令・公序良俗に反する内容は入力しないでください。生成結果について当サービスは責任を負いません。
+        </div>
+
         <button
           onClick={submit}
           disabled={!text.trim() || over || loading}
