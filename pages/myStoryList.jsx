@@ -9,7 +9,7 @@ export default function MyStoryList() {
   const router = useRouter()
   const [stories, setStories] = useState([])
   const [loading, setLoading] = useState(true)
-  const [editMode, setEditMode] = useState(false)
+  const [menuOpenId, setMenuOpenId] = useState(null) // ⋯メニューを開いている story
   const [showLimitModal, setShowLimitModal] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(null) // 削除確認中の story
 
@@ -40,21 +40,13 @@ export default function MyStoryList() {
 
   return (
     <div className="lessonList" style={{ paddingBottom: "80px" }}>
-      <div style={{ padding: "10px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ padding: "10px 20px" }}>
         <button
           onClick={() => router.push("/categoryList")}
           style={{ background: "none", border: "none", fontSize: "15px", fontWeight: "bold", color: "#333333", cursor: "pointer" }}
         >
           ◀
         </button>
-        {stories.length > 0 && (
-          <button
-            onClick={() => setEditMode(v => !v)}
-            style={{ background: "none", border: "none", fontSize: "14px", fontWeight: "bold", color: editMode ? "#e8963c" : "#888", cursor: "pointer" }}
-          >
-            {editMode ? "完了" : "編集"}
-          </button>
-        )}
       </div>
 
       <div className="lessonHeader" onClick={() => router.push("/categoryList")} data-sound>
@@ -97,32 +89,57 @@ export default function MyStoryList() {
         </div>
       ) : (
         stories.map((s) => (
-          <div className="lessonRow" key={s.storyId}>
+          <div className="lessonRow" key={s.storyId} style={{ position: "relative", zIndex: menuOpenId === s.storyId ? 30 : undefined }}>
             <div
               className="lessonIcon"
               style={{ backgroundColor: "#e8963c" }}
-              onClick={() => !editMode && router.push(`/story?source=my&id=${s.storyId}`)}
+              onClick={() => router.push(`/story?source=my&id=${s.storyId}`)}
               data-sound
             >
               <img src="/images/icons/practice_icon.png" className="iconImage" />
             </div>
-            <div className="lessonInfo" onClick={() => !editMode && router.push(`/story?source=my&id=${s.storyId}`)}>
+            <div className="lessonInfo" onClick={() => router.push(`/story?source=my&id=${s.storyId}`)}>
               <div className="lessonName">{s.title || "無題の長文"}</div>
             </div>
-            {editMode && (
-              <button
-                onClick={() => setConfirmDelete(s)}
+
+            {/* 三点リーダー（⋯）→ タップで削除メニュー */}
+            <button
+              onClick={(e) => { e.stopPropagation(); setMenuOpenId(prev => prev === s.storyId ? null : s.storyId) }}
+              style={{
+                marginLeft: "auto", marginRight: "16px", background: "none", border: "none",
+                fontSize: "22px", lineHeight: 1, color: "#888", cursor: "pointer", padding: "4px 8px",
+              }}
+              aria-label="メニュー"
+            >
+              ⋯
+            </button>
+
+            {menuOpenId === s.storyId && (
+              <div
                 style={{
-                  marginLeft: "auto", marginRight: "16px", background: "none", border: "none",
-                  fontSize: "20px", cursor: "pointer",
+                  position: "absolute", top: "50%", right: "16px", transform: "translateY(-50%)",
+                  background: "#fff", border: "1px solid #e0e0e0", borderRadius: "10px",
+                  boxShadow: "0 4px 16px rgba(0,0,0,0.15)", zIndex: 20, overflow: "hidden",
                 }}
-                aria-label="削除"
               >
-                🗑
-              </button>
+                <button
+                  onClick={(e) => { e.stopPropagation(); setMenuOpenId(null); setConfirmDelete(s) }}
+                  style={{
+                    display: "block", padding: "12px 24px", background: "none", border: "none",
+                    color: "#d9534f", fontSize: "15px", fontWeight: "bold", cursor: "pointer", whiteSpace: "nowrap",
+                  }}
+                >
+                  削除
+                </button>
+              </div>
             )}
           </div>
         ))
+      )}
+
+      {/* ⋯メニューを開いている間の透明バックドロップ（他をタップで閉じる） */}
+      {menuOpenId && (
+        <div onClick={() => setMenuOpenId(null)} style={{ position: "fixed", inset: 0, zIndex: 10 }} />
       )}
 
       {/* 上限時の注意モーダル（新規作成を押したとき） */}
