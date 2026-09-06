@@ -57,35 +57,12 @@ export default function MyStoryList() {
         </div>
       </div>
 
-      <div style={{ padding: "16px 20px" }}>
-        <button
-          onClick={handleCreate}
-          data-sound
-          style={{
-            width: "100%",
-            padding: "16px",
-            borderRadius: "999px",
-            border: "none",
-            background: "#333333",
-            color: "#ffffff",
-            fontSize: "17px",
-            fontWeight: "bold",
-            cursor: "pointer",
-          }}
-        >
-          ＋ 新しい長文を作る
-        </button>
-        <div style={{ textAlign: "right", fontSize: "12px", color: atLimit ? "#d9534f" : "#999", marginTop: "8px" }}>
-          保存 {stories.length} / {MY_STORY_LIMIT} 件
-        </div>
-      </div>
-
       {loading ? (
         <div style={{ padding: "24px 20px", textAlign: "center", color: "#aaa", fontSize: "14px" }}>読み込み中…</div>
       ) : stories.length === 0 ? (
         <div style={{ padding: "24px 20px", textAlign: "center", color: "#888888", fontSize: "14px", lineHeight: 1.7 }}>
           自分だけの長文で並べ替え問題を作ってみよう！<br />
-          上のボタンから、英語または日本語の文章を入力してね。
+          下のボタンから、英語または日本語の文章を入力してね。
         </div>
       ) : (
         stories.map((s) => (
@@ -136,6 +113,30 @@ export default function MyStoryList() {
           </div>
         ))
       )}
+
+      {/* 新しい長文を作る（リストの下） */}
+      <div style={{ padding: "16px 20px" }}>
+        <button
+          onClick={handleCreate}
+          data-sound
+          style={{
+            width: "100%",
+            padding: "16px",
+            borderRadius: "999px",
+            border: "none",
+            background: "#333333",
+            color: "#ffffff",
+            fontSize: "17px",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          ＋ 新しい長文を作る
+        </button>
+        <div style={{ textAlign: "right", fontSize: "12px", color: atLimit ? "#d9534f" : "#999", marginTop: "8px" }}>
+          保存 {stories.length} / {MY_STORY_LIMIT} 件
+        </div>
+      </div>
 
       {/* ⋯メニューを開いている間の透明バックドロップ（他をタップで閉じる） */}
       {menuOpenId && (
