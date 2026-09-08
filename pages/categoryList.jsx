@@ -24,15 +24,15 @@ export default function CategoryList(){
         .filter(c => c.category_id)
         .sort((a, b) => Number(a.order) - Number(b.order))
 
-      // 特別カテゴリー「めっちゃMy長文」（ユーザー投稿専用・CSV外）を末尾に差し込む
+      // 特別カテゴリー「めっちゃMy長文」（ユーザー投稿専用・CSV外）を先頭に差し込む
       const myStoryCategory = {
         category_id: "cMy",
         category_name: "めっちゃMy長文",
         color: "#e8963c",
-        order: 999,
+        order: -1,
         isMyStory: true,
       }
-      setCategories([...sorted, myStoryCategory])
+      setCategories([myStoryCategory, ...sorted])
 
       // カテゴリごとのストーリー数
       const counts = {}
