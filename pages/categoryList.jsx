@@ -24,15 +24,7 @@ export default function CategoryList(){
         .filter(c => c.category_id)
         .sort((a, b) => Number(a.order) - Number(b.order))
 
-      // 特別カテゴリー「めっちゃMy長文」（ユーザー投稿専用・CSV外）を先頭に差し込む
-      const myStoryCategory = {
-        category_id: "cMy",
-        category_name: "めっちゃMy長文",
-        color: "#e8963c",
-        order: -1,
-        isMyStory: true,
-      }
-      setCategories([myStoryCategory, ...sorted])
+      setCategories(sorted)
 
       // カテゴリごとのストーリー数
       const counts = {}
@@ -62,11 +54,7 @@ export default function CategoryList(){
 
   function openCategory(cat){
     localStorage.setItem("lastPlayedCategory", cat.category_id);
-    if (cat.isMyStory) {
-      router.push("/myStoryList")   // ユーザー投稿専用一覧へ
-    } else {
-      router.push(`/storyList?category=${cat.category_id}`)
-    }
+    router.push(`/storyList?category=${cat.category_id}`)
   }
 
   return(
@@ -98,12 +86,9 @@ export default function CategoryList(){
               <div className="unitCardContent">
                 <div className="unitTitle">{cat.category_id.slice(1)}</div>
                 <div className="unitName">{cat.category_name}</div>
-                {/* My長文は進捗管理をしないので数字を出さない */}
-                {!cat.isMyStory && (
-                  <div className="unitBarRow">
-                    <div className="progressText" style={{ minWidth: 0, textAlign: "center" }}>{clearedCount}/{total}</div>
-                  </div>
-                )}
+                <div className="unitBarRow">
+                  <div className="progressText" style={{ minWidth: 0, textAlign: "center" }}>{clearedCount}/{total}</div>
+                </div>
               </div>
             </div>
           );
