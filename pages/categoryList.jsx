@@ -23,6 +23,7 @@ export default function CategoryList(){
       const sorted = catData
         .filter(c => c.category_id)
         .sort((a, b) => Number(a.order) - Number(b.order))
+
       setCategories(sorted)
 
       // カテゴリごとのストーリー数
@@ -51,9 +52,9 @@ export default function CategoryList(){
     }
   }, [categories]);
 
-  function openCategory(categoryId){
-    localStorage.setItem("lastPlayedCategory", categoryId);
-    router.push(`/storyList?category=${categoryId}`)
+  function openCategory(cat){
+    localStorage.setItem("lastPlayedCategory", cat.category_id);
+    router.push(`/storyList?category=${cat.category_id}`)
   }
 
   return(
@@ -78,7 +79,7 @@ export default function CategoryList(){
               className="unitCard"
               key={cat.category_id}
               ref={(el) => (scrollRefs.current[cat.category_id] = el)}
-              onClick={() => openCategory(cat.category_id)}
+              onClick={() => openCategory(cat)}
               data-sound
             >
               <img src="/images/illustrations/unitlist_button.png" className="unitCardBg" />

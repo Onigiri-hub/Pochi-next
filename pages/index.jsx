@@ -54,7 +54,7 @@ export default function Home() {
           autoPlay
           muted
           playsInline
-          style={{ width: "300px" }}
+          style={{ width: "240px", transform: "translateY(-40px)" }}
         />
       </div>
     );
@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* タイトル */}
         <h1 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "8px" }}>
-          Pochiへようこそ！
+          Pochi NEXTへようこそ！
         </h1>
 
         {/* 画像（お好みの画像パスに変えてね） */}
@@ -114,12 +114,12 @@ export default function Home() {
           boxSizing: "border-box"
         }}>
           <h2 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px" }}>
-            Pochiとは？
+            Pochi-NEXTとは？
           </h2>
           <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#444", margin: 0 }}>
             ぽちぽちするだけで英語の感覚を身につけるアプリです。<br />
-            英語初学者の負荷を下げて、英語を「わかる！」「つかってみたい！」にすることを目指して作りました。<br /><br />
-            今のところベータ版で一部公開中。全部無料でお楽しみいただけます！
+            英語にたくさん触れて、英語を「わかる！」「つかってみたい！」にすることを目指して作りました。<br /><br />
+            今のところベータ版で一部無料公開中。
           </p>
           <img
             src="/images/illustrations/index-introduction.png"
@@ -130,6 +130,9 @@ export default function Home() {
               marginTop: "16px"
             }}
           />
+          <p style={{ fontSize: "15px", lineHeight: "1.8", color: "#444", margin: "16px 0 0" }}>
+            英語初学者向けに文法解説や基礎的な単語学習を扱う「<a href="https://pochi-english.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: "#333333", textDecoration: "underline" }}>Pochi</a>」もベータ版公開中です。
+          </p>
 
         </div>
         

@@ -90,8 +90,8 @@ export default function Terms() {
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px" }}>第1条（収集する情報）</h3>
           <p>本サービスでは以下の情報を取得します。</p>
           <p>・Googleアカウント情報（ログイン時）</p>
-          <p>・学習履歴・利用データ</p>        
-          
+          <p>・学習履歴・利用データ</p>
+
           <h3 style={{ fontSize: "16px", borderBottom: "1px solid #eee", paddingBottom: "5px", marginTop: "20px" }}>第2条（利用目的）</h3>
           <p>取得した情報は以下の目的で使用します。</p>
           <p>・学習記録の保存・表示</p>
