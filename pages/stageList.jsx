@@ -43,7 +43,7 @@ function CircleProgress({ value, total, color, label }) {
 
 // 並べて英単語：例文データが用意できている Stage_no の上限。
 // これより後の Stage はグレーアウトして無効化する（例文を追加したら値を上げる）。
-const ARRANGE_MAX_ENABLED_NO = 4
+const ARRANGE_MAX_ENABLED_NO = 12
 
 export default function StageList() {
   const [stages, setStages] = useState([])
@@ -144,6 +144,19 @@ export default function StageList() {
                 <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
                 <img src="/images/icons/honekko_333.svg" style={{ width: "24px" }} />
               </div>
+            </div>
+
+            <div style={{ textAlign: "center", margin: "-16px 0 20px", fontSize: "12px", color: "#999999" }}>
+              Stage1〜10は
+              <a
+                href="https://pochi-english.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#999999", textDecoration: "underline" }}
+              >
+                Pochi英語
+              </a>
+              でプレイできます
             </div>
 
             {arrange.map((stage) => {
