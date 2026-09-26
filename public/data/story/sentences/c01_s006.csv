@@ -1,0 +1,11 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c01,s006,1,c01_s006_q1,"Later, Dexter wrote a book.",そのあと、デクスターは本を書いた。,Ruth,"Later, Dexter wrote a book.","Later,|Dexter|wrote|a|book.",c01_s006_q1.mp3,1,,narration
+c01,s006,2,c01_s006_q2,It had no punctuation at all.,句読点がひとつもない本。,Ruth,It had no punctuation at all.,It|had|no|punctuation|at|all.,c01_s006_q2.mp3,1,,narration
+c01,s006,3,c01_s006_q3,Readers complained.,読んだ人たちから文句が出た。,Ruth,Readers complained.,Readers|complained.,c01_s006_q3.mp3,1,,narration
+c01,s006,4,c01_s006_q4,So he added a page at the end.,そこで最後に1ページ付け足した。,Ruth,So he added a page at the end.,So|he|added|a|page|at|the|end.,c01_s006_q4.mp3,1,,narration
+c01,s006,5,c01_s006_q5,It was full of periods and commas.,ピリオドとコンマがびっしり並んだページ。,Ruth,It was full of periods and commas.,It|was|full|of|periods|and|commas.,c01_s006_q5.mp3,1,,narration
+c01,s006,6,c01_s006_q6,He told readers to use them as they liked.,「お好きなところにどうぞ」ってわけ。,Ruth,He told readers to use them as they liked.,He|told|readers|to|use|them|as|they|liked.,c01_s006_q6.mp3,1,,narration
+c01,s006,7,c01_s006_q7,"He also called himself ""Lord Timothy Dexter.""",自分のことを「ティモシー・デクスター卿」って名乗ってもいた。,Ruth,"He also called himself ""Lord Timothy Dexter.""","He|also|called|himself|""Lord|Timothy|Dexter.""",c01_s006_q7.mp3,1,,narration
+c01,s006,8,c01_s006_q8,Nobody gave him that title.,誰もそんな称号あげてないのに。,Ruth,Nobody gave him that title.,Nobody|gave|him|that|title.,c01_s006_q8.mp3,1,,narration
+c01,s006,9,c01_s006_q9,He just liked it.,ただ気に入ってただけ。,Ruth,He just liked it.,He|just|liked|it.,c01_s006_q9.mp3,1,,narration
+c01,s006,10,c01_s006_q10,"Sometimes, being a fool works out fine.",おバカでいるのも、案外うまくいくことがあるんだね。,Ruth,"Sometimes, being a fool works out fine.","Sometimes,|being|a|fool|works|out|fine.",c01_s006_q10.mp3,1,,narration

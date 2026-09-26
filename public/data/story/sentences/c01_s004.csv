@@ -1,0 +1,12 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c01,s004,1,c01_s004_q1,Timothy Dexter lived in America in the 1700s.,ティモシー・デクスターは1700年代のアメリカの人。,Ruth,Timothy Dexter lived in America in the 1700s.,Timothy|Dexter|lived|in|America|in|the|1700s.,c01_s004_q1.mp3,1,,narration
+c01,s004,2,c01_s004_q2,He was not very smart.,あんまり頭はよくなかった。,Ruth,He was not very smart.,He|was|not|very|smart.,c01_s004_q2.mp3,1,,narration
+c01,s004,3,c01_s004_q3,He could barely spell.,字もろくに書けなかった。,Ruth,He could barely spell.,He|could|barely|spell.,c01_s004_q3.mp3,1,,narration
+c01,s004,4,c01_s004_q4,But he became very rich.,なのに大金持ちになった。,Ruth,But he became very rich.,But|he|became|very|rich.,c01_s004_q4.mp3,1,,narration
+c01,s004,5,c01_s004_q5,How?,どうやって？,Ruth,How?,How?,c01_s004_q5.mp3,1,,narration
+c01,s004,6,c01_s004_q6,Pure luck.,ただの運。,Ruth,Pure luck.,Pure|luck.,c01_s004_q6.mp3,1,,narration
+c01,s004,7,c01_s004_q7,"After the American Revolution, old paper money looked worthless.",アメリカ独立戦争のあと、古い紙幣は紙くず同然だと思われていた。,Ruth,"After the American Revolution, old paper money looked worthless.","After|the|American|Revolution,|old|paper|money|looked|worthless.",c01_s004_q7.mp3,1,,narration
+c01,s004,8,c01_s004_q8,Dexter bought a lot of it.,デクスターはそれを大量に買い込んだ。,Ruth,Dexter bought a lot of it.,Dexter|bought|a|lot|of|it.,c01_s004_q8.mp3,1,,narration
+c01,s004,9,c01_s004_q9,People laughed at him.,みんなに笑われた。,Ruth,People laughed at him.,People|laughed|at|him.,c01_s004_q9.mp3,1,,narration
+c01,s004,10,c01_s004_q10,Then the government decided to honor that money.,ところが政府が、そのお金をちゃんと価値あるものとして扱うことにした。,Ruth,Then the government decided to honor that money.,Then|the|government|decided|to|honor|that|money.,c01_s004_q10.mp3,1,,narration
+c01,s004,11,c01_s004_q11,"Suddenly, Dexter was rich.",デクスター、一気にお金持ち。,Ruth,"Suddenly, Dexter was rich.","Suddenly,|Dexter|was|rich.",c01_s004_q11.mp3,1,,narration

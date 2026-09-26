@@ -1,0 +1,12 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c01,s005,1,c01_s005_q1,Some businessmen wanted to trick him.,彼をだまそうとした商売人たちがいた。,Ruth,Some businessmen wanted to trick him.,Some|businessmen|wanted|to|trick|him.,c01_s005_q1.mp3,1,,narration
+c01,s005,2,c01_s005_q2,They told him to send warming pans to the Caribbean.,カリブの島に、ベッドを温める鍋を送れってすすめたんだ。,Ruth,They told him to send warming pans to the Caribbean.,They|told|him|to|send|warming|pans|to|the|Caribbean.,c01_s005_q2.mp3,1,,narration
+c01,s005,3,c01_s005_q3,It is a very hot place.,そこはめちゃくちゃ暑いところ。,Ruth,It is a very hot place.,It|is|a|very|hot|place.,c01_s005_q3.mp3,1,,narration
+c01,s005,4,c01_s005_q4,Nobody needs to warm their beds there.,ベッドを温めたい人なんていない。,Ruth,Nobody needs to warm their beds there.,Nobody|needs|to|warm|their|beds|there.,c01_s005_q4.mp3,1,,narration
+c01,s005,5,c01_s005_q5,But local sugar makers bought them all.,でも、地元の砂糖職人たちが全部買っていった。,Ruth,But local sugar makers bought them all.,But|local|sugar|makers|bought|them|all.,c01_s005_q5.mp3,1,,narration
+c01,s005,6,c01_s005_q6,They used the pans as ladles for molasses.,糖蜜をすくうおたまとして使ったんだって。,Ruth,They used the pans as ladles for molasses.,They|used|the|pans|as|ladles|for|molasses.,c01_s005_q6.mp3,1,,narration
+c01,s005,7,c01_s005_q7,The story goes that he also sent coal to Newcastle.,ニューカッスルに石炭を送ったって話もある。,Ruth,The story goes that he also sent coal to Newcastle.,The|story|goes|that|he|also|sent|coal|to|Newcastle.,c01_s005_q7.mp3,1,,narration
+c01,s005,8,c01_s005_q8,Newcastle was already famous for its coal.,ニューカッスルはそもそも石炭で有名な町。,Ruth,Newcastle was already famous for its coal.,Newcastle|was|already|famous|for|its|coal.,c01_s005_q8.mp3,1,,narration
+c01,s005,9,c01_s005_q9,It was a silly idea.,どう考えてもおかしな話。,Ruth,It was a silly idea.,It|was|a|silly|idea.,c01_s005_q9.mp3,1,,narration
+c01,s005,10,c01_s005_q10,But a miners' strike happened.,ところが、炭鉱でストライキが起きた。,Ruth,But a miners' strike happened.,But|a|miners'|strike|happened.,c01_s005_q10.mp3,1,,narration
+c01,s005,11,c01_s005_q11,His coal sold quickly.,彼の石炭はあっという間に売れた。,Ruth,His coal sold quickly.,His|coal|sold|quickly.,c01_s005_q11.mp3,1,,narration

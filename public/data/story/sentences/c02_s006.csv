@@ -1,0 +1,9 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s006,1,c02_s006_q1,Light was leaking in around the curtains.,カーテンから光が漏れている。,Kevin,Light was leaking in around the curtains.,Light|was|leaking|in|around|the|curtains.,c02_s006_q1.mp3,1,Kevin.png,narration
+c02,s006,2,c02_s006_q2,"Outside, the birds were singing.",鳥の鳴き声が聞こえる。,Kevin,"Outside, the birds were singing.","Outside,|the|birds|were|singing.",c02_s006_q2.mp3,1,Kevin.png,narration
+c02,s006,3,c02_s006_q3,"When I woke up, my mother was looking down at my face.",朝起きると、母親が僕の顔をのぞき込んできた。,Kevin,"When I woke up, my mother was looking down at my face.","When|I|woke|up,|my|mother|was|looking|down|at|my|face.",c02_s006_q3.mp3,1,Kevin.png,narration
+c02,s006,4,c02_s006_q4,"Then she said, cheerfully:",そしてにこやかに言った。,Kevin,"Then she said, cheerfully:","Then|she|said,|cheerfully:",c02_s006_q4.mp3,1,Kevin.png,narration
+c02,s006,5,c02_s006_q5,"""You turned seventeen today.""",「あなたは今日、17歳になったわ」,Ruth,"""You turned seventeen today.""","""You|turned|seventeen|today.""",c02_s006_q5.mp3,1,Ruth.png,left
+c02,s006,6,c02_s006_q6,"""So today is the day you set out on your journey.""",「いよいよ旅立ちの日ね」,Ruth,"""So today is the day you set out on your journey.""","""So|today|is|the|day|you|set|out|on|your|journey.""",c02_s006_q6.mp3,1,Ruth.png,left
+c02,s006,7,c02_s006_q7,"""Come on, Hero Takashi. Get up.""",「さあ、勇者タカシよ、起きなさい」,Ruth,"""Come on, Hero Takashi. Get up.""","""Come|on,|Hero|Takashi.|Get|up.""",c02_s006_q7.mp3,1,Ruth.png,left
+c02,s006,8,c02_s006_q8,I pulled the blanket over my head.,僕は、布団を深々とかぶった。,Kevin,I pulled the blanket over my head.,I|pulled|the|blanket|over|my|head.,c02_s006_q8.mp3,1,Kevin.png,narration
