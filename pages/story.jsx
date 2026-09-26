@@ -22,7 +22,6 @@ export default function Story() {
   const { id } = router.query // 例: c01_s001
   const category = id ? String(id).split("_")[0] : ""
   const storyId = id ? String(id).split("_")[1] : ""
-  const order = storyId ? Number(storyId.replace(/\D/g, "")) : 0
 
   const [sentences, setSentences] = useState([])
   const [storyName, setStoryName] = useState("")
@@ -191,7 +190,7 @@ export default function Story() {
     if (index < sentences.length - 1) {
       setIndex(i => i + 1)
     } else {
-      router.replace(`/storyComplete?category=${category}&order=${order}&storyId=${id}`)
+      router.replace(`/storyComplete?category=${category}&storyId=${storyId}`)
     }
   }
 
@@ -315,15 +314,17 @@ export default function Story() {
         ))}
       </div>
 
-      {/* 日本語ヒント */}
+      {/* 日本語ヒント（position_first=narration はキャラなし・しっぽなしのナレーション枠） */}
       <div className={`chat ${q.position_first || "left"}`}>
-        <div className="iconContainer">
-          {q.icon_first === "user" || !q.icon_first ? (
-            <img src={`/images/avatars/${profile?.avatar || "01.png"}`} alt="" className="characterIcon" />
-          ) : (
-            <img src={`/images/avatars/${q.icon_first}`} alt="" className="characterIcon" />
-          )}
-        </div>
+        {q.position_first !== "narration" && (
+          <div className="iconContainer">
+            {q.icon_first === "user" || !q.icon_first ? (
+              <img src={`/images/avatars/${profile?.avatar || "01.png"}`} alt="" className="characterIcon" />
+            ) : (
+              <img src={`/images/avatars/${q.icon_first}`} alt="" className="characterIcon" />
+            )}
+          </div>
+        )}
         <div className="bubble">
           <div className="en">
             <span className="audioBtn" onClick={() => playSentenceAudio({ text: q.en, audioUrl: resolveAudioUrl(q.audio) })}>

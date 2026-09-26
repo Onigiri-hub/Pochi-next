@@ -384,7 +384,7 @@ w_else,else,,ほかに,else.mp3,済
 w_end,end,,終わり,end.mp3,済
 w_ending,ending,,終わり方、結末,ending.mp3,済
 w_energy,energy,,エネルギー、元気,energy.mp3,済
-w_english,english,,英語,english.mp3,済
+w_english,English,,英語,English.mp3,済
 w_enjoy,enjoy,,楽しむ,enjoy.mp3,済
 w_enjoyed,enjoyed,,enjoy（楽しむ）の過去形,enjoyed.mp3,済
 w_enjoying,enjoying,,enjoy（楽しむ）のing形,enjoying.mp3,済
@@ -3839,3 +3839,818 @@ w_tourist,tourist,,観光客,tourist.mp3,済
 w_contribute,contribute,,貢献する、寄付する,contribute.mp3,済
 w_composer,composer,,作曲家,composer.mp3,済
 w_chopin,Chopin,,ショパン（人名）,Chopin.mp3,済
+w_wombats,wombats,,wombat（ウォンバット）の複数形,wombats.mp3,済
+w_round,round,,丸い、まわりに,round.mp3,済
+w_poop,poop,,うんち,poop.mp3,済
+w_shaped,shaped,,shape（形づくる）の過去形、〜の形をした,shaped.mp3,済
+w_cubes,cubes,,cube（立方体）の複数形,cubes.mp3,済
+w_wombat,wombat,,ウォンバット,wombat.mp3,済
+w_sides,sides,,side（面、側）の複数形,sides.mp3,済
+w_corners,corners,,corner（角、すみ）の複数形,corners.mp3,済
+w_cube,cube,,立方体,cube.mp3,済
+w_square,square,,四角い、正方形、広場,square.mp3,済
+w_bottoms,bottoms,,bottom（底、おしり）の複数形,bottoms.mp3,済
+w_intestine,intestine,,腸,intestine.mp3,済
+w_stiff,stiff,,かたい、こわばった,stiff.mp3,済
+w_stretchy,stretchy,,よくのびる、伸縮性のある,stretchy.mp3,済
+w_moves,moves,,move（動く）の三単現,moves.mp3,済
+w_unevenly,unevenly,,ふぞろいに、でこぼこに,unevenly.mp3,済
+w_also,also,,〜もまた,also.mp3,済
+w_firm,firm,,かたい、しっかりした,firm.mp3,済
+w_logs,logs,,log（丸太）の複数形,logs.mp3,済
+w_nobel,Nobel,,ノーベル（Nobel Prize でノーベル賞）,Nobel.mp3,済
+w_timothy,Timothy,,ティモシー（名前）,Timothy.mp3,済
+w_dexter,Dexter,,デクスター（名前）,Dexter.mp3,済
+w_1700s,1700s,,1700年代,1700s.mp3,済
+w_pure,pure,,純粋な、まじりけのない,pure.mp3,済
+w_american,American,,アメリカの、アメリカ人,American.mp3,済
+w_revolution,revolution,,革命（American Revolution でアメリカ独立革命）,revolution.mp3,済
+w_worthless,worthless,,価値のない,worthless.mp3,済
+w_honor,honor,,名誉、尊敬する,honor.mp3,済
+w_businessmen,businessmen,,businessman（実業家）の複数形,businessmen.mp3,済
+w_warming,warming,,warm（温める）のing形、温暖化（global warming で地球温暖化）,warming.mp3,済
+w_pans,pans,,pan（なべ、フライパン）の複数形,pans.mp3,済
+w_caribbean,Caribbean,,カリブ海（の）,Caribbean.mp3,済
+w_makers,makers,,maker（作る人、メーカー）の複数形,makers.mp3,済
+w_ladles,ladles,,ladle（おたま）の複数形,ladles.mp3,済
+w_molasses,molasses,,糖みつ,molasses.mp3,済
+w_coal,coal,,石炭,coal.mp3,済
+w_newcastle,Newcastle,,ニューカッスル（イギリスの地名）,Newcastle.mp3,済
+w_silly,silly,,ばかげた、おかしな,silly.mp3,済
+w_miners,miners,,miner（炭鉱で働く人）の複数形,miners.mp3,済
+w_strike,strike,,打つ、ストライキ,strike.mp3,済
+w_punctuation,punctuation,,句読点,punctuation.mp3,済
+w_complained,complained,,complain（文句を言う）の過去形,complained.mp3,済
+w_periods,periods,,period（ピリオド、期間）の複数形,periods.mp3,済
+w_commas,commas,,comma（コンマ）の複数形,commas.mp3,済
+w_himself,himself,,彼自身,himself.mp3,済
+w_lord,lord,,王、支配者（Demon Lord で魔王）,lord.mp3,済
+w_fool,fool,,ばか、ばかな人,fool.mp3,済
+w_mina,Mina,,ミナ（名前）,Mina.mp3,済
+w_wherever,wherever,,どこでも、どこへ〜しても,wherever.mp3,済
+w_grains,grains,,grain（粒）の複数形,grains.mp3,済
+w_glowed,glowed,,glow（光る、輝く）の過去形,glowed.mp3,済
+w_faintly,faintly,,かすかに,faintly.mp3,済
+w_fallen,fallen,,fall（落ちる）の過去分詞,fallen.mp3,済
+w_collected,collected,,collect（集める）の過去形,collected.mp3,済
+w_fountain,fountain,,噴水,fountain.mp3,済
+w_knelt,knelt,,kneel（ひざまずく）の過去形,knelt.mp3,済
+w_grain,grain,,粒、穀物,grain.mp3,済
+w_holding,holding,,hold（持つ）のing形,holding.mp3,済
+w_tommy,Tommy,,トミー（名前）,Tommy.mp3,済
+w_picking,picking,,pick（拾う、つむ）のing形,picking.mp3,済
+w_blinked,blinked,,blink（まばたきする）の過去形,blinked.mp3,済
+w_shining,shining,,shine（輝く）のing形,shining.mp3,済
+w_drops,drops,,drop（落とす）の三単現、drop（しずく）の複数形,drops.mp3,済
+w_noticing,noticing,,notice（気づく）のing形,noticing.mp3,済
+w_silver,silver,,銀、銀色の,silver.mp3,済
+w_rooftops,rooftops,,rooftop（屋根の上）の複数形,rooftops.mp3,済
+w_smiled,smiled,,smile（ほほえむ）の過去形,smiled.mp3,済
+w_bent,bent,,bend（曲げる、かがむ）の過去形,bent.mp3,済
+w_placed,placed,,place（置く）の過去形,placed.mp3,済
+w_gently,gently,,やさしく、そっと,gently.mp3,済
+w_palm,palm,,手のひら、ヤシ,palm.mp3,済
+w_warmer,warmer,,warm（暖かい）の比較級,warmer.mp3,済
+w_pushed,pushed,,push（押す）の過去形,pushed.mp3,済
+w_hated,hated,,hate（ひどく嫌う）の過去形,hated.mp3,済
+w_leaking,leaking,,leak（もれる）のing形,leaking.mp3,済
+w_cheerfully,cheerfully,,元気よく、明るく,cheerfully.mp3,済
+w_journey,journey,,旅,journey.mp3,済
+w_takashi,Takashi,,タカシ（名前）,Takashi.mp3,済
+w_weary,weary,,疲れ果てた,weary.mp3,済
+w_soldier,soldier,,兵士,soldier.mp3,済
+w_led,led,,lead（導く）の過去形,led.mp3,済
+w_magnificent,magnificent,,すばらしい、壮大な,magnificent.mp3,済
+w_demon,demon,,悪魔、魔物（Demon Lord で魔王）,demon.mp3,済
+w_firmly,firmly,,しっかりと,firmly.mp3,済
+w_troubled,troubled,,trouble（困らせる）の過去形、困った,troubled.mp3,済
+w_amelia,Amelia,,アメリア（名前）,Amelia.mp3,済
+w_mage,mage,,魔法使い,mage.mp3,済
+w_handshake,handshake,,握手,handshake.mp3,済
+w_fight,fight,,戦う、けんか,fight.mp3,済
+w_defeat,defeat,,倒す、負かす,defeat.mp3,済
+w_grip,grip,,にぎる、にぎり,grip.mp3,済
+w_chanted,chanted,,chant（唱える）の過去形,chanted.mp3,済
+w_warp,warp,,ワープする、ワープ,warp.mp3,済
+w_lord_s,lord's,,lord（王、支配者）の所有格,lord's.mp3,済
+w_hero_s,hero's,,hero（ヒーロー、勇者）の所有格,hero's.mp3,済
+w_handed,handed,,hand（手渡す）の過去形,handed.mp3,済
+w_shone,shone,,shine（輝く）の過去形,shone.mp3,済
+w_brightly,brightly,,明るく、きらきらと,brightly.mp3,済
+w_confusion,confusion,,混乱,confusion.mp3,済
+w_marched,marched,,march（行進する）の過去形,marched.mp3,済
+w_fuhaha,fuhaha,,ふはは（悪役っぽい笑い声）,fuhaha.mp3,済
+w_wrapped,wrapped,,wrap（包む）の過去形,wrapped.mp3,済
+w_sinister,sinister,,不吉な、悪意のある,sinister.mp3,済
+w_aura,aura,,オーラ、雰囲気,aura.mp3,済
+w_mouth,mouth,,口,mouth.mp3,済
+w_uneasy,uneasy,,不安な、落ち着かない,uneasy.mp3,済
+w_painful,painful,,痛い、つらい,painful.mp3,済
+w_panic,panic,,パニック、あわてる,panic.mp3,済
+w_um,um,,えーと、うーん（言いよどむときの声）,um.mp3,済
+w_pathetic,pathetic,,なさけない,pathetic.mp3,済
+w_farther,farther,,far（遠い）の比較級,farther.mp3,済
+w_relieved,relieved,,relieve（ほっとさせる）の過去形、ほっとした,relieved.mp3,済
+w_a_fork_in_the_road,a fork in the road,,岐路・分岐点,a fork in the road.mp3,済
+w_a_m_,a.m.,,午前,a.m..mp3,済
+w_abalone,abalone,,アワビ,abalone.mp3,済
+w_air_cleaner,air cleaner,,空気清浄機,air cleaner.mp3,済
+w_air_conditioner,air conditioner,,エアコン,air conditioner.mp3,済
+w_air_force,air force,,空軍,air force.mp3,済
+w_airplane,airplane,,飛行機,airplane.mp3,済
+w_alarm_clock,alarm clock,,目覚まし時計,alarm clock.mp3,済
+w_album,album,,アルバム,album.mp3,済
+w_alcohol,alcohol,,アルコール,alcohol.mp3,済
+w_algebra,algebra,,代数,algebra.mp3,済
+w_alligator,alligator,,アリゲーター（ワニ）,alligator.mp3,済
+w_almond,almond,,アーモンド,almond.mp3,済
+w_ambulance,ambulance,,救急車,ambulance.mp3,済
+w_anemia,anemia,,貧血,anemia.mp3,済
+w_ant,ant,,アリ,ant.mp3,済
+w_apartment,apartment,,アパート・マンション,apartment.mp3,済
+w_archery,archery,,アーチェリー,archery.mp3,済
+w_arithmetic,arithmetic,,算数,arithmetic.mp3,済
+w_armchair,armchair,,肘掛け椅子,armchair.mp3,済
+w_aroma,aroma,,アロマ・香り,aroma.mp3,済
+w_art_gallery,art gallery,,美術館,art gallery.mp3,済
+w_arts_and_crafts,arts and crafts,,工芸,arts and crafts.mp3,済
+w_asparagus,asparagus,,アスパラガス,asparagus.mp3,済
+w_asthma,asthma,,喘息,asthma.mp3,済
+w_astronaut,astronaut,,宇宙飛行士,astronaut.mp3,済
+w_astronomer,astronomer,,天文学者,astronomer.mp3,済
+w_astronomy,astronomy,,天文学,astronomy.mp3,済
+w_atopy,atopy,,アトピー,atopy.mp3,済
+w_attorney,attorney,,弁護士,attorney.mp3,済
+w_august,August,,8月,August.mp3,済
+w_autobiography,autobiography,,自伝,autobiography.mp3,済
+w_automobile,automobile,,自動車,automobile.mp3,済
+w_avocado,avocado,,アボカド,avocado.mp3,済
+w_azalea,azalea,,ツツジ,azalea.mp3,済
+w_backache,backache,,腰痛・背中の痛み,backache.mp3,済
+w_baggage_claim,baggage claim,,手荷物受取所,baggage claim.mp3,済
+w_baggage,baggage,,荷物,baggage.mp3,済
+w_balcony,balcony,,バルコニー,balcony.mp3,済
+w_bandage,bandage,,包帯,bandage.mp3,済
+w_baseball,baseball,,野球,baseball.mp3,済
+w_battery_charger,battery charger,,充電器,battery charger.mp3,済
+w_bean_paste,bean paste,,味噌,bean paste.mp3,済
+w_bean_sprout,bean sprout,,もやし,bean sprout.mp3,済
+w_bean,bean,,豆,bean.mp3,済
+w_bedroom,bedroom,,寝室,bedroom.mp3,済
+w_beef,beef,,牛肉,beef.mp3,済
+w_beetle,beetle,,甲虫,beetle.mp3,済
+w_bench,bench,,ベンチ,bench.mp3,済
+w_bicycle,bicycle,,自転車,bicycle.mp3,済
+w_biography,biography,,伝記,biography.mp3,済
+w_blender,blender,,ミキサー,blender.mp3,済
+w_blond_haired,blond-haired,,金髪の,blond-haired.mp3,済
+w_blood_pressure,blood pressure,,血圧,blood pressure.mp3,済
+w_blood_vessel,blood vessel,,血管,blood vessel.mp3,済
+w_blouse,blouse,,ブラウス,blouse.mp3,済
+w_blueberry,blueberry,,ブルーベリー,blueberry.mp3,済
+w_bomb,bomb,,爆弾,bomb.mp3,済
+w_bonito,bonito,,カツオ,bonito.mp3,済
+w_bookcase,bookcase,,本棚,bookcase.mp3,済
+w_bouldering,bouldering,,ボルダリング,bouldering.mp3,済
+w_box_cutter,box cutter,,カッターナイフ,box cutter.mp3,済
+w_breeze,breeze,,そよ風,breeze.mp3,済
+w_bricklayer,bricklayer,,れんが職人,bricklayer.mp3,済
+w_broom,broom,,ほうき,broom.mp3,済
+w_brown_rice,brown rice,,玄米,brown rice.mp3,済
+w_bucket_list,bucket list,,やりたいことリスト,bucket list.mp3,済
+w_buffet,buffet,,ビュッフェ,buffet.mp3,済
+w_bulldozer,bulldozer,,ブルドーザー,bulldozer.mp3,済
+w_bullet_train,bullet train,,新幹線,bullet train.mp3,済
+w_bus_station,bus station,,バス停,bus station.mp3,済
+w_butterfly,butterfly,,チョウ,butterfly.mp3,済
+w_button,button,,ボタン,button.mp3,済
+w_cab,cab,,タクシー,cab.mp3,済
+w_cabbage,cabbage,,キャベツ,cabbage.mp3,済
+w_cabinet,cabinet,,キャビネット,cabinet.mp3,済
+w_calculator,calculator,,電卓,calculator.mp3,済
+w_camel,camel,,ラクダ,camel.mp3,済
+w_candy_store,candy store,,お菓子屋,candy store.mp3,済
+w_canoe,canoe,,カヌー,canoe.mp3,済
+w_canola_flower,canola flower,,菜の花,canola flower.mp3,済
+w_cap,cap,,帽子,cap.mp3,済
+w_capybara,capybara,,カピバラ,capybara.mp3,済
+w_carnation,carnation,,カーネーション,carnation.mp3,済
+w_carrot,carrot,,ニンジン,carrot.mp3,済
+w_cashew_nut,cashew nut,,カシューナッツ,cashew nut.mp3,済
+w_caterpillar,caterpillar,,毛虫,caterpillar.mp3,済
+w_cauliflower,cauliflower,,カリフラワー,cauliflower.mp3,済
+w_cavity,cavity,,虫歯,cavity.mp3,済
+w_centimeter,centimeter,,センチメートル,centimeter.mp3,済
+w_centipede,centipede,,ムカデ,centipede.mp3,済
+w_charity,charity,,慈善活動,charity.mp3,済
+w_chemistry,chemistry,,化学,chemistry.mp3,済
+w_chemotherapy,chemotherapy,,化学療法,chemotherapy.mp3,済
+w_chimney,chimney,,煙突,chimney.mp3,済
+w_chimpanzee,chimpanzee,,チンパンジー,chimpanzee.mp3,済
+w_chin,chin,,あご,chin.mp3,済
+w_chinese_cabbage,Chinese cabbage,,白菜,Chinese cabbage.mp3,済
+w_chopping_board,chopping board,,まな板,chopping board.mp3,済
+w_chrysanthemum,chrysanthemum,,菊,chrysanthemum.mp3,済
+w_cicada,cicada,,セミ,cicada.mp3,済
+w_clam,clam,,ハマグリ,clam.mp3,済
+w_classical_music,classical music,,クラシック音楽,classical music.mp3,済
+w_clerk,clerk,,店員・事務員,clerk.mp3,済
+w_clip,clip,,クリップ,clip.mp3,済
+w_co_worker,co-worker,,同僚,co-worker.mp3,済
+w_cockroach,cockroach,,ゴキブリ,cockroach.mp3,済
+w_cod,cod,,タラ,cod.mp3,済
+w_coelacanth,coelacanth,,シーラカンス,coelacanth.mp3,済
+w_colander,colander,,水切りざる,colander.mp3,済
+w_comb,comb,,くし,comb.mp3,済
+w_comic_book,comic book,,漫画本,comic book.mp3,済
+w_committee,committee,,委員会,committee.mp3,済
+w_commuter,commuter,,通勤者,commuter.mp3,済
+w_conger_eel,conger eel,,アナゴ,conger eel.mp3,済
+w_constipation,constipation,,便秘,constipation.mp3,済
+w_contact_lenses,contact lenses,,コンタクトレンズ,contact lenses.mp3,済
+w_continent,continent,,大陸,continent.mp3,済
+w_cop,cop,,警官,cop.mp3,済
+w_coral_reef,coral reef,,サンゴ礁,coral reef.mp3,済
+w_corn,corn,,トウモロコシ,corn.mp3,済
+w_corporate_retreat,corporate retreat,,社員旅行・合宿,corporate retreat.mp3,済
+w_corporation,corporation,,企業・法人,corporation.mp3,済
+w_cosmos,cosmos,,コスモス（花）,cosmos.mp3,済
+w_county,county,,郡・州,county.mp3,済
+w_crab,crab,,カニ,crab.mp3,済
+w_craftspeople,craftspeople,,職人たち,craftspeople.mp3,済
+w_crew,crew,,乗組員・クルー,crew.mp3,済
+w_crocodile,crocodile,,クロコダイル（ワニ）,crocodile.mp3,済
+w_crowd_funding,crowd funding,,クラウドファンディング,crowd funding.mp3,済
+w_cucumber,cucumber,,キュウリ,cucumber.mp3,済
+w_curling,curling,,カーリング,curling.mp3,済
+w_curtain,curtain,,カーテン,curtain.mp3,済
+w_cutting_board,cutting board,,まな板,cutting board.mp3,済
+w_dahlia,dahlia,,ダリア,dahlia.mp3,済
+w_dairy,dairy,,乳製品,dairy.mp3,済
+w_dandelion,dandelion,,タンポポ,dandelion.mp3,済
+w_daughter,daughter,,娘,daughter.mp3,済
+w_day_care,day care,,保育,day care.mp3,済
+w_daytrip,daytrip,,日帰り旅行,daytrip.mp3,済
+w_debt,debt,,借金,debt.mp3,済
+w_desk_lamp,desk lamp,,デスクランプ,desk lamp.mp3,済
+w_desktop,desktop,,デスクトップパソコン,desktop.mp3,済
+w_diabetes,diabetes,,糖尿病,diabetes.mp3,済
+w_dialect,dialect,,方言,dialect.mp3,済
+w_dialogue,dialogue,,対話,dialogue.mp3,済
+w_diarrhea,diarrhea,,下痢,diarrhea.mp3,済
+w_diary,diary,,日記,diary.mp3,済
+w_dining_room,dining room,,ダイニングルーム,dining room.mp3,済
+w_dishwasher,dishwasher,,食洗機,dishwasher.mp3,済
+w_doll,doll,,人形,doll.mp3,済
+w_dolphin,dolphin,,イルカ,dolphin.mp3,済
+w_donor,donor,,寄付者・ドナー,donor.mp3,済
+w_doormat,doormat,,玄関マット,doormat.mp3,済
+w_dormitory,dormitory,,寮,dormitory.mp3,済
+w_dragonfly,dragonfly,,トンボ,dragonfly.mp3,済
+w_drawing_pin,drawing pin,,画鋲,drawing pin.mp3,済
+w_dresser,dresser,,タンス,dresser.mp3,済
+w_dried_seaweed_sheet,dried seaweed sheet,,のり（海苔）,dried seaweed sheet.mp3,済
+w_drill,drill,,ドリル,drill.mp3,済
+w_drum,drum,,ドラム,drum.mp3,済
+w_dryer,dryer,,乾燥機,dryer.mp3,済
+w_duck,duck,,アヒル,duck.mp3,済
+w_dusk,dusk,,夕暮れ,dusk.mp3,済
+w_dustpan,dustpan,,ちりとり,dustpan.mp3,済
+w_ear,ear,,耳,ear.mp3,済
+w_earrings,earrings,,イヤリング,earrings.mp3,済
+w_earthworm,earthworm,,ミミズ,earthworm.mp3,済
+w_east,east,,東,east.mp3,済
+w_ecology,ecology,,生態学,ecology.mp3,済
+w_editor,editor,,編集者,editor.mp3,済
+w_eel,eel,,ウナギ,eel.mp3,済
+w_eggplant,eggplant,,ナス,eggplant.mp3,済
+w_elbow,elbow,,ひじ,elbow.mp3,済
+w_electric_guitar,electric guitar,,エレキギター,electric guitar.mp3,済
+w_elephant,elephant,,ゾウ,elephant.mp3,済
+w_emergency,emergency,,緊急事態,emergency.mp3,済
+w_empire,empire,,帝国,empire.mp3,済
+w_employee,employee,,従業員,employee.mp3,済
+w_engine,engine,,エンジン,engine.mp3,済
+w_engineering,engineering,,工学,engineering.mp3,済
+w_ethics,ethics,,倫理,ethics.mp3,済
+w_evaluation,evaluation,,評価,evaluation.mp3,済
+w_eyebrow,eyebrow,,眉毛,eyebrow.mp3,済
+w_eyelash,eyelash,,まつ毛,eyelash.mp3,済
+w_facecloth,facecloth,,フェイスタオル,facecloth.mp3,済
+w_fair_trade,fair trade,,フェアトレード,fair trade.mp3,済
+w_farmer,farmer,,農家・農夫,farmer.mp3,済
+w_fast_food,fast food,,ファストフード,fast food.mp3,済
+w_february,February,,2月,February.mp3,済
+w_federal,federal,,連邦の,federal.mp3,済
+w_ferry_terminal,ferry terminal,,フェリー乗り場,ferry terminal.mp3,済
+w_fire_engine,fire engine,,消防車,fire engine.mp3,済
+w_fire_truck,fire truck,,消防車,fire truck.mp3,済
+w_firefly,firefly,,ホタル,firefly.mp3,済
+w_fireworks_display,fireworks display,,花火大会,fireworks display.mp3,済
+w_first_aid,first aid,,応急処置,first aid.mp3,済
+w_flea,flea,,ノミ,flea.mp3,済
+w_flood,flood,,洪水,flood.mp3,済
+w_flounder,flounder,,カレイ,flounder.mp3,済
+w_flour,flour,,小麦粉,flour.mp3,済
+w_flow_chart,flow chart,,フローチャート,flow chart.mp3,済
+w_flowerpot,flowerpot,,植木鉢,flowerpot.mp3,済
+w_fluid,fluid,,液体・流体,fluid.mp3,済
+w_folk,folk,,民俗,folk.mp3,済
+w_folklore,folklore,,民話・民間伝承,folklore.mp3,済
+w_football,football,,フットボール・サッカー,football.mp3,済
+w_foreign_currency,foreign currency,,外貨,foreign currency.mp3,済
+w_foundation,foundation,,財団・基盤,foundation.mp3,済
+w_fountain_pen,fountain pen,,万年筆,fountain pen.mp3,済
+w_fragment,fragment,,断片,fragment.mp3,済
+w_fried_rice,fried rice,,チャーハン,fried rice.mp3,済
+w_front_door,front door,,玄関,front door.mp3,済
+w_fruit,fruit,,果物,fruit.mp3,済
+w_frying_pan,frying pan,,フライパン,frying pan.mp3,済
+w_fuel,fuel,,燃料,fuel.mp3,済
+w_fund,fund,,基金,fund.mp3,済
+w_fur_seal,fur seal,,オットセイ,fur seal.mp3,済
+w_futsal,futsal,,フットサル,futsal.mp3,済
+w_gadget,gadget,,ガジェット,gadget.mp3,済
+w_gallery,gallery,,ギャラリー,gallery.mp3,済
+w_garlic,garlic,,ニンニク,garlic.mp3,済
+w_gas_stove,gas stove,,ガスコンロ,gas stove.mp3,済
+w_gene,gene,,遺伝子,gene.mp3,済
+w_genius,genius,,天才,genius.mp3,済
+w_geology,geology,,地質学,geology.mp3,済
+w_geometry,geometry,,幾何学,geometry.mp3,済
+w_gerbera,gerbera,,ガーベラ,gerbera.mp3,済
+w_german,German,,ドイツ語・ドイツの,German.mp3,済
+w_gesture,gesture,,ジェスチャー,gesture.mp3,済
+w_ginger,ginger,,ショウガ,ginger.mp3,済
+w_giraffe,giraffe,,キリン,giraffe.mp3,済
+w_girlfriend,girlfriend,,ガールフレンド,girlfriend.mp3,済
+w_globalization,globalization,,グローバル化,globalization.mp3,済
+w_globe,globe,,地球儀,globe.mp3,済
+w_globefish,globefish,,フグ,globefish.mp3,済
+w_gloves,gloves,,手袋,gloves.mp3,済
+w_goat,goat,,ヤギ,goat.mp3,済
+w_golf,golf,,ゴルフ,golf.mp3,済
+w_goose_bumps,goose bumps,,鳥肌,goose bumps.mp3,済
+w_goose,goose,,ガチョウ,goose.mp3,済
+w_gorilla,gorilla,,ゴリラ,gorilla.mp3,済
+w_governor,governor,,知事,governor.mp3,済
+w_granddaughter,granddaughter,,孫娘,granddaughter.mp3,済
+w_grapefruit,grapefruit,,グレープフルーツ,grapefruit.mp3,済
+w_grasshopper,grasshopper,,バッタ,grasshopper.mp3,済
+w_gray,gray,,灰色,gray.mp3,済
+w_green_pepper,green pepper,,ピーマン,green pepper.mp3,済
+w_grief,grief,,悲しみ・嘆き,grief.mp3,済
+w_grocery_store,grocery store,,食料雑貨店,grocery store.mp3,済
+w_gun,gun,,銃,gun.mp3,済
+w_gymnastics,gymnastics,,体操,gymnastics.mp3,済
+w_hair_dryer,hair dryer,,ヘアドライヤー,hair dryer.mp3,済
+w_hairbrush,hairbrush,,ヘアブラシ,hairbrush.mp3,済
+w_half_price,half-price,,半額,half-price.mp3,済
+w_hammer,hammer,,ハンマー,hammer.mp3,済
+w_handball,handball,,ハンドボール,handball.mp3,済
+w_handicraft,handicraft,,手工芸,handicraft.mp3,済
+w_hangover,hangover,,二日酔い,hangover.mp3,済
+w_hardship,hardship,,苦労・困難,hardship.mp3,済
+w_hay_fever,hay fever,,花粉症,hay fever.mp3,済
+w_headline,headline,,見出し,headline.mp3,済
+w_headquarters,headquarters,,本社・本部,headquarters.mp3,済
+w_heartburn,heartburn,,胸やけ,heartburn.mp3,済
+w_heater,heater,,ヒーター,heater.mp3,済
+w_heatstroke,heatstroke,,熱中症,heatstroke.mp3,済
+w_heel,heel,,かかと,heel.mp3,済
+w_helicopter,helicopter,,ヘリコプター,helicopter.mp3,済
+w_heritage,heritage,,遺産,heritage.mp3,済
+w_high_blood_pressure,high blood pressure,,高血圧,high blood pressure.mp3,済
+w_high_school,high school,,高校,high school.mp3,済
+w_highlighter,highlighter,,蛍光ペン,highlighter.mp3,済
+w_highway,highway,,高速道路,highway.mp3,済
+w_hip_hop,hip hop,,ヒップホップ,hip hop.mp3,済
+w_hippopotamus,hippopotamus,,カバ,hippopotamus.mp3,済
+w_hives,hives,,じんましん,hives.mp3,済
+w_hockey,hockey,,ホッケー,hockey.mp3,済
+w_home_economics,home economics,,家庭科,home economics.mp3,済
+w_honey,honey,,はちみつ,honey.mp3,済
+w_hooded_sweatshirt,hooded sweatshirt,,パーカー,hooded sweatshirt.mp3,済
+w_hoodie,hoodie,,パーカー,hoodie.mp3,済
+w_horse_mackerel,horse mackerel,,アジ,horse mackerel.mp3,済
+w_hospitality,hospitality,,おもてなし,hospitality.mp3,済
+w_host_family,host family,,ホストファミリー,host family.mp3,済
+w_host_mother,host mother,,ホストマザー,host mother.mp3,済
+w_husband,husband,,夫,husband.mp3,済
+w_hydrangea,hydrangea,,アジサイ,hydrangea.mp3,済
+w_hypothesis,hypothesis,,仮説,hypothesis.mp3,済
+w_ice_cream,ice cream,,アイスクリーム,ice cream.mp3,済
+w_ice_skating,ice skating,,アイススケート,ice skating.mp3,済
+w_identification,identification,,身分証明,identification.mp3,済
+w_illusion,illusion,,錯覚・幻想,illusion.mp3,済
+w_illustration,illustration,,イラスト,illustration.mp3,済
+w_imagination,imagination,,想像力,imagination.mp3,済
+w_immigrant,immigrant,,移民,immigrant.mp3,済
+w_immunity,immunity,,免疫,immunity.mp3,済
+w_implant,implant,,インプラント,implant.mp3,済
+w_income,income,,収入,income.mp3,済
+w_industry,industry,,産業,industry.mp3,済
+w_infant,infant,,乳児,infant.mp3,済
+w_influenza,influenza,,インフルエンザ,influenza.mp3,済
+w_ingredient,ingredient,,材料・成分,ingredient.mp3,済
+w_innovation,innovation,,イノベーション,innovation.mp3,済
+w_inquiry,inquiry,,問い合わせ,inquiry.mp3,済
+w_instructor,instructor,,インストラクター,instructor.mp3,済
+w_instrument,instrument,,楽器・器具,instrument.mp3,済
+w_interpreter,interpreter,,通訳者,interpreter.mp3,済
+w_interviewee,interviewee,,インタビューを受ける人,interviewee.mp3,済
+w_invention,invention,,発明,invention.mp3,済
+w_investigator,investigator,,調査員,investigator.mp3,済
+w_iris,iris,,アイリス（花）,iris.mp3,済
+w_iron,iron,,アイロン・鉄,iron.mp3,済
+w_itinerary,itinerary,,旅程,itinerary.mp3,済
+w_january,January,,1月,January.mp3,済
+w_japanese_pear,Japanese pear,,梨,Japanese pear.mp3,済
+w_japanese_radish,Japanese radish,,大根,Japanese radish.mp3,済
+w_jazz,jazz,,ジャズ,jazz.mp3,済
+w_jellyfish,jellyfish,,クラゲ,jellyfish.mp3,済
+w_jet_aircraft,jet aircraft,,ジェット機,jet aircraft.mp3,済
+w_job_opening,job opening,,求人,job opening.mp3,済
+w_job_seeker,job seeker,,求職者,job seeker.mp3,済
+w_june,June,,6月,June.mp3,済
+w_junior_high_school,junior high school,,中学校,junior high school.mp3,済
+w_justice,justice,,正義,justice.mp3,済
+w_kangaroo,kangaroo,,カンガルー,kangaroo.mp3,済
+w_kettle,kettle,,やかん,kettle.mp3,済
+w_kingdom,kingdom,,王国,kingdom.mp3,済
+w_kitchen_knife,kitchen knife,,包丁,kitchen knife.mp3,済
+w_kiwi_fruit,kiwi fruit,,キウイ,kiwi fruit.mp3,済
+w_knit_cap,knit cap,,ニット帽,knit cap.mp3,済
+w_knitting_needle,knitting needle,,編み針,knitting needle.mp3,済
+w_koala,koala,,コアラ,koala.mp3,済
+w_lacrosse,lacrosse,,ラクロス,lacrosse.mp3,済
+w_ladle,ladle,,おたま,ladle.mp3,済
+w_ladybug,ladybug,,てんとう虫,ladybug.mp3,済
+w_lamp,lamp,,ランプ,lamp.mp3,済
+w_landmark,landmark,,ランドマーク,landmark.mp3,済
+w_landscape,landscape,,風景,landscape.mp3,済
+w_lavender,lavender,,ラベンダー,lavender.mp3,済
+w_leather_shoes,leather shoes,,革靴,leather shoes.mp3,済
+w_lecture,lecture,,講義,lecture.mp3,済
+w_legend,legend,,伝説,legend.mp3,済
+w_lettuce,lettuce,,レタス,lettuce.mp3,済
+w_level,level,,レベル,level.mp3,済
+w_lever,lever,,レバー,lever.mp3,済
+w_liberty,liberty,,自由,liberty.mp3,済
+w_license,license,,免許,license.mp3,済
+w_lid,lid,,ふた,lid.mp3,済
+w_lifestyle,lifestyle,,ライフスタイル,lifestyle.mp3,済
+w_lightning,lightning,,稲妻・雷,lightning.mp3,済
+w_lily,lily,,ユリ,lily.mp3,済
+w_lime,lime,,ライム,lime.mp3,済
+w_limousine,limousine,,リムジン,limousine.mp3,済
+w_linguistics,linguistics,,言語学,linguistics.mp3,済
+w_lip,lip,,唇,lip.mp3,済
+w_literature,literature,,文学,literature.mp3,済
+w_lobster,lobster,,ロブスター,lobster.mp3,済
+w_lotus_root,lotus root,,レンコン,lotus root.mp3,済
+w_lotus,lotus,,ハス,lotus.mp3,済
+w_luggage,luggage,,荷物,luggage.mp3,済
+w_lung,lung,,肺,lung.mp3,済
+w_mackerel,mackerel,,サバ,mackerel.mp3,済
+w_magnet,magnet,,磁石,magnet.mp3,済
+w_mammal,mammal,,哺乳類,mammal.mp3,済
+w_management,management,,経営・管理,management.mp3,済
+w_manufacturer,manufacturer,,製造業者,manufacturer.mp3,済
+w_march,March,,3月,March.mp3,済
+w_marshmallow,marshmallow,,マシュマロ,marshmallow.mp3,済
+w_masterpiece,masterpiece,,傑作,masterpiece.mp3,済
+w_mathematics,mathematics,,数学,mathematics.mp3,済
+w_mayor,mayor,,市長,mayor.mp3,済
+w_measles,measles,,はしか,measles.mp3,済
+w_measuring_spoon,measuring spoon,,計量スプーン,measuring spoon.mp3,済
+w_medical_center,medical center,,医療センター,medical center.mp3,済
+w_melon,melon,,メロン,melon.mp3,済
+w_memorial_service,memorial service,,追悼式,memorial service.mp3,済
+w_menstrual_cramps,menstrual cramps,,生理痛,menstrual cramps.mp3,済
+w_merchant,merchant,,商人,merchant.mp3,済
+w_meter,meter,,メートル,meter.mp3,済
+w_midday,midday,,正午,midday.mp3,済
+w_middle_school,middle school,,中学校,middle school.mp3,済
+w_migraine,migraine,,偏頭痛,migraine.mp3,済
+w_milkshake,milkshake,,ミルクシェイク,milkshake.mp3,済
+w_mime,mime,,パントマイム,mime.mp3,済
+w_mince,mince,,ひき肉,mince.mp3,済
+w_minister,minister,,大臣・牧師,minister.mp3,済
+w_mirror,mirror,,鏡,mirror.mp3,済
+w_molecule,molecule,,分子,molecule.mp3,済
+w_monkfish,monkfish,,アンコウ,monkfish.mp3,済
+w_monorail,monorail,,モノレール,monorail.mp3,済
+w_morning_glory,morning glory,,アサガオ,morning glory.mp3,済
+w_mosquito,mosquito,,蚊,mosquito.mp3,済
+w_moth,moth,,ガ（蛾）,moth.mp3,済
+w_motorcycle,motorcycle,,バイク,motorcycle.mp3,済
+w_mouse,mouse,,ネズミ・マウス,mouse.mp3,済
+w_movie_star,movie star,,映画スター,movie star.mp3,済
+w_movie_theater,movie theater,,映画館,movie theater.mp3,済
+w_mug,mug,,マグカップ,mug.mp3,済
+w_musical,musical,,ミュージカル,musical.mp3,済
+w_musician,musician,,音楽家,musician.mp3,済
+w_mustard,mustard,,マスタード,mustard.mp3,済
+w_myth,myth,,神話,myth.mp3,済
+w_nail,nail,,爪・釘,nail.mp3,済
+w_nausea,nausea,,吐き気,nausea.mp3,済
+w_navy,navy,,海軍,navy.mp3,済
+w_neck,neck,,首,neck.mp3,済
+w_necktie,necktie,,ネクタイ,necktie.mp3,済
+w_newscaster,newscaster,,ニュースキャスター,newscaster.mp3,済
+w_notepad,notepad,,メモ帳,notepad.mp3,済
+w_novelist,novelist,,小説家,novelist.mp3,済
+w_november,November,,11月,November.mp3,済
+w_nursing_home,nursing home,,介護施設,nursing home.mp3,済
+w_nutrient,nutrient,,栄養素,nutrient.mp3,済
+w_nutritionist,nutritionist,,栄養士,nutritionist.mp3,済
+w_oak,oak,,オーク（木）,oak.mp3,済
+w_oarfish,oarfish,,リュウグウノツカイ,oarfish.mp3,済
+w_oatmeal,oatmeal,,オートミール,oatmeal.mp3,済
+w_okra,okra,,オクラ,okra.mp3,済
+w_onion,onion,,タマネギ,onion.mp3,済
+w_operation,operation,,手術・操作,operation.mp3,済
+w_orange_osmanthus,orange osmanthus,,キンモクセイ,orange osmanthus.mp3,済
+w_organism,organism,,生物・有機体,organism.mp3,済
+w_orphan,orphan,,孤児,orphan.mp3,済
+w_ostrich,ostrich,,ダチョウ,ostrich.mp3,済
+w_oven,oven,,オーブン,oven.mp3,済
+w_oyster,oyster,,カキ（牡蠣）,oyster.mp3,済
+w_palace,palace,,宮殿・城,palace.mp3,済
+w_pan,pan,,フライパン,pan.mp3,済
+w_panda,panda,,パンダ,panda.mp3,済
+w_pansy,pansy,,パンジー,pansy.mp3,済
+w_pants,pants,,ズボン,pants.mp3,済
+w_parachute,parachute,,パラシュート,parachute.mp3,済
+w_parliament,parliament,,議会,parliament.mp3,済
+w_participant,participant,,参加者,participant.mp3,済
+w_passport,passport,,パスポート,passport.mp3,済
+w_patient,patient,,患者,patient.mp3,済
+w_patio,patio,,テラス・中庭,patio.mp3,済
+w_patrol_car,patrol car,,パトカー,patrol car.mp3,済
+w_payroll,payroll,,給与,payroll.mp3,済
+w_pea,pea,,エンドウ豆,pea.mp3,済
+w_peach,peach,,桃,peach.mp3,済
+w_peacock,peacock,,クジャク,peacock.mp3,済
+w_peeler,peeler,,ピーラー,peeler.mp3,済
+w_penguin,penguin,,ペンギン,penguin.mp3,済
+w_penny,penny,,1セント硬貨,penny.mp3,済
+w_pension,pension,,年金,pension.mp3,済
+w_pepper_mill,pepper mill,,ペッパーミル,pepper mill.mp3,済
+w_pepper,pepper,,コショウ・ピーマン,pepper.mp3,済
+w_persimmon,persimmon,,柿,persimmon.mp3,済
+w_petroleum,petroleum,,石油,petroleum.mp3,済
+w_phenomenon,phenomenon,,現象,phenomenon.mp3,済
+w_philosophy,philosophy,,哲学,philosophy.mp3,済
+w_photographer,photographer,,カメラマン,photographer.mp3,済
+w_photography,photography,,写真撮影,photography.mp3,済
+w_physician,physician,,内科医,physician.mp3,済
+w_pie,pie,,パイ,pie.mp3,済
+w_pig,pig,,豚,pig.mp3,済
+w_pilot,pilot,,パイロット,pilot.mp3,済
+w_pin,pin,,ピン,pin.mp3,済
+w_pineapple,pineapple,,パイナップル,pineapple.mp3,済
+w_pistachio,pistachio,,ピスタチオ,pistachio.mp3,済
+w_pitcher,pitcher,,ピッチャー・水差し,pitcher.mp3,済
+w_plantation,plantation,,農園・プランテーション,plantation.mp3,済
+w_plumber,plumber,,配管工,plumber.mp3,済
+w_poet,poet,,詩人,poet.mp3,済
+w_polar_bear,polar bear,,ホッキョクグマ,polar bear.mp3,済
+w_police_car,police car,,パトカー,police car.mp3,済
+w_police_officer,police officer,,警察官,police officer.mp3,済
+w_police_station,police station,,警察署,police station.mp3,済
+w_post_office,post office,,郵便局,post office.mp3,済
+w_postcard,postcard,,はがき,postcard.mp3,済
+w_pot,pot,,鍋・ポット,pot.mp3,済
+w_prawn,prawn,,エビ（大型）,prawn.mp3,済
+w_prayer,prayer,,祈り,prayer.mp3,済
+w_prescription_medicine,prescription medicine,,処方薬,prescription medicine.mp3,済
+w_prescription,prescription,,処方箋,prescription.mp3,済
+w_press_conference,press conference,,記者会見,press conference.mp3,済
+w_prime_minister,prime minister,,首相,prime minister.mp3,済
+w_princess,princess,,王女,princess.mp3,済
+w_printer,printer,,プリンター,printer.mp3,済
+w_priority,priority,,優先事項,priority.mp3,済
+w_privacy,privacy,,プライバシー,privacy.mp3,済
+w_profession,profession,,職業,profession.mp3,済
+w_professor,professor,,教授,professor.mp3,済
+w_pronunciation,pronunciation,,発音,pronunciation.mp3,済
+w_protein,protein,,タンパク質,protein.mp3,済
+w_proverb,proverb,,ことわざ,proverb.mp3,済
+w_psychologist,psychologist,,心理士,psychologist.mp3,済
+w_psychology,psychology,,心理学,psychology.mp3,済
+w_pumpkin,pumpkin,,カボチャ,pumpkin.mp3,済
+w_punishment,punishment,,罰,punishment.mp3,済
+w_qualification,qualification,,資格,qualification.mp3,済
+w_queen,queen,,女王,queen.mp3,済
+w_questionnaire,questionnaire,,アンケート,questionnaire.mp3,済
+w_quotation,quotation,,引用・見積もり,quotation.mp3,済
+w_racism,racism,,人種差別,racism.mp3,済
+w_rank,rank,,ランク,rank.mp3,済
+w_raspberry,raspberry,,ラズベリー,raspberry.mp3,済
+w_record_holder,record-holder,,記録保持者,record-holder.mp3,済
+w_recycling_center,recycling center,,リサイクルセンター,recycling center.mp3,済
+w_red_bean,red bean,,小豆,red bean.mp3,済
+w_red_meat,red meat,,赤身肉,red meat.mp3,済
+w_red_snapper,red snapper,,タイ（鯛）,red snapper.mp3,済
+w_refugee,refugee,,難民,refugee.mp3,済
+w_regulation,regulation,,規制,regulation.mp3,済
+w_religion,religion,,宗教,religion.mp3,済
+w_remote_working,remote working,,リモートワーク,remote working.mp3,済
+w_researcher,researcher,,研究者,researcher.mp3,済
+w_reservation,reservation,,予約,reservation.mp3,済
+w_residence,residence,,居住地,residence.mp3,済
+w_resident,resident,,住民,resident.mp3,済
+w_resort,resort,,リゾート,resort.mp3,済
+w_retail,retail,,小売り,retail.mp3,済
+w_retirement,retirement,,退職・引退,retirement.mp3,済
+w_rhinoceros,rhinoceros,,サイ（動物）,rhinoceros.mp3,済
+w_rhythm,rhythm,,リズム,rhythm.mp3,済
+w_rice_cooker,rice cooker,,炊飯器,rice cooker.mp3,済
+w_risk,risk,,リスク,risk.mp3,済
+w_rock_music,rock music,,ロック音楽,rock music.mp3,済
+w_rolling_pin,rolling pin,,麺棒,rolling pin.mp3,済
+w_roly_poly,roly-poly,,起き上がりこぼし,roly-poly.mp3,済
+w_rose,rose,,バラ,rose.mp3,済
+w_rugby,rugby,,ラグビー,rugby.mp3,済
+w_runny_nose,runny nose,,鼻水,runny nose.mp3,済
+w_runway,runway,,滑走路,runway.mp3,済
+w_sailboat,sailboat,,ヨット,sailboat.mp3,済
+w_salmon_roe,salmon roe,,イクラ,salmon roe.mp3,済
+w_salmon,salmon,,サーモン,salmon.mp3,済
+w_sandals,sandals,,サンダル,sandals.mp3,済
+w_sardine,sardine,,イワシ,sardine.mp3,済
+w_satellite_imagery,satellite imagery,,衛星画像,satellite imagery.mp3,済
+w_satellite,satellite,,衛星,satellite.mp3,済
+w_saucer,saucer,,受け皿,saucer.mp3,済
+w_savings,savings,,貯金,savings.mp3,済
+w_scallion,scallion,,ネギ,scallion.mp3,済
+w_scallop,scallop,,ホタテ,scallop.mp3,済
+w_scanner,scanner,,スキャナー,scanner.mp3,済
+w_scar,scar,,傷跡,scar.mp3,済
+w_scarab_beetle,scarab beetle,,スカラベ,scarab beetle.mp3,済
+w_scholarship,scholarship,,奨学金,scholarship.mp3,済
+w_sea_bass,sea bass,,スズキ（魚）,sea bass.mp3,済
+w_sea_bream,sea bream,,タイ（鯛）,sea bream.mp3,済
+w_sea_cucumber,sea cucumber,,ナマコ,sea cucumber.mp3,済
+w_sea_horse,sea horse,,タツノオトシゴ,sea horse.mp3,済
+w_sea_lion,sea lion,,アシカ,sea lion.mp3,済
+w_sea_otter,sea otter,,ラッコ,sea otter.mp3,済
+w_sea_turtle,sea turtle,,ウミガメ,sea turtle.mp3,済
+w_sea_urchin,sea urchin,,ウニ,sea urchin.mp3,済
+w_seafood,seafood,,シーフード,seafood.mp3,済
+w_seaside,seaside,,海辺,seaside.mp3,済
+w_seasoning,seasoning,,調味料,seasoning.mp3,済
+w_secretary,secretary,,秘書,secretary.mp3,済
+w_security_guard,security guard,,警備員,security guard.mp3,済
+w_self_confidence,self-confidence,,自信,self-confidence.mp3,済
+w_self_discipline,self-discipline,,自己管理,self-discipline.mp3,済
+w_shark,shark,,サメ,shark.mp3,済
+w_sheep,sheep,,羊,sheep.mp3,済
+w_shoulder_bag,shoulder bag,,ショルダーバッグ,shoulder bag.mp3,済
+w_shredder,shredder,,シュレッダー,shredder.mp3,済
+w_shrimp,shrimp,,エビ,shrimp.mp3,済
+w_sign_language,sign language,,手話,sign language.mp3,済
+w_skateboarding,skateboarding,,スケートボード,skateboarding.mp3,済
+w_skiing,skiing,,スキー,skiing.mp3,済
+w_slave,slave,,奴隷,slave.mp3,済
+w_slavery,slavery,,奴隷制度,slavery.mp3,済
+w_sleeper_train,sleeper train,,夜行列車,sleeper train.mp3,済
+w_sleeping_bag,sleeping bag,,寝袋,sleeping bag.mp3,済
+w_slippers,slippers,,スリッパ,slippers.mp3,済
+w_snail,snail,,カタツムリ,snail.mp3,済
+w_snowboarding,snowboarding,,スノーボード,snowboarding.mp3,済
+w_snowman,snowman,,雪だるま,snowman.mp3,済
+w_soap,soap,,石けん,soap.mp3,済
+w_social_studies,social studies,,社会科,social studies.mp3,済
+w_software,software,,ソフトウェア,software.mp3,済
+w_soil,soil,,土壌,soil.mp3,済
+w_sommelier,sommelier,,ソムリエ,sommelier.mp3,済
+w_sophomore,sophomore,,2年生,sophomore.mp3,済
+w_soul,soul,,魂,soul.mp3,済
+w_souvenir,souvenir,,お土産,souvenir.mp3,済
+w_soy_sauce,soy sauce,,醤油,soy sauce.mp3,済
+w_soybean,soybean,,大豆,soybean.mp3,済
+w_spaceship,spaceship,,宇宙船,spaceship.mp3,済
+w_spectator,spectator,,観客,spectator.mp3,済
+w_spinach,spinach,,ほうれん草,spinach.mp3,済
+w_sponge,sponge,,スポンジ,sponge.mp3,済
+w_squid,squid,,イカ,squid.mp3,済
+w_squirrel,squirrel,,リス,squirrel.mp3,済
+w_stag_beetle,stag beetle,,クワガタ,stag beetle.mp3,済
+w_stair,stair,,階段,stair.mp3,済
+w_stapler,stapler,,ホッチキス,stapler.mp3,済
+w_starfish,starfish,,ヒトデ,starfish.mp3,済
+w_statistic,statistic,,統計,statistic.mp3,済
+w_statistics,statistics,,統計学,statistics.mp3,済
+w_statue,statue,,像・彫像,statue.mp3,済
+w_stew,stew,,シチュー,stew.mp3,済
+w_stiff_shoulder,stiff shoulder,,肩こり,stiff shoulder.mp3,済
+w_stink_bug,stink bug,,カメムシ,stink bug.mp3,済
+w_stir_fry,stir-fry,,炒め物,stir-fry.mp3,済
+w_stockings,stockings,,ストッキング,stockings.mp3,済
+w_stomachache,stomachache,,腹痛,stomachache.mp3,済
+w_straw,straw,,ストロー,straw.mp3,済
+w_subway,subway,,地下鉄,subway.mp3,済
+w_sunflower,sunflower,,ひまわり,sunflower.mp3,済
+w_superstition,superstition,,迷信,superstition.mp3,済
+w_supper,supper,,夕食,supper.mp3,済
+w_surgeon,surgeon,,外科医,surgeon.mp3,済
+w_surgery,surgery,,手術,surgery.mp3,済
+w_survivor,survivor,,生存者,survivor.mp3,済
+w_suspense,suspense,,サスペンス,suspense.mp3,済
+w_sweatshirt,sweatshirt,,スウェット,sweatshirt.mp3,済
+w_sweet_potato,sweet potato,,サツマイモ,sweet potato.mp3,済
+w_swimming_pool,swimming pool,,プール,swimming pool.mp3,済
+w_swimsuit,swimsuit,,水着,swimsuit.mp3,済
+w_symphony,symphony,,交響曲,symphony.mp3,済
+w_symptom,symptom,,症状,symptom.mp3,済
+w_table_tennis,table tennis,,卓球,table tennis.mp3,済
+w_tank_top,tank top,,タンクトップ,tank top.mp3,済
+w_taxi,taxi,,タクシー,taxi.mp3,済
+w_teaspoon,teaspoon,,小さじ,teaspoon.mp3,済
+w_technique,technique,,技術・テクニック,technique.mp3,済
+w_teenager,teenager,,10代の若者,teenager.mp3,済
+w_television,television,,テレビ,television.mp3,済
+w_territory,territory,,領土,territory.mp3,済
+w_terrorism,terrorism,,テロリズム,terrorism.mp3,済
+w_text_message,text message,,テキストメッセージ,text message.mp3,済
+w_theater,theater,,劇場,theater.mp3,済
+w_theory,theory,,理論,theory.mp3,済
+w_therapist,therapist,,セラピスト,therapist.mp3,済
+w_therapy,therapy,,療法・セラピー,therapy.mp3,済
+w_thumb,thumb,,親指,thumb.mp3,済
+w_thumbtack,thumbtack,,画鋲,thumbtack.mp3,済
+w_tide,tide,,潮,tide.mp3,済
+w_tiger,tiger,,トラ,tiger.mp3,済
+w_timetable,timetable,,時刻表,timetable.mp3,済
+w_toe,toe,,足の指,toe.mp3,済
+w_toll,toll,,通行料,toll.mp3,済
+w_tomato,tomato,,トマト,tomato.mp3,済
+w_tongs,tongs,,トング,tongs.mp3,済
+w_toothache,toothache,,歯痛,toothache.mp3,済
+w_toothpaste,toothpaste,,歯磨き粉,toothpaste.mp3,済
+w_tour_guide,tour guide,,ガイド,tour guide.mp3,済
+w_tour,tour,,ツアー,tour.mp3,済
+w_track_and_field,track and field,,陸上競技,track and field.mp3,済
+w_tractor,tractor,,トラクター,tractor.mp3,済
+w_traffic_jam,traffic jam,,渋滞,traffic jam.mp3,済
+w_trailer,trailer,,トレーラー,trailer.mp3,済
+w_transport,transport,,輸送,transport.mp3,済
+w_trap,trap,,罠,trap.mp3,済
+w_treasurer,treasurer,,会計係,treasurer.mp3,済
+w_trend,trend,,トレンド,trend.mp3,済
+w_triangle,triangle,,三角形,triangle.mp3,済
+w_triathlon,triathlon,,トライアスロン,triathlon.mp3,済
+w_tribe,tribe,,部族,tribe.mp3,済
+w_trunks,trunks,,水泳パンツ,trunks.mp3,済
+w_tuition,tuition,,授業料,tuition.mp3,済
+w_tuna,tuna,,マグロ,tuna.mp3,済
+w_turban_shell,turban shell,,サザエ,turban shell.mp3,済
+w_turkey,turkey,,七面鳥,turkey.mp3,済
+w_turnip,turnip,,カブ,turnip.mp3,済
+w_ume_apricot,ume apricot,,梅,ume apricot.mp3,済
+w_undergraduate,undergraduate,,大学生,undergraduate.mp3,済
+w_underpants,underpants,,パンツ（下着）,underpants.mp3,済
+w_undershirt,undershirt,,肌着,undershirt.mp3,済
+w_underwear,underwear,,下着,underwear.mp3,済
+w_unemployment,unemployment,,失業,unemployment.mp3,済
+w_vacuum_cleaner,vacuum cleaner,,掃除機,vacuum cleaner.mp3,済
+w_van,van,,バン,van.mp3,済
+w_vegetable,vegetable,,野菜,vegetable.mp3,済
+w_vendor,vendor,,売り手・業者,vendor.mp3,済
+w_vest,vest,,ベスト,vest.mp3,済
+w_victim,victim,,被害者,victim.mp3,済
+w_vinegar,vinegar,,酢,vinegar.mp3,済
+w_wage,wage,,賃金,wage.mp3,済
+w_waist,waist,,腰,waist.mp3,済
+w_waitress,waitress,,ウェイトレス,waitress.mp3,済
+w_wake_up_call,wake-up call,,目覚ましの電話・警告,wake-up call.mp3,済
+w_walking_shoes,walking shoes,,ウォーキングシューズ,walking shoes.mp3,済
+w_walnut,walnut,,クルミ,walnut.mp3,済
+w_walrus,walrus,,セイウチ,walrus.mp3,済
+w_washing_machine,washing machine,,洗濯機,washing machine.mp3,済
+w_weekday,weekday,,平日,weekday.mp3,済
+w_west,west,,西,west.mp3,済
+w_wheelchair,wheelchair,,車椅子,wheelchair.mp3,済
+w_white_rice,white rice,,白米,white rice.mp3,済
+w_wholesale,wholesale,,卸売り,wholesale.mp3,済
+w_wife,wife,,妻,wife.mp3,済
+w_wine,wine,,ワイン,wine.mp3,済
+w_wisdom,wisdom,,知恵,wisdom.mp3,済
+w_witness,witness,,目撃者,witness.mp3,済
+w_wool,wool,,ウール,wool.mp3,済
+w_worker,worker,,労働者,worker.mp3,済
+w_workplace,workplace,,職場,workplace.mp3,済
+w_worm,worm,,ミミズ・虫,worm.mp3,済
+w_wrestling,wrestling,,レスリング,wrestling.mp3,済
+w_wrist,wrist,,手首,wrist.mp3,済
+w_yacht,yacht,,ヨット,yacht.mp3,済
+w_yarn,yarn,,毛糸,yarn.mp3,済
+w_yellowtail,yellowtail,,ブリ（魚）,yellowtail.mp3,済
+w_yogurt,yogurt,,ヨーグルト,yogurt.mp3,済
+w_young_yellowtail,young yellowtail,,ハマチ（魚）,young yellowtail.mp3,済
+w_zebra,zebra,,シマウマ,zebra.mp3,済
+w_zip_code,zip code,,郵便番号,zip code.mp3,済
+w_zipper,zipper,,チャック・ジッパー,zipper.mp3,済

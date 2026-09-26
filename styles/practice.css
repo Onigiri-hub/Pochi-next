@@ -22,6 +22,15 @@ white-space:pre-line;
 line-height:1.4;
 }
 
+/* ナレーション：アイコンなし・しっぽなしの角丸四角を中央に */
+.chat.narration{
+justify-content:center;
+}
+
+.chat.narration .bubble{
+max-width:85%;
+}
+
 .chat.left img{
 margin:0px 15px 0px 0px;
 }

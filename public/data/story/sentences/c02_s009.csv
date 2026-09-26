@@ -1,0 +1,10 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s009,1,c02_s009_q1,I was clearly standing in a place that looked like the Demon Lord's castle.,僕は明らかに魔王の城らしき場所に来ていた。,Kevin,I was clearly standing in a place that looked like the Demon Lord's castle.,I|was|clearly|standing|in|a|place|that|looked|like|the|Demon|Lord's|castle.,c02_s009_q1.mp3,1,Kevin.png,narration
+c02,s009,2,c02_s009_q2,"""This is the Hero's Sword. The king gave it to me for you.""",「王様から預かった、勇者の剣よ」,Ivy,"""This is the Hero's Sword. The king gave it to me for you.""","""This|is|the|Hero's|Sword.|The|king|gave|it|to|me|for|you.""",c02_s009_q2.mp3,1,Ivy.png,left
+c02,s009,3,c02_s009_q3,"""Use this.""",「これを使って」,Ivy,"""Use this.""","""Use|this.""",c02_s009_q3.mp3,1,Ivy.png,left
+c02,s009,4,c02_s009_q4,Amelia handed me a sword that shone brightly.,アメリアは僕に、キラリと光る剣を渡した。,Kevin,Amelia handed me a sword that shone brightly.,Amelia|handed|me|a|sword|that|shone|brightly.,c02_s009_q4.mp3,1,Kevin.png,narration
+c02,s009,5,c02_s009_q5,"When I took it, it was so heavy that I almost dropped it.",僕がそれを受け取ると、ずっしりと重くて、落としそうになった。,Kevin,"When I took it, it was so heavy that I almost dropped it.","When|I|took|it,|it|was|so|heavy|that|I|almost|dropped|it.",c02_s009_q5.mp3,1,Kevin.png,narration
+c02,s009,6,c02_s009_q6,"""There's no way I can win! No! I'm going home!""",「僕には勝てっこない！いやだ！帰る！」,Kevin,"""There's no way I can win! No! I'm going home!""","""There's|no|way|I|can|win!|No!|I'm|going|home!""",c02_s009_q6.mp3,1,Kevin.png,right
+c02,s009,7,c02_s009_q7,My legs were shaking.,僕の足は震えていた。,Kevin,My legs were shaking.,My|legs|were|shaking.,c02_s009_q7.mp3,1,Kevin.png,narration
+c02,s009,8,c02_s009_q8,Amelia chanted a spell again.,アメリアは再び魔法を唱えた。,Kevin,Amelia chanted a spell again.,Amelia|chanted|a|spell|again.,c02_s009_q8.mp3,1,Kevin.png,narration
+c02,s009,9,c02_s009_q9,"""Brave!""",「ブレイブ！」,Ivy,"""Brave!""","""Brave!""",c02_s009_q9.mp3,1,Ivy.png,left

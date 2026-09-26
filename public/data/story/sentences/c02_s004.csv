@@ -1,0 +1,21 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s004,1,c02_s004_q1,Mina suddenly stopped walking.,ミーナが急に立ち止まった。,Kendra,Mina suddenly stopped walking.,Mina|suddenly|stopped|walking.,c02_s004_q1.mp3,1,,narration
+c02,s004,2,c02_s004_q2,"""Oh,"" she said, and there was surprise in her voice.",「あっ」その声には、少し驚きが混じっていた。,Kendra,"""Oh,"" she said, and there was surprise in her voice.","""Oh,""|she|said,|and|there|was|surprise|in|her|voice.",c02_s004_q2.mp3,1,,narration
+c02,s004,3,c02_s004_q3,She bent down and picked up a single grain.,彼女はかがんで、ひとつの粒を拾い上げた。,Kendra,She bent down and picked up a single grain.,She|bent|down|and|picked|up|a|single|grain.,c02_s004_q3.mp3,1,,narration
+c02,s004,4,c02_s004_q4,For a moment she just looked at it.,しばらくのあいだ、ただそれを見つめていた。,Kendra,For a moment she just looked at it.,For|a|moment|she|just|looked|at|it.,c02_s004_q4.mp3,1,,narration
+c02,s004,5,c02_s004_q5,"""This one is for you,"" she said.",「これ、あなたにあげる」と彼女は言った。,Kendra,"""This one is for you,"" she said.","""This|one|is|for|you,""|she|said.",c02_s004_q5.mp3,1,,narration
+c02,s004,6,c02_s004_q6,Tommy held out his hand.,トミーは手を差し出した。,Kendra,Tommy held out his hand.,Tommy|held|out|his|hand.,c02_s004_q6.mp3,1,,narration
+c02,s004,7,c02_s004_q7,Mina placed the grain gently on his palm.,ミーナはその粒を、そっと彼の手のひらに置いた。,Kendra,Mina placed the grain gently on his palm.,Mina|placed|the|grain|gently|on|his|palm.,c02_s004_q7.mp3,1,,narration
+c02,s004,8,c02_s004_q8,"It was cold, and its light was very weak.",それは冷たく、とても弱々しく光っていた。,Kendra,"It was cold, and its light was very weak.","It|was|cold,|and|its|light|was|very|weak.",c02_s004_q8.mp3,1,,narration
+c02,s004,9,c02_s004_q9,"""That's yours, isn't it?"" she said with a gentle smile.",「それ、あなたのでしょ？」彼女は優しく微笑んで言った。,Kendra,"""That's yours, isn't it?"" she said with a gentle smile.","""That's|yours,|isn't|it?""|she|said|with|a|gentle|smile.",c02_s004_q9.mp3,1,,narration
+c02,s004,10,c02_s004_q10,Tommy said nothing.,トミーは何も言わなかった。,Kendra,Tommy said nothing.,Tommy|said|nothing.,c02_s004_q10.mp3,1,,narration
+c02,s004,11,c02_s004_q11,He knew at once whose words those were.,それが誰の言葉なのか、すぐにわかった。,Kendra,He knew at once whose words those were.,He|knew|at|once|whose|words|those|were.,c02_s004_q11.mp3,1,,narration
+c02,s004,12,c02_s004_q12,"""Then go,"" said Mina.",「じゃあ、行って」とミーナは言った。,Kendra,"""Then go,"" said Mina.","""Then|go,""|said|Mina.",c02_s004_q12.mp3,1,,narration
+c02,s004,13,c02_s004_q13,"""Hurry, before the light goes out.""",「早く。光が消えてしまう前に」,Kendra,"""Hurry, before the light goes out.""","""Hurry,|before|the|light|goes|out.""",c02_s004_q13.mp3,1,,narration
+c02,s004,14,c02_s004_q14,"""Can I still say it?"" he asked.",「今からでも、言える？」と彼は聞いた。,Kendra,"""Can I still say it?"" he asked.","""Can|I|still|say|it?""|he|asked.",c02_s004_q14.mp3,1,,narration
+c02,s004,15,c02_s004_q15,"""If you run,"" she said.",「走ればね」と彼女は言った。,Kendra,"""If you run,"" she said.","""If|you|run,""|she|said.",c02_s004_q15.mp3,1,,narration
+c02,s004,16,c02_s004_q16,Tommy closed his fingers around the grain.,トミーは粒をぎゅっと握りしめた。,Kendra,Tommy closed his fingers around the grain.,Tommy|closed|his|fingers|around|the|grain.,c02_s004_q16.mp3,1,,narration
+c02,s004,17,c02_s004_q17,"""I'll take care of the rest,"" Mina said.",「あとは私がやっておくから」とミーナは言った。,Kendra,"""I'll take care of the rest,"" Mina said.","""I'll|take|care|of|the|rest,""|Mina|said.",c02_s004_q17.mp3,1,,narration
+c02,s004,18,c02_s004_q18,"""Thank you for helping me.""",「手伝ってくれてありがとう」,Kendra,"""Thank you for helping me.""","""Thank|you|for|helping|me.""",c02_s004_q18.mp3,1,,narration
+c02,s004,19,c02_s004_q19,And Tommy ran.,そしてトミーは走り出した。,Kendra,And Tommy ran.,And|Tommy|ran.,c02_s004_q19.mp3,1,,narration
+c02,s004,20,c02_s004_q20,"He ran past the bakery and over the stone bridge, and the small light grew warmer in his hand.",パン屋の前を過ぎ、石の橋を渡って走った。小さな光は、手の中で少しずつ温かくなっていった。,Kendra,"He ran past the bakery and over the stone bridge, and the small light grew warmer in his hand.","He|ran|past|the|bakery|and|over|the|stone|bridge,|and|the|small|light|grew|warmer|in|his|hand.",c02_s004_q20.mp3,1,,narration

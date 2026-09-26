@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Papa from "papaparse"
-import { getClearedOrders } from "../utils/progressManager"
+import { getClearedStories } from "../utils/progressManager"
 import Navigation from "../components/Navigation";
 
 export default function StoryList() {
   const [stories, setStories] = useState([])
   const [categoryName, setCategoryName] = useState("")
   const [categoryColor, setCategoryColor] = useState("#e53935")
-  const [clearedOrders, setClearedOrders] = useState(new Set())
+  const [clearedStories, setClearedStories] = useState(new Set())
   const router = useRouter()
   const { category } = router.query
 
@@ -29,10 +29,10 @@ export default function StoryList() {
 
       const list = storyData
         .filter(s => s.category_id === category)
-        .sort((a, b) => Number(a.order) - Number(b.order))
+        .sort((a, b) => a.story_id.localeCompare(b.story_id))
       setStories(list)
 
-      setClearedOrders(await getClearedOrders(category))
+      setClearedStories(await getClearedStories(category))
     }
     load()
   }, [category])
@@ -63,8 +63,7 @@ export default function StoryList() {
       </div>
 
       {stories.map((s) => {
-        const order = Number(s.order);
-        const learned = clearedOrders.has(order);
+        const learned = clearedStories.has(s.story_id);
 
         return (
           <div className="lessonRow" key={s.story_id}>

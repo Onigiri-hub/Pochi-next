@@ -1,0 +1,11 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s007,1,c02_s007_q1,I made my way to the castle with weary steps.,僕は疲れた足どりで、城へ向かった。,Kevin,I made my way to the castle with weary steps.,I|made|my|way|to|the|castle|with|weary|steps.,c02_s007_q1.mp3,1,Kevin.png,narration
+c02,s007,2,c02_s007_q2,A soldier led me to the king.,兵士が僕を王様の元へと案内した。,Kevin,A soldier led me to the king.,A|soldier|led|me|to|the|king.,c02_s007_q2.mp3,1,Kevin.png,narration
+c02,s007,3,c02_s007_q3,The king was sitting on a magnificent chair.,王様は立派な椅子に座っていた。,Kevin,The king was sitting on a magnificent chair.,The|king|was|sitting|on|a|magnificent|chair.,c02_s007_q3.mp3,1,Kevin.png,narration
+c02,s007,4,c02_s007_q4,"""Hero Takashi, you have come at last.""",「勇者タカシよ、よくぞ参った」,Matthew,"""Hero Takashi, you have come at last.""","""Hero|Takashi,|you|have|come|at|last.""",c02_s007_q4.mp3,1,Matthew.png,left
+c02,s007,5,c02_s007_q5,"""Now then, at the end of this world lives the Demon Lord Dororo.""",「さて、この世界の果てには魔王ドロロがいる」,Matthew,"""Now then, at the end of this world lives the Demon Lord Dororo.""","""Now|then,|at|the|end|of|this|world|lives|the|Demon|Lord|Dororo.""",c02_s007_q5.mp3,1,Matthew.png,left
+c02,s007,6,c02_s007_q6,"""No, thank you!""",「お断りします！」,Kevin,"""No, thank you!""","""No,|thank|you!""",c02_s007_q6.mp3,1,Kevin.png,right
+c02,s007,7,c02_s007_q7,"I said it firmly, without waiting for the king to finish.",僕は王様の言葉が終わるのを待たずに力強く言った。,Kevin,"I said it firmly, without waiting for the king to finish.","I|said|it|firmly,|without|waiting|for|the|king|to|finish.",c02_s007_q7.mp3,1,Kevin.png,narration
+c02,s007,8,c02_s007_q8,The king looked troubled.,王様は困った顔になった。,Kevin,The king looked troubled.,The|king|looked|troubled.,c02_s007_q8.mp3,1,Kevin.png,narration
+c02,s007,9,c02_s007_q9,"""Wait. Hear me out to the end.""",「待たれよ、最後まで話を聞くのじゃ」,Matthew,"""Wait. Hear me out to the end.""","""Wait.|Hear|me|out|to|the|end.""",c02_s007_q9.mp3,1,Matthew.png,left
+c02,s007,10,c02_s007_q10,"""No, thank you! I am not going on a journey.""",「お断りします！僕は旅立ちません」,Kevin,"""No, thank you! I am not going on a journey.""","""No,|thank|you!|I|am|not|going|on|a|journey.""",c02_s007_q10.mp3,1,Kevin.png,right

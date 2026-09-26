@@ -1,0 +1,9 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c01,s003,1,c01_s003_q1,But why cubes?,でも、なんでわざわざ四角いの？,Ivy,But why cubes?,But|why|cubes?,c01_s003_q1.mp3,1,,narration
+c01,s003,2,c01_s003_q2,Wombats use poop to send messages.,ウォンバットはうんこでメッセージを送るんだ。,Ivy,Wombats use poop to send messages.,Wombats|use|poop|to|send|messages.,c01_s003_q2.mp3,1,,narration
+c01,s003,3,c01_s003_q3,They leave it on rocks and logs.,岩や丸太の上にうんこを置いておく。,Ivy,They leave it on rocks and logs.,They|leave|it|on|rocks|and|logs.,c01_s003_q3.mp3,1,,narration
+c01,s003,4,c01_s003_q4,"It says, ""This is my place!""",「ここはオレの場所だぞ！」って意味。,Ivy,"It says, ""This is my place!""","It|says,|""This|is|my|place!""",c01_s003_q4.mp3,1,,narration
+c01,s003,5,c01_s003_q5,Round poop might roll away.,丸いうんこだと転がっていっちゃうかも。,Ivy,Round poop might roll away.,Round|poop|might|roll|away.,c01_s003_q5.mp3,1,,narration
+c01,s003,6,c01_s003_q6,Cubes stay put.,四角ならその場から動かない。,Ivy,Cubes stay put.,Cubes|stay|put.,c01_s003_q6.mp3,1,,narration
+c01,s003,7,c01_s003_q7,This research even won an Ig Nobel Prize.,この研究、イグノーベル賞までとったんだよ。,Ivy,This research even won an Ig Nobel Prize.,This|research|even|won|an|Ig|Nobel|Prize.,c01_s003_q7.mp3,1,,narration
+c01,s003,8,c01_s003_q8,"It's a prize for studies that make people laugh, then think.",笑わせたあとに考えさせる研究に贈られる賞。,Ivy,"It's a prize for studies that make people laugh, then think.","It's|a|prize|for|studies|that|make|people|laugh,|then|think.",c01_s003_q8.mp3,1,,narration

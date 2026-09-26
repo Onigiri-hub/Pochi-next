@@ -1,0 +1,20 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s003,1,c02_s003_q1,"""But where do they come from?"" Tommy asked.",「でも、どこから来るの？」トミーが尋ねた。,Kendra,"""But where do they come from?"" Tommy asked.","""But|where|do|they|come|from?""|Tommy|asked.",c02_s003_q1.mp3,1,,narration
+c02,s003,2,c02_s003_q2,Mina closed her hand around the bottle.,ミーナは瓶をきゅっと握りしめた。,Kendra,Mina closed her hand around the bottle.,Mina|closed|her|hand|around|the|bottle.,c02_s003_q2.mp3,1,,narration
+c02,s003,3,c02_s003_q3,"""They're born when you can't say what you want to say.""",「これはね、言いたいことが言えなかった時に生まれるの」,Kendra,"""They're born when you can't say what you want to say.""","""They're|born|when|you|can't|say|what|you|want|to|say.""",c02_s003_q3.mp3,1,,narration
+c02,s003,4,c02_s003_q4,"""What do you mean?""",「それってどういうこと？」,Kendra,"""What do you mean?""","""What|do|you|mean?""",c02_s003_q4.mp3,1,,narration
+c02,s003,5,c02_s003_q5,"""You know the feeling,"" she said.",「あの気持ち、わかるでしょ」と彼女は言った。,Kendra,"""You know the feeling,"" she said.","""You|know|the|feeling,""|she|said.",c02_s003_q5.mp3,1,,narration
+c02,s003,6,c02_s003_q6,"""If I had a little more time, I could have said it.""",「あともう少し時間があったら、言えたのに、っていう」,Kendra,"""If I had a little more time, I could have said it.""","""If|I|had|a|little|more|time,|I|could|have|said|it.""",c02_s003_q6.mp3,1,,narration
+c02,s003,7,c02_s003_q7,"""That feeling turns into these grains, I think.""",「あの気持ちが、この粒になるんだと思う」,Kendra,"""That feeling turns into these grains, I think.""","""That|feeling|turns|into|these|grains,|I|think.""",c02_s003_q7.mp3,1,,narration
+c02,s003,8,c02_s003_q8,Tommy was quiet.,トミーは黙っていた。,Kendra,Tommy was quiet.,Tommy|was|quiet.,c02_s003_q8.mp3,1,,narration
+c02,s003,9,c02_s003_q9,He could think of a few things he had never said.,言えないままだったことが、いくつか思い浮かんだ。,Kendra,He could think of a few things he had never said.,He|could|think|of|a|few|things|he|had|never|said.,c02_s003_q9.mp3,1,,narration
+c02,s003,10,c02_s003_q10,"""And if you leave them there, they just disappear,"" Mina went on.",「そのまま放っておいたら、消えちゃうの」とミーナは続けた。,Kendra,"""And if you leave them there, they just disappear,"" Mina went on.","""And|if|you|leave|them|there,|they|just|disappear,""|Mina|went|on.",c02_s003_q10.mp3,1,,narration
+c02,s003,11,c02_s003_q11,"""Nobody ever comes back for them.""",「誰も拾いに戻ってこないから」,Kendra,"""Nobody ever comes back for them.""","""Nobody|ever|comes|back|for|them.""",c02_s003_q11.mp3,1,,narration
+c02,s003,12,c02_s003_q12,"""So what do you do with them?"" he asked.",「それを集めてどうするの？」と彼は聞いた。,Kendra,"""So what do you do with them?"" he asked.","""So|what|do|you|do|with|them?""|he|asked.",c02_s003_q12.mp3,1,,narration
+c02,s003,13,c02_s003_q13,Mina looked up.,ミーナは顔を上げた。,Kendra,Mina looked up.,Mina|looked|up.,c02_s003_q13.mp3,1,,narration
+c02,s003,14,c02_s003_q14,"Above the rooftops, the old clock tower stood against the evening sky.",屋根の向こう、夕暮れの空に古い時計塔が立っていた。,Kendra,"Above the rooftops, the old clock tower stood against the evening sky.","Above|the|rooftops,|the|old|clock|tower|stood|against|the|evening|sky.",c02_s003_q14.mp3,1,,narration
+c02,s003,15,c02_s003_q15,"""I take them to the tower,"" she said.",「時計塔に持っていくのよ」と彼女は言った。,Kendra,"""I take them to the tower,"" she said.","""I|take|them|to|the|tower,""|she|said.",c02_s003_q15.mp3,1,,narration
+c02,s003,16,c02_s003_q16,"""Why the tower?""",「どうして時計塔に？」,Kendra,"""Why the tower?""","""Why|the|tower?""",c02_s003_q16.mp3,1,,narration
+c02,s003,17,c02_s003_q17,Mina only smiled.,ミーナはただ微笑んだ。,Kendra,Mina only smiled.,Mina|only|smiled.,c02_s003_q17.mp3,1,,narration
+c02,s003,18,c02_s003_q18,"""Come with me,"" she said.",「一緒に来て」と彼女は言った。,Kendra,"""Come with me,"" she said.","""Come|with|me,""|she|said.",c02_s003_q18.mp3,1,,narration
+c02,s003,19,c02_s003_q19,"""Then you'll see.""",「そうすればわかるから」,Kendra,"""Then you'll see.""","""Then|you'll|see.""",c02_s003_q19.mp3,1,,narration

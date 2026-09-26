@@ -1,3 +1,21 @@
 category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
-c02,s002,1,c02_s002_q1,One day she found a blue stone.,ある日 彼女は青い石を見つけた。,Matthew,One day she found a blue stone.,One|day|she|found|a|blue|stone.,c02_s002_q1.mp3,1,Matthew.png,left
-c02,s002,2,c02_s002_q2,The stone was warm in her hand.,その石は手の中で温かかった。,Matthew,The stone was warm in her hand.,The|stone|was|warm|in|her|hand.,c02_s002_q2.mp3,1,Matthew.png,left
+c02,s002,1,c02_s002_q1,"""What are you doing?"" someone asked her one afternoon.",「何をしているの？」ある日の午後、誰かが彼女に尋ねた。,Kendra,"""What are you doing?"" someone asked her one afternoon.","""What|are|you|doing?""|someone|asked|her|one|afternoon.",c02_s002_q1.mp3,1,,narration
+c02,s002,2,c02_s002_q2,Mina looked up from the ground.,ミーナは地面から顔を上げた。,Kendra,Mina looked up from the ground.,Mina|looked|up|from|the|ground.,c02_s002_q2.mp3,1,,narration
+c02,s002,3,c02_s002_q3,"A boy about her age stood on the path, holding a paper bag from the bakery.",同じくらいの年の男の子が、パン屋の紙袋を持って道に立っていた。,Kendra,"A boy about her age stood on the path, holding a paper bag from the bakery.","A|boy|about|her|age|stood|on|the|path,|holding|a|paper|bag|from|the|bakery.",c02_s002_q3.mp3,1,,narration
+c02,s002,4,c02_s002_q4,"""I'm Tommy,"" he said.",「僕はトミー」と彼は言った。,Kendra,"""I'm Tommy,"" he said.","""I'm|Tommy,""|he|said.",c02_s002_q4.mp3,1,,narration
+c02,s002,5,c02_s002_q5,"""What's your name?""",「あなたは？」,Kendra,"""What's your name?""","""What's|your|name?""",c02_s002_q5.mp3,1,,narration
+c02,s002,6,c02_s002_q6,"""I'm Mina,"" she answered.",「私はミーナ」と彼女は答えた。,Kendra,"""I'm Mina,"" she answered.","""I'm|Mina,""|she|answered.",c02_s002_q6.mp3,1,,narration
+c02,s002,7,c02_s002_q7,"""I'm picking up time.""",「時間を拾っているのよ」,Kendra,"""I'm picking up time.""","""I'm|picking|up|time.""",c02_s002_q7.mp3,1,,narration
+c02,s002,8,c02_s002_q8,Tommy blinked.,トミーは目をぱちくりさせた。,Kendra,Tommy blinked.,Tommy|blinked.,c02_s002_q8.mp3,1,,narration
+c02,s002,9,c02_s002_q9,"""Time?"" he said.",「時間？」と彼は言った。,Kendra,"""Time?"" he said.","""Time?""|he|said.",c02_s002_q9.mp3,1,,narration
+c02,s002,10,c02_s002_q10,"""You can pick up time?""",「時間って拾えるの？」,Kendra,"""You can pick up time?""","""You|can|pick|up|time?""",c02_s002_q10.mp3,1,,narration
+c02,s002,11,c02_s002_q11,"""Yes,"" said Mina.",「そう」とミーナは言った。,Kendra,"""Yes,"" said Mina.","""Yes,""|said|Mina.",c02_s002_q11.mp3,1,,narration
+c02,s002,12,c02_s002_q12,"""These shining grains are time.""",「この光っている粒は、時間なの」,Kendra,"""These shining grains are time.""","""These|shining|grains|are|time.""",c02_s002_q12.mp3,1,,narration
+c02,s002,13,c02_s002_q13,"""Everyone drops a little of it, every single day.""",「みんなが毎日、少しずつ落としていくのよ」,Kendra,"""Everyone drops a little of it, every single day.""","""Everyone|drops|a|little|of|it,|every|single|day.""",c02_s002_q13.mp3,1,,narration
+c02,s002,14,c02_s002_q14,"""Most people walk right past them without noticing.""",「ほとんどの人は、気づかずに通り過ぎてしまうけど」,Kendra,"""Most people walk right past them without noticing.""","""Most|people|walk|right|past|them|without|noticing.""",c02_s002_q14.mp3,1,,narration
+c02,s002,15,c02_s002_q15,She held her bottle out toward him.,彼女は瓶を彼のほうへ差し出した。,Kendra,She held her bottle out toward him.,She|held|her|bottle|out|toward|him.,c02_s002_q15.mp3,1,,narration
+c02,s002,16,c02_s002_q16,"""But you can see them too, can't you?""",「でもあなたには見えるのね？」,Kendra,"""But you can see them too, can't you?""","""But|you|can|see|them|too,|can't|you?""",c02_s002_q16.mp3,1,,narration
+c02,s002,17,c02_s002_q17,Tommy did not answer.,トミーは答えなかった。,Kendra,Tommy did not answer.,Tommy|did|not|answer.,c02_s002_q17.mp3,1,,narration
+c02,s002,18,c02_s002_q18,"He was staring into the bottle, his eyes wide.",目を見開いて、瓶の中をじっと見つめていた。,Kendra,"He was staring into the bottle, his eyes wide.","He|was|staring|into|the|bottle,|his|eyes|wide.",c02_s002_q18.mp3,1,,narration
+c02,s002,19,c02_s002_q19,"Inside, the grains of light were shining silver.",その中で、光の粒は銀色に輝いていた。,Kendra,"Inside, the grains of light were shining silver.","Inside,|the|grains|of|light|were|shining|silver.",c02_s002_q19.mp3,1,,narration
+c02,s002,20,c02_s002_q20,"For the first time, Mina was not the only one.",生まれてはじめて、ミーナは一人ではなかった。,Kendra,"For the first time, Mina was not the only one.","For|the|first|time,|Mina|was|not|the|only|one.",c02_s002_q20.mp3,1,,narration

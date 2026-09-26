@@ -1,0 +1,17 @@
+category_id,story_id,question_NO,question_id,en,ja,voice,answer,chips,audio,audio_auto,icon_first,position_first
+c02,s005,1,c02_s005_q1,Tommy pushed open the door of his house.,トミーは家のドアを押し開けた。,Kendra,Tommy pushed open the door of his house.,Tommy|pushed|open|the|door|of|his|house.,c02_s005_q1.mp3,1,,narration
+c02,s005,2,c02_s005_q2,His mother was sitting on a chair in the kitchen.,お母さんが、キッチンのイスに座っていた。,Kendra,His mother was sitting on a chair in the kitchen.,His|mother|was|sitting|on|a|chair|in|the|kitchen.,c02_s005_q2.mp3,1,,narration
+c02,s005,3,c02_s005_q3,She did not say anything.,何も言わなかった。,Kendra,She did not say anything.,She|did|not|say|anything.,c02_s005_q3.mp3,1,,narration
+c02,s005,4,c02_s005_q4,"She only looked at him, as if she had been waiting all afternoon for his words.",ただじっとトミーを見つめていた。まるで、ずっと彼の言葉を待っていたみたいに。,Kendra,"She only looked at him, as if she had been waiting all afternoon for his words.","She|only|looked|at|him,|as|if|she|had|been|waiting|all|afternoon|for|his|words.",c02_s005_q4.mp3,1,,narration
+c02,s005,5,c02_s005_q5,"The grain in his hand was warm now, almost hot.",手の中の粒は、もう熱いくらいに温かくなっていた。,Kendra,"The grain in his hand was warm now, almost hot.","The|grain|in|his|hand|was|warm|now,|almost|hot.",c02_s005_q5.mp3,1,,narration
+c02,s005,6,c02_s005_q6,"""Mom,"" he said.",「母さん」と彼は言った。,Kendra,"""Mom,"" he said.","""Mom,""|he|said.",c02_s005_q6.mp3,1,,narration
+c02,s005,7,c02_s005_q7,"""I'm sorry I said I hated you.""",「嫌いって言って、ごめんね」,Kendra,"""I'm sorry I said I hated you.""","""I'm|sorry|I|said|I|hated|you.""",c02_s005_q7.mp3,1,,narration
+c02,s005,8,c02_s005_q8,"His voice was very small, but he said it.",とても小さな声だったけれど、彼は言えた。,Kendra,"His voice was very small, but he said it.","His|voice|was|very|small,|but|he|said|it.",c02_s005_q8.mp3,1,,narration
+c02,s005,9,c02_s005_q9,"In his palm, the grain of light began to melt like snow.",手のひらの上で、光の粒が雪のように溶けはじめた。,Kendra,"In his palm, the grain of light began to melt like snow.","In|his|palm,|the|grain|of|light|began|to|melt|like|snow.",c02_s005_q9.mp3,1,,narration
+c02,s005,10,c02_s005_q10,"It grew warmer and warmer, and then it was gone.",どんどん温かくなって、そして消えた。,Kendra,"It grew warmer and warmer, and then it was gone.","It|grew|warmer|and|warmer,|and|then|it|was|gone.",c02_s005_q10.mp3,1,,narration
+c02,s005,11,c02_s005_q11,Nothing was left on his hand.,手のひらには、何も残っていなかった。,Kendra,Nothing was left on his hand.,Nothing|was|left|on|his|hand.,c02_s005_q11.mp3,1,,narration
+c02,s005,12,c02_s005_q12,"""It's all right,"" his mother said.",「いいのよ」とお母さんは言った。,Kendra,"""It's all right,"" his mother said.","""It's|all|right,""|his|mother|said.",c02_s005_q12.mp3,1,,narration
+c02,s005,13,c02_s005_q13,She stood up and put her arms around him.,立ち上がって、トミーを抱きしめた。,Kendra,She stood up and put her arms around him.,She|stood|up|and|put|her|arms|around|him.,c02_s005_q13.mp3,1,,narration
+c02,s005,14,c02_s005_q14,"For a while, neither of them said anything else.",しばらくのあいだ、二人とも何も言わなかった。,Kendra,"For a while, neither of them said anything else.","For|a|while,|neither|of|them|said|anything|else.",c02_s005_q14.mp3,1,,narration
+c02,s005,15,c02_s005_q15,They did not need to.,言う必要が、なかった。,Kendra,They did not need to.,They|did|not|need|to.,c02_s005_q15.mp3,1,,narration
+c02,s005,16,c02_s005_q16,"Far away, above the rooftops, the old clock tower began to ring.",ずっと遠く、屋根の向こうで、古い時計塔が鳴りはじめた。,Kendra,"Far away, above the rooftops, the old clock tower began to ring.","Far|away,|above|the|rooftops,|the|old|clock|tower|began|to|ring.",c02_s005_q16.mp3,1,,narration
