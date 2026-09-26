@@ -22,7 +22,7 @@ export default function CategoryList(){
 
       const sorted = catData
         .filter(c => c.category_id)
-        .sort((a, b) => Number(a.order) - Number(b.order))
+        .sort((a, b) => a.category_id.localeCompare(b.category_id))
 
       setCategories(sorted)
 

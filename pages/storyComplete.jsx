@@ -9,7 +9,7 @@ import ShareModal from "../components/ShareModal"
 
 export default function StoryComplete() {
   const router = useRouter()
-  const { category, order, isPerfect } = router.query
+  const { category, storyId, isPerfect } = router.query
   const {
     setMofu, setStreak,
     setTotalLessons, totalLessons,
@@ -37,7 +37,7 @@ export default function StoryComplete() {
       if (cancelled) return;
 
       // 1. 進捗保存 → 初クリアかどうかが返ってくる
-      const { isFirstClear } = await saveProgress(category, Number(order));
+      const { isFirstClear } = await saveProgress(category, storyId);
 
       // 2. 連続日数を更新して取得
       const { count: streak, isFirstToday } = await updateStreak()
