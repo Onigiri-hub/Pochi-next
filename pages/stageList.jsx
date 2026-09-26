@@ -43,7 +43,7 @@ function CircleProgress({ value, total, color, label }) {
 
 // 並べて英単語：例文データが用意できている Stage_no の上限。
 // これより後の Stage はグレーアウトして無効化する（例文を追加したら値を上げる）。
-const ARRANGE_MAX_ENABLED_NO = 12
+const ARRANGE_MAX_ENABLED_NO = 14
 
 export default function StageList() {
   const [stages, setStages] = useState([])
